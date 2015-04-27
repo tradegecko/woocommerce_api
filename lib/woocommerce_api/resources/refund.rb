@@ -1,3 +1,5 @@
+require "woocommerce_api/resources/line_item"
+
 module WoocommerceAPI
   class OrderRefund < Resource
     attribute :id

@@ -1,5 +1,8 @@
+require "woocommerce_api/resources/address"
+require "woocommerce_api/resources/customer"
 require "woocommerce_api/resources/fee_line"
 require "woocommerce_api/resources/shipping_line"
+require "woocommerce_api/resources/coupon_line"
 require "woocommerce_api/resources/tax_line"
 require "woocommerce_api/resources/payment_details"
 

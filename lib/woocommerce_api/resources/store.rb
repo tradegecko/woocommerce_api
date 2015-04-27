@@ -1,3 +1,6 @@
+require "woocommerce_api/resources/meta"
+require "woocommerce_api/resources/route"
+
 module WoocommerceAPI
   class Store < Resource
     attribute :description

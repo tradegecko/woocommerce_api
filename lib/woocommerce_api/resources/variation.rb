@@ -1,4 +1,5 @@
 require "woocommerce_api/resources/image"
+require "woocommerce_api/resources/dimensions"
 
 module WoocommerceAPI
   class Variation < Resource
