@@ -10,10 +10,10 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
-  s.authors = ["Philip Deazeta"]
+  s.authors = ["TradeGecko"]
   s.date = "2015-05-04"
   s.description = "Enables Ruby applications to communicate with the WooCommerce API."
-  s.email = "philip@tradegecko.com"
+  s.email = "support@tradegecko.com"
   s.extra_rdoc_files = [
     "LICENSE",
     "README.md"
@@ -48,7 +48,7 @@ Gem::Specification.new do |s|
     "lib/woocommerce_api/resources/webhook.rb",
     "lib/woocommerce_api/version.rb"
   ]
-  s.homepage = "http://github.com/pmdeazeta/woocommerce_api"
+  s.homepage = "http://github.com/tradegecko/woocommerce_api"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.4.5"
   s.summary = "Enables Ruby applications to communicate with the WooCommerce API"
@@ -95,4 +95,3 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<pry>, [">= 0"])
   end
 end
-
