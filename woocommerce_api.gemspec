@@ -40,7 +40,6 @@ Gem::Specification.new do |s|
     "lib/woocommerce_api/resources/product.rb",
     "lib/woocommerce_api/resources/product_review.rb",
     "lib/woocommerce_api/resources/refund.rb",
-    "lib/woocommerce_api/resources/route.rb",
     "lib/woocommerce_api/resources/shipping_line.rb",
     "lib/woocommerce_api/resources/store.rb",
     "lib/woocommerce_api/resources/tax_line.rb",

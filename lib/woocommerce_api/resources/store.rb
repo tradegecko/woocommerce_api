@@ -1,14 +1,13 @@
 require "woocommerce_api/resources/meta"
-require "woocommerce_api/resources/route"
 
 module WoocommerceAPI
   class Store < Resource
     attribute :description
     attribute :meta, Meta
     attribute :name
-    attribute :routes, Array[Route]
     attribute :URL
     attribute :wc_version
+    attribute :routes, Hash
     delegate :timezone,
              :currency,
              :currency_format,
@@ -29,4 +28,3 @@ module WoocommerceAPI
     end
   end
 end
-

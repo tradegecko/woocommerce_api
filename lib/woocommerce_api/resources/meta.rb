@@ -12,6 +12,6 @@ module WoocommerceAPI
     attribute :dimension_unit
     attribute :ssl_enabled, Boolean
     attribute :permalinks_enabled, Boolean
-    attribute :links, Array
+    attribute :links, Hash
   end
 end
