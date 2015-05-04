@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.files = [
     "lib/woocommerce_api.rb",
     "lib/woocommerce_api/base.rb",
-    "lib/woocommerce_api/resource.rb"
+    "lib/woocommerce_api/resource.rb",
     "lib/woocommerce_api/product.rb"
   ]
   s.homepage = "http://github.com/pmdeazeta/woocommerce_api"
