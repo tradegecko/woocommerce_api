@@ -73,7 +73,7 @@ module WoocommerceAPI
       def save
         return unless valid?
         method = persisted? ? :put : :post
-        resource = self.class.http_request(method, self.to_path, body: self.to_json(root: true))
+        resource = self.class.http_request(method, self.to_path, body: self.as_json.to_json)
         self.class.extract_resource(resource)
       end
       alias_method :create, :save
