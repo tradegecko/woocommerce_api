@@ -10,7 +10,7 @@ module WoocommerceAPI
     attribute :download_limit, Integer
     attribute :downloadable, Boolean
     attribute :downloads, Array
-    attribute :image
+    attribute :image, Array[Image]
     attribute :images, Array[Image]
     attribute :in_stock, Boolean
     attribute :managing_stock, Boolean
