@@ -24,5 +24,11 @@ module WoocommerceAPI
     attribute :created_at, DateTime
     attribute :updated_at, DateTime
     attribute :usage_count, Integer
+
+    def self.find_by_code(code)
+      return if code.blank?
+      resource = http_request(:get, "#{collection_path}/code/#{code}")
+      self.extract_resource(resource)
+    end
   end
 end
