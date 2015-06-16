@@ -19,7 +19,7 @@ module WoocommerceAPI
 
         define_method association_name do
           association_class = class_name.constantize
-          resource_uri = "/#{self.class.resource_name}/#{self.id}"
+          resource_uri = "/#{self.class.collection_name}/#{self.id}"
           resource_uri.concat(options[:resource_uri].presence || "/#{association_class.resource_name}")
           resource = http_request(:get, resource_uri)
           self.extract_resource(resource)
