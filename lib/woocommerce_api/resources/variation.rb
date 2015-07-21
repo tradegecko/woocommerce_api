@@ -3,8 +3,24 @@ require "woocommerce_api/resources/dimensions"
 
 module WoocommerceAPI
   class Variation < Resource
+    def initialize(attributes={})
+      # Rename restricted attributes
+      if attributes['attributes']
+        attributes['wc_attributes'] = attributes.delete('attributes')
+      end
+      super
+    end
+
+    def as_json
+      wc_attributes = super
+      if attributes[:wc_attributes]
+        wc_attributes['product']['attributes'] = attributes[:wc_attributes]
+      end
+      wc_attributes
+    end
+
     attribute :id, Integer
-    attribute :custom_attributes
+    attribute :wc_attributes, Array
     attribute :dimensions, Dimensions
     attribute :download_expiry, Integer
     attribute :download_limit, Integer
@@ -41,3 +57,4 @@ module WoocommerceAPI
     attribute :sale_price_dates_to, DateTime
   end
 end
+

@@ -2,8 +2,25 @@ require "woocommerce_api/resources/variation"
 
 module WoocommerceAPI
   class Product < Resource
+
+    def initialize(attributes={})
+      # Rename restricted attributes
+      if attributes['attributes']
+        attributes['wc_attributes'] = attributes.delete('attributes')
+      end
+      super
+    end
+
+    def as_json
+      wc_attributes = super
+      if attributes[:wc_attributes]
+        wc_attributes['product']['attributes'] = attributes[:wc_attributes]
+      end
+      wc_attributes
+    end
+
     attribute :id, Integer
-    attribute :custom_attributes
+    attribute :wc_attributes, Array
     attribute :catalog_visibility
     attribute :categories, Array
     attribute :cross_sell_ids, Array

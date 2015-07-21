@@ -14,7 +14,8 @@ describe WoocommerceAPI::Product do
       categories: [
         "Clothing",
         "T-shirts"
-      ]
+      ],
+      wc_attributes: [{name: 'test', options: ['option1', 'option2']}]
     }
   end
 
@@ -37,6 +38,7 @@ describe WoocommerceAPI::Product do
     expect(wc_product).to be_kind_of described_class
     expect(wc_product.title).to eq "Premium Quality (TEST)"
     expect(wc_product.regular_price).to eq 21.99
+    expect(wc_product.wc_attributes).to eq [{"name"=>"Test", "slug"=>"test", "position"=>0, "visible"=>false, "variation"=>false, "options"=>["option1", "option2"]}]
   end
 
   it "updates attributes" do

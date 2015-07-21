@@ -50,14 +50,6 @@ module WoocommerceAPI
     end
 
     module InstanceMethods
-      def initialize(attributes={})
-        # Rename restricted attributes
-        if attributes['attributes']
-          attributes['custom_attributes'] = attributes.delete('attributes')
-        end
-        super
-      end
-
       def singleton_name
         self.class.singleton_name
       end
