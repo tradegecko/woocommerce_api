@@ -86,5 +86,9 @@ module WoocommerceAPI
     attribute :button_text
 
     has_many :product_reviews, class_name: "ProductReview", resource_uri: '/reviews'
+
+    def self.sku(sku)
+      extract_resource(http_request(:get, "/products/sku/#{sku}"))
+    end
   end
 end
