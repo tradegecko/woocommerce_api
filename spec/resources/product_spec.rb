@@ -32,6 +32,10 @@ shared_examples_for "a woocommerce product CRUD" do
   it "deletes a product" do
     expect(wc_product.destroy).to include({"message"=>"Deleted product"})
   end
+
+  it "permanently deletes a product" do
+    expect(wc_product.destroy(force: true)).to include({"message"=>"Permanently deleted product"})
+  end
 end
 
 describe WoocommerceAPI::Product do
