@@ -86,6 +86,21 @@ module WoocommerceAPI
       def to_path
         "/#{collection_name}#{"/#{id}" if id}"
       end
+
+      # Every nested assocation. by default #as_json(root: false) could be applied
+      def as_json(options=nil)
+        attr_json = super(options)
+        if options && options[:root]
+          attr_json[singleton_name].each do |key, value|
+            attr_json[singleton_name][key] = value.as_json(root: false)
+          end
+        else
+          attr_json.each do |key, value|
+            attr_json[key] = value.as_json(root: false)
+          end
+        end
+        attr_json
+      end
     end
 
     def self.included(receiver)
