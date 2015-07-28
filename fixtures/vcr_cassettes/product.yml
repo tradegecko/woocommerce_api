@@ -1,55 +1,8 @@
 ---
 http_interactions:
 - request:
-    method: put
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/1785
-    body:
-      encoding: UTF-8
-      string: '{"product":{"id":1785,"wc_attributes":[{"name":"Test","slug":"test","position":0,"visible":false,"variation":false,"options":["option1","option2"]}],"catalog_visibility":"visible","categories":["Clothing","T-shirts"],"cross_sell_ids":[],"description":"\u003cp\u003ePellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.\u003c/p\u003e\n","dimensions":{"dimensions":{"length":"","width":"","height":"","unit":"cm"}},"download_expiry":0,"download_limit":0,"download_type":"","downloadable":false,"downloads":[],"featured":false,"images":[{"image":{"id":0,"src":"https://wpcommercetest.wpengine.com/wp-content/plugins/woocommerce/assets/images/placeholder.png","position":0,"created_at":"2015-07-21T11:55:00.000+00:00","updated_at":"2015-07-21T11:55:00.000+00:00","title":"Placeholder","alt":"Placeholder"}}],"in_stock":true,"managing_stock":false,"parent":[],"parent_id":0,"purchase_note":"","regular_price":"34.77","reviews_allowed":true,"sale_price":null,"shipping_class":"","short_description":"\u003cp\u003ePellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\u003c/p\u003e\n","sku":"","sold_individually":false,"status":"publish","stock_quantity":0,"tags":[],"tax_class":"","tax_status":"taxable","title":"UpdatedTitle","total_sales":0,"type":"simple","upsell_ids":[],"variations":[],"virtual":false,"weight":null,"created_at":"2015-07-21T11:55:00.000+00:00","updated_at":"2015-07-21T11:55:00.000+00:00","average_rating":"0.00","backordered":false,"backorders_allowed":false,"featured_src":false,"on_sale":false,"permalink":"https://wpcommercetest.wpengine.com/product/premium-quality-test-7/","price":"21.99","price_html":"\u003cspan
-        class=\"amount\"\u003e\u0026#36;20.55\u003c/span\u003e","purchaseable":true,"rating_count":0,"related_ids":[1779,1781,1782,1783,1784],"shipping_class_id":null,"shipping_required":true,"shipping_taxable":true,"taxable":true,"visible":true,"default_attributes":{},"sale_price_dates_from":null,"sale_price_dates_to":null,"product_url":null,"button_text":null,"attributes":[{"name":"Test","slug":"test","position":0,"visible":false,"variation":false,"options":["option1","option2"]}]}}'
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Tue, 21 Jul 2015 11:55:02 GMT
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Length:
-      - '2028'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-      X-Type:
-      - default
-    body:
-      encoding: UTF-8
-      string: '{"product":{"title":"UpdatedTitle","id":1785,"created_at":"2015-07-21T11:55:00Z","updated_at":"2015-07-21T11:55:02Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-7\/","sku":"","price":"34.77","regular_price":"34.77","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;32.50<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1780,1779,1781,1782,1783],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T11:55:02Z","updated_at":"2015-07-21T11:55:02Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Test","slug":"Test","position":0,"visible":false,"variation":false,"options":["option1","option2"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]}}'
-    http_version:
-  recorded_at: Tue, 21 Jul 2015 11:55:01 GMT
-- request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/1785
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products
     body:
       encoding: US-ASCII
       string: ''
@@ -66,15 +19,22 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 21 Jul 2015 11:55:05 GMT
+      - Tue, 28 Jul 2015 07:42:03 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '2028'
+      - '30826'
       Connection:
       - keep-alive
       Keep-Alive:
       - timeout=20
+      Link:
+      - <https://wpcommercetest.wpengine.com//wc-api/v2/products?page=16>; rel="last"
+      - <https://wpcommercetest.wpengine.com//wc-api/v2/products?page=2>; rel="next"
+      X-Wc-Total:
+      - '160'
+      X-Wc-Totalpages:
+      - '16'
       X-Cacheable:
       - NO:Passed
       Cache-Control:
@@ -91,18 +51,79 @@ http_interactions:
       - default
     body:
       encoding: UTF-8
-      string: '{"product":{"title":"UpdatedTitle","id":1785,"created_at":"2015-07-21T11:55:00Z","updated_at":"2015-07-21T11:55:02Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-7\/","sku":"","price":"34.77","regular_price":"34.77","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;32.50<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+      string: '{"products":[{"title":"Premium Quality (TEST)","id":2040,"created_at":"2015-07-28T07:38:41Z","updated_at":"2015-07-28T07:38:41Z","type":"variable","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-91\/","sku":"","price":"123.00","regular_price":"0.00","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;114.95<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":345,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
         habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
         Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
         Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
         Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1779,1781,1782,1783,1784],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T11:55:05Z","updated_at":"2015-07-21T11:55:05Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Test","slug":"Test","position":0,"visible":false,"variation":false,"options":["option1","option2"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]}}'
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1881,1860,1861,1862,1863],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Size","slug":"Size","position":0,"visible":false,"variation":false,"options":["S","M"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[{"id":2041,"created_at":"2015-07-28T07:38:41Z","updated_at":"2015-07-28T07:38:41Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-91\/","sku":"","price":"123.00","regular_price":"123.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":321,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0},{"id":2042,"created_at":"2015-07-28T07:38:41Z","updated_at":"2015-07-28T07:38:41Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-91\/","sku":"","price":"123.00","regular_price":"123.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":321,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0}],"parent":[]},{"title":"Premium
+        Quality (TEST)","id":2037,"created_at":"2015-07-28T07:38:39Z","updated_at":"2015-07-28T07:38:39Z","type":"variable","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-90\/","sku":"","price":"123.00","regular_price":"0.00","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;114.95<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":345,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[2024,2027,2031,2032,2040],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Size","slug":"Size","position":0,"visible":false,"variation":false,"options":["S","M"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[{"id":2038,"created_at":"2015-07-28T07:38:39Z","updated_at":"2015-07-28T07:38:39Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-90\/","sku":"","price":"123.00","regular_price":"123.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":321,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0},{"id":2039,"created_at":"2015-07-28T07:38:39Z","updated_at":"2015-07-28T07:38:39Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-90\/","sku":"","price":"123.00","regular_price":"123.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":321,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0}],"parent":[]},{"title":"UpdatedTitle","id":2032,"created_at":"2015-07-28T07:38:27Z","updated_at":"2015-07-28T07:38:29Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-88\/","sku":"","price":"34.77","regular_price":"34.77","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;32.50<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":345,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1788,1843,1850,1851,1884],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":2033,"created_at":"2015-07-28T07:38:28Z","updated_at":"2015-07-28T07:38:28Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2015\/07\/placeholder22.png","title":"","alt":"","position":0}],"featured_src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2015\/07\/placeholder22.png","attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"Premium
+        Quality (TEST)","id":2031,"created_at":"2015-07-28T07:38:25Z","updated_at":"2015-07-28T07:38:25Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-87\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":345,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1940,1941,1946,1949,1953],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"Premium
+        Quality (TEST)","id":2027,"created_at":"2015-07-28T07:32:51Z","updated_at":"2015-07-28T07:32:51Z","type":"variable","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-85\/","sku":"","price":"123.00","regular_price":"0.00","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;114.95<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":345,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1993,1998,2001,2005,2006],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Size","slug":"Size","position":0,"visible":false,"variation":false,"options":["S","M"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[{"id":2028,"created_at":"2015-07-28T07:32:51Z","updated_at":"2015-07-28T07:32:51Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-85\/","sku":"","price":"123.00","regular_price":"123.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":321,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0},{"id":2029,"created_at":"2015-07-28T07:32:51Z","updated_at":"2015-07-28T07:32:51Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-85\/","sku":"","price":"123.00","regular_price":"123.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":321,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0}],"parent":[]},{"title":"Premium
+        Quality (TEST)","id":2024,"created_at":"2015-07-28T07:32:49Z","updated_at":"2015-07-28T07:32:49Z","type":"variable","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-84\/","sku":"","price":"123.00","regular_price":"0.00","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;114.95<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":345,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1855,1856,1857,1881,1860],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Size","slug":"Size","position":0,"visible":false,"variation":false,"options":["S","M"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[{"id":2025,"created_at":"2015-07-28T07:32:49Z","updated_at":"2015-07-28T07:32:49Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-84\/","sku":"","price":"123.00","regular_price":"123.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":321,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0},{"id":2026,"created_at":"2015-07-28T07:32:49Z","updated_at":"2015-07-28T07:32:49Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-84\/","sku":"","price":"123.00","regular_price":"123.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":321,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0}],"parent":[]},{"title":"UpdatedTitle","id":2019,"created_at":"2015-07-28T07:32:37Z","updated_at":"2015-07-28T07:32:39Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-82\/","sku":"","price":"34.77","regular_price":"34.77","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;32.50<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":345,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1788,1843,1850,1851,1884],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":2020,"created_at":"2015-07-28T07:32:39Z","updated_at":"2015-07-28T07:32:39Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2015\/07\/placeholder21.png","title":"","alt":"","position":0}],"featured_src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2015\/07\/placeholder21.png","attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"Premium
+        Quality (TEST)","id":2018,"created_at":"2015-07-28T07:32:35Z","updated_at":"2015-07-28T07:32:35Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-81\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":345,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1781,1782,1783,1784,1785],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"Premium
+        Quality (TEST)","id":2014,"created_at":"2015-07-28T07:31:26Z","updated_at":"2015-07-28T07:31:26Z","type":"variable","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-79\/","sku":"","price":"123.00","regular_price":"0.00","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;114.95<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":0,"in_stock":false,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1860,1861,1862,1863,1911],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Size","slug":"Size","position":0,"visible":false,"variation":false,"options":["S","M"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[{"id":2015,"created_at":"2015-07-28T07:31:26Z","updated_at":"2015-07-28T07:31:26Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-79\/","sku":"","price":"123.00","regular_price":"123.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":"parent","stock_quantity":0,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0},{"id":2016,"created_at":"2015-07-28T07:31:26Z","updated_at":"2015-07-28T07:31:26Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-79\/","sku":"","price":"123.00","regular_price":"123.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":"parent","stock_quantity":0,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0}],"parent":[]},{"title":"Premium
+        Quality (TEST)","id":2011,"created_at":"2015-07-28T07:31:24Z","updated_at":"2015-07-28T07:31:24Z","type":"variable","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-78\/","sku":"","price":"123.00","regular_price":"0.00","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;114.95<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":0,"in_stock":false,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1787,1788,1843,1850,1851],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Size","slug":"Size","position":0,"visible":false,"variation":false,"options":["S","M"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[{"id":2012,"created_at":"2015-07-28T07:31:24Z","updated_at":"2015-07-28T07:31:24Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-78\/","sku":"","price":"123.00","regular_price":"123.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":"parent","stock_quantity":0,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0},{"id":2013,"created_at":"2015-07-28T07:31:24Z","updated_at":"2015-07-28T07:31:24Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-78\/","sku":"","price":"123.00","regular_price":"123.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":"parent","stock_quantity":0,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":0,"created_at":"2015-07-28T07:42:03Z","updated_at":"2015-07-28T07:42:03Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0}],"parent":[]}]}'
     http_version:
-  recorded_at: Tue, 21 Jul 2015 11:55:04 GMT
+  recorded_at: Tue, 28 Jul 2015 07:42:03 GMT
 - request:
     method: delete
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/1786
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/2045
     body:
       encoding: US-ASCII
       string: ''
@@ -119,7 +140,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 21 Jul 2015 11:55:09 GMT
+      - Tue, 28 Jul 2015 07:42:06 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -132,224 +153,19 @@ http_interactions:
       encoding: UTF-8
       string: '{"message":"Deleted product"}'
     http_version:
-  recorded_at: Tue, 21 Jul 2015 11:55:08 GMT
-- request:
-    method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Tue, 21 Jul 2015 12:01:51 GMT
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Length:
-      - '18148'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-      Link:
-      - <https://wpcommercetest.wpengine.com/wc-api/v2/products?page=10>; rel="last"
-      - <https://wpcommercetest.wpengine.com/wc-api/v2/products?page=2>; rel="next"
-      X-Wc-Total:
-      - '94'
-      X-Wc-Totalpages:
-      - '10'
-      X-Cacheable:
-      - NO:Passed
-      Cache-Control:
-      - max-age=0, must-revalidate
-      Accept-Ranges:
-      - bytes
-      X-Cache:
-      - MISS
-      X-Pass-Why:
-      - auth
-      X-Cache-Group:
-      - ''
-      X-Type:
-      - default
-    body:
-      encoding: UTF-8
-      string: '{"products":[{"title":"UpdatedTitle","id":1785,"created_at":"2015-07-21T11:55:00Z","updated_at":"2015-07-21T11:55:02Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-7\/","sku":"","price":"34.77","regular_price":"34.77","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;32.50<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1780,1779,1781,1782,1783],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:50Z","updated_at":"2015-07-21T12:01:50Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Test","slug":"Test","position":0,"visible":false,"variation":false,"options":["option1","option2"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"Premium
-        Quality (TEST)","id":1784,"created_at":"2015-07-21T11:54:57Z","updated_at":"2015-07-21T11:54:57Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-6\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1779,1781,1782,1783,1785],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:50Z","updated_at":"2015-07-21T12:01:50Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Test","slug":"test","position":0,"visible":false,"variation":false,"options":["option1","option2"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"Premium
-        Quality (TEST)","id":1783,"created_at":"2015-07-21T11:46:20Z","updated_at":"2015-07-21T11:46:20Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-5\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1780,1779,1781,1782,1784],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:50Z","updated_at":"2015-07-21T12:01:50Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Test","slug":"test","position":0,"visible":false,"variation":false,"options":["option1","option2"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"Premium
-        Quality (TEST)","id":1782,"created_at":"2015-07-21T11:37:52Z","updated_at":"2015-07-21T11:37:52Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-4\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1779,1781,1783,1784,1785],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:51Z","updated_at":"2015-07-21T12:01:51Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"Premium
-        Quality (TEST)","id":1781,"created_at":"2015-07-21T11:20:08Z","updated_at":"2015-07-21T11:20:08Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-3\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1780,1779,1782,1783,1784],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:51Z","updated_at":"2015-07-21T12:01:51Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"Premium
-        Quality (TEST)","id":1780,"created_at":"2015-07-21T10:50:40Z","updated_at":"2015-07-21T10:50:40Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-2\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1779,1781,1782,1783,1784],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:51Z","updated_at":"2015-07-21T12:01:51Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"Premium
-        Quality (TEST)","id":1779,"created_at":"2015-07-21T10:41:54Z","updated_at":"2015-07-21T10:41:54Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1781,1782,1783,1784,1785],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:51Z","updated_at":"2015-07-21T12:01:51Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"test","id":1778,"created_at":"2015-07-21T10:13:07Z","updated_at":"2015-07-21T10:13:07Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/test-5\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>test<\/p>\n","short_description":"","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":[],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:51Z","updated_at":"2015-07-21T12:01:51Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"test","id":1777,"created_at":"2015-07-21T10:12:26Z","updated_at":"2015-07-21T10:12:26Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/test-4\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>test<\/p>\n","short_description":"","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":[],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:51Z","updated_at":"2015-07-21T12:01:51Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]},{"title":"test","id":1776,"created_at":"2015-07-21T10:12:14Z","updated_at":"2015-07-21T10:12:14Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/test-3\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>test<\/p>\n","short_description":"","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":[],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:51Z","updated_at":"2015-07-21T12:01:51Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]}]}'
-    http_version:
-  recorded_at: Tue, 21 Jul 2015 12:01:50 GMT
-- request:
-    method: put
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/1789
-    body:
-      encoding: UTF-8
-      string: '{"product":{"id":1789,"wc_attributes":[{"name":"Test","slug":"test","position":0,"visible":false,"variation":false,"options":["option1","option2"]}],"catalog_visibility":"visible","categories":["Clothing","T-shirts"],"cross_sell_ids":[],"description":"\u003cp\u003ePellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.\u003c/p\u003e\n","dimensions":{"dimensions":{"length":"","width":"","height":"","unit":"cm"}},"download_expiry":0,"download_limit":0,"download_type":"","downloadable":false,"downloads":[],"featured":false,"images":[{"image":{"id":0,"src":"https://wpcommercetest.wpengine.com/wp-content/plugins/woocommerce/assets/images/placeholder.png","position":0,"created_at":"2015-07-21T12:01:55.000+00:00","updated_at":"2015-07-21T12:01:55.000+00:00","title":"Placeholder","alt":"Placeholder"}}],"in_stock":true,"managing_stock":false,"parent":[],"parent_id":0,"purchase_note":"","regular_price":"34.77","reviews_allowed":true,"sale_price":null,"shipping_class":"","short_description":"\u003cp\u003ePellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\u003c/p\u003e\n","sku":"","sold_individually":false,"status":"publish","stock_quantity":0,"tags":[],"tax_class":"","tax_status":"taxable","title":"UpdatedTitle","total_sales":0,"type":"simple","upsell_ids":[],"variations":[],"virtual":false,"weight":null,"created_at":"2015-07-21T12:01:54.000+00:00","updated_at":"2015-07-21T12:01:54.000+00:00","average_rating":"0.00","backordered":false,"backorders_allowed":false,"featured_src":false,"on_sale":false,"permalink":"https://wpcommercetest.wpengine.com/product/premium-quality-test-10/","price":"21.99","price_html":"\u003cspan
-        class=\"amount\"\u003e\u0026#36;20.55\u003c/span\u003e","purchaseable":true,"rating_count":0,"related_ids":[1782,1783,1784,1785,1787],"shipping_class_id":null,"shipping_required":true,"shipping_taxable":true,"taxable":true,"visible":true,"default_attributes":{},"sale_price_dates_from":null,"sale_price_dates_to":null,"product_url":null,"button_text":null,"attributes":[{"name":"Test","slug":"test","position":0,"visible":false,"variation":false,"options":["option1","option2"]}]}}'
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Tue, 21 Jul 2015 12:01:56 GMT
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Length:
-      - '2029'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-      X-Type:
-      - default
-    body:
-      encoding: UTF-8
-      string: '{"product":{"title":"UpdatedTitle","id":1789,"created_at":"2015-07-21T12:01:54Z","updated_at":"2015-07-21T12:01:56Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-10\/","sku":"","price":"34.77","regular_price":"34.77","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;32.50<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1779,1781,1782,1783,1784],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:56Z","updated_at":"2015-07-21T12:01:56Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Test","slug":"Test","position":0,"visible":false,"variation":false,"options":["option1","option2"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]}}'
-    http_version:
-  recorded_at: Tue, 21 Jul 2015 12:01:56 GMT
-- request:
-    method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/1789
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Tue, 21 Jul 2015 12:01:58 GMT
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Length:
-      - '2029'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-      X-Cacheable:
-      - NO:Passed
-      Cache-Control:
-      - max-age=0, must-revalidate
-      Accept-Ranges:
-      - bytes
-      X-Cache:
-      - MISS
-      X-Pass-Why:
-      - auth
-      X-Cache-Group:
-      - ''
-      X-Type:
-      - default
-    body:
-      encoding: UTF-8
-      string: '{"product":{"title":"UpdatedTitle","id":1789,"created_at":"2015-07-21T12:01:54Z","updated_at":"2015-07-21T12:01:56Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-10\/","sku":"","price":"34.77","regular_price":"34.77","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;32.50<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1779,1781,1782,1783,1784],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:58Z","updated_at":"2015-07-21T12:01:58Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Test","slug":"Test","position":0,"visible":false,"variation":false,"options":["option1","option2"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]}}'
-    http_version:
-  recorded_at: Tue, 21 Jul 2015 12:01:57 GMT
+  recorded_at: Tue, 28 Jul 2015 07:42:06 GMT
 - request:
     method: post
     uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products
     body:
       encoding: UTF-8
-      string: '{"product":{"id":null,"wc_attributes":[{"name":"test","options":["option1","option2"]}],"catalog_visibility":null,"categories":["Clothing","T-shirts"],"cross_sell_ids":[],"description":"Pellentesque
+      string: '{"product":{"id":null,"wc_attributes":[],"catalog_visibility":null,"categories":["Clothing","T-shirts"],"cross_sell_ids":[],"description":"Pellentesque
         habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
         Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
         Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-        Mauris placerat eleifend leo.","dimensions":null,"download_expiry":null,"download_limit":null,"download_type":null,"downloadable":null,"downloads":null,"featured":null,"images":[],"in_stock":null,"managing_stock":null,"parent":null,"parent_id":null,"purchase_note":null,"regular_price":"21.99","reviews_allowed":null,"sale_price":null,"shipping_class":null,"short_description":"Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.","sku":null,"sold_individually":null,"status":null,"stock_quantity":null,"tags":[],"tax_class":null,"tax_status":null,"title":"Premium
-        Quality (TEST)","total_sales":null,"type":"simple","upsell_ids":[],"variations":[],"virtual":null,"weight":null,"created_at":null,"updated_at":null,"average_rating":null,"backordered":null,"backorders_allowed":null,"featured_src":null,"on_sale":null,"permalink":null,"price":null,"price_html":null,"purchaseable":null,"rating_count":null,"related_ids":[],"shipping_class_id":null,"shipping_required":null,"shipping_taxable":null,"taxable":null,"visible":null,"default_attributes":{},"sale_price_dates_from":null,"sale_price_dates_to":null,"product_url":null,"button_text":null,"attributes":[{"name":"test","options":["option1","option2"]}]}}'
+        Mauris placerat eleifend leo.","dimensions":null,"download_expiry":null,"download_limit":null,"download_type":null,"downloadable":null,"downloads":null,"featured":null,"images":[],"in_stock":null,"managing_stock":true,"parent":null,"parent_id":null,"purchase_note":null,"regular_price":"21.99","reviews_allowed":null,"sale_price":null,"shipping_class":null,"short_description":"Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.","sku":null,"sold_individually":null,"status":null,"stock_quantity":345,"tags":[],"tax_class":null,"tax_status":null,"title":"Premium
+        Quality (TEST)","total_sales":null,"type":"simple","upsell_ids":[],"variations":[],"virtual":null,"weight":null,"created_at":null,"updated_at":null,"average_rating":null,"backordered":null,"backorders_allowed":null,"featured_src":null,"on_sale":null,"permalink":null,"price":null,"price_html":null,"purchaseable":null,"rating_count":null,"related_ids":[],"shipping_class_id":null,"shipping_required":null,"shipping_taxable":null,"taxable":null,"visible":null,"default_attributes":{},"sale_price_dates_from":null,"sale_price_dates_to":null,"product_url":null,"button_text":null,"attributes":[]}}'
     headers:
       Accept:
       - application/json
@@ -363,11 +179,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 21 Jul 2015 12:02:00 GMT
+      - Tue, 28 Jul 2015 07:42:09 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '2039'
+      - '1932'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -376,18 +192,65 @@ http_interactions:
       - default
     body:
       encoding: UTF-8
-      string: '{"product":{"title":"Premium Quality (TEST)","id":1789,"created_at":"2015-07-21T12:01:59Z","updated_at":"2015-07-21T12:01:59Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-11\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
-        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":false,"stock_quantity":0,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+      string: '{"product":{"title":"Premium Quality (TEST)","id":2045,"created_at":"2015-07-28T07:42:09Z","updated_at":"2015-07-28T07:42:09Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-94\/","sku":"","price":"21.99","regular_price":"21.99","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;20.55<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":345,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
         habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
         Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
         Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
         Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
-        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1783,1784,1785,1787,1789],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-21T12:01:59Z","updated_at":"2015-07-21T12:01:59Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[{"name":"Test","slug":"test","position":0,"visible":false,"variation":false,"options":["option1","option2"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]}}'
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[2024,2027,2031,2032,2037],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":0,"created_at":"2015-07-28T07:42:09Z","updated_at":"2015-07-28T07:42:09Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","title":"Placeholder","alt":"Placeholder","position":0}],"featured_src":false,"attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]}}'
     http_version:
-  recorded_at: Tue, 21 Jul 2015 12:01:59 GMT
+  recorded_at: Tue, 28 Jul 2015 07:42:09 GMT
 - request:
-    method: delete
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/1789
+    method: put
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/2045
+    body:
+      encoding: UTF-8
+      string: '{"product":{"id":2045,"wc_attributes":[],"catalog_visibility":"visible","categories":["Clothing","T-shirts"],"cross_sell_ids":[],"description":"\u003cp\u003ePellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.\u003c/p\u003e\n","dimensions":{"length":"","width":"","height":"","unit":"cm"},"download_expiry":0,"download_limit":0,"download_type":"","downloadable":false,"downloads":[],"featured":false,"images":[{"id":0,"src":"https://wpcommercetest.wpengine.com/wp-content/plugins/woocommerce/assets/images/placeholder.png","position":0,"created_at":"2015-07-28T07:42:09.000+00:00","updated_at":"2015-07-28T07:42:09.000+00:00","title":"Placeholder","alt":"Placeholder"}],"in_stock":true,"managing_stock":true,"parent":[],"parent_id":0,"purchase_note":"","regular_price":"34.77","reviews_allowed":true,"sale_price":null,"shipping_class":"","short_description":"\u003cp\u003ePellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\u003c/p\u003e\n","sku":"","sold_individually":false,"status":"publish","stock_quantity":345,"tags":[],"tax_class":"","tax_status":"taxable","title":"UpdatedTitle","total_sales":0,"type":"simple","upsell_ids":[],"variations":[],"virtual":false,"weight":null,"created_at":"2015-07-28T07:42:09.000+00:00","updated_at":"2015-07-28T07:42:09.000+00:00","average_rating":"0.00","backordered":false,"backorders_allowed":false,"featured_src":false,"on_sale":false,"permalink":"https://wpcommercetest.wpengine.com/product/premium-quality-test-94/","price":"21.99","price_html":"\u003cspan
+        class=\"amount\"\u003e\u0026#36;20.55\u003c/span\u003e","purchaseable":true,"rating_count":0,"related_ids":[2024,2027,2031,2032,2037],"shipping_class_id":null,"shipping_required":true,"shipping_taxable":true,"taxable":true,"visible":true,"default_attributes":{},"sale_price_dates_from":null,"sale_price_dates_to":null,"product_url":null,"button_text":null,"attributes":[]}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 28 Jul 2015 07:42:11 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1970'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"product":{"title":"UpdatedTitle","id":2045,"created_at":"2015-07-28T07:42:09Z","updated_at":"2015-07-28T07:42:11Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-94\/","sku":"","price":"34.77","regular_price":"34.77","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;32.50<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":345,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1884,1854,1855,1856,1857],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":2046,"created_at":"2015-07-28T07:42:11Z","updated_at":"2015-07-28T07:42:11Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2015\/07\/placeholder23.png","title":"","alt":"","position":0}],"featured_src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2015\/07\/placeholder23.png","attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]}}'
+    http_version:
+  recorded_at: Tue, 28 Jul 2015 07:42:11 GMT
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/2045
     body:
       encoding: US-ASCII
       string: ''
@@ -398,24 +261,44 @@ http_interactions:
       - application/json
   response:
     status:
-      code: 202
-      message: Accepted
+      code: 200
+      message: OK
     headers:
       Server:
       - nginx
       Date:
-      - Tue, 21 Jul 2015 12:02:02 GMT
+      - Tue, 28 Jul 2015 07:42:13 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '29'
+      - '1970'
       Connection:
       - keep-alive
       Keep-Alive:
       - timeout=20
+      X-Cacheable:
+      - NO:Passed
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+      X-Type:
+      - default
     body:
       encoding: UTF-8
-      string: '{"message":"Deleted product"}'
+      string: '{"product":{"title":"UpdatedTitle","id":2045,"created_at":"2015-07-28T07:42:09Z","updated_at":"2015-07-28T07:42:11Z","type":"simple","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-94\/","sku":"","price":"34.77","regular_price":"34.77","sale_price":null,"price_html":"<span
+        class=\"amount\">&#36;32.50<\/span>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":345,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":false,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[1966,1967,1972,1975,1979],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":["Clothing","T-shirts"],"tags":[],"images":[{"id":2046,"created_at":"2015-07-28T07:42:11Z","updated_at":"2015-07-28T07:42:11Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2015\/07\/placeholder23.png","title":"","alt":"","position":0}],"featured_src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2015\/07\/placeholder23.png","attributes":[],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]}}'
     http_version:
-  recorded_at: Tue, 21 Jul 2015 12:02:02 GMT
+  recorded_at: Tue, 28 Jul 2015 07:42:13 GMT
 recorded_with: VCR 2.9.3
