@@ -10,10 +10,11 @@ module WoocommerceAPI
 
     def self.http_request(verb, url, options={})
       response = WoocommerceAPI::Client.send(verb, url, options)
-      return if response.nil? and !response.success?
-      response
-    rescue => e
-      puts e
+      if response.success?
+        response
+      else
+        raise StandardError.new response
+      end
     end
   end # Resource
 end
