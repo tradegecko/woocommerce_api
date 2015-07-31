@@ -1,4 +1,12 @@
 module WoocommerceAPI
+  class ClientError < StandardError
+    attr_accessor :code
+    def initialize(code, message)
+      @code = code
+      super(message)
+    end
+  end
+
   class Resource
     include Virtus.model
     include ActiveModel::Model
@@ -13,7 +21,8 @@ module WoocommerceAPI
       if response.success?
         response
       else
-        raise StandardError.new response
+        response_error = response["errors"].first
+        raise ClientError.new(response_error["code"], response_error["message"])
       end
     end
   end # Resource
