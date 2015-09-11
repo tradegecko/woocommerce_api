@@ -7,13 +7,15 @@ describe WoocommerceAPI::Client do
       WoocommerceAPI::Client.new(consumer_key: 'ABC_KEY', consumer_secret: 'ABC_SECRET', store_url: 'https://api.woocommerce.com/ABC')
 
       Thread.new do
-        WoocommerceAPI::Client.new(consumer_key: 'DEF_KEY', consumer_secret: 'DEF_SECRET', store_url: 'https://api.woocommerce.com/DEF')
-        expect(WoocommerceAPI::Client.default_options).to include basic_auth: { username: 'DEF_KEY', password: 'DEF_SECRET' }
+        WoocommerceAPI::Client.new(consumer_key: 'DEF_KEY', consumer_secret: 'DEF_SECRET', store_url: 'https://api.woocommerce.com/DEF', insecure_mode: true)
+        expect(WoocommerceAPI::Client.default_options).to_not include :basic_auth
         expect(WoocommerceAPI::Client.default_options).to include base_uri: 'https://api.woocommerce.com/DEF/wc-api/v2'
+        expect(WoocommerceAPI::Client.default_options).to include query: { consumer_key: 'DEF_KEY', consumer_secret: 'DEF_SECRET' }
       end
 
       expect(WoocommerceAPI::Client.default_options).to include basic_auth: { username: 'ABC_KEY', password: 'ABC_SECRET' }
       expect(WoocommerceAPI::Client.default_options).to include base_uri: 'https://api.woocommerce.com/ABC/wc-api/v2'
+      expect(WoocommerceAPI::Client.default_options).to_not include :query
     end
   end
 end
