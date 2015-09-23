@@ -13,12 +13,13 @@ module WoocommerceAPI
 
     def initialize(params={})
       session_options = self.class.default_options
-      if params[:insecure_mode].present?
+      session_options[:test_mode] =  params[:test_mode]
+      if params[:insecure_mode].present? || params[:test_mode].present?
         session_options[:query] = params.slice(:consumer_key, :consumer_secret)
       else
         session_options[:basic_auth] = { username: params[:consumer_key], password: params[:consumer_secret] }
       end
-      session_options[:base_uri] = HTTParty.normalize_base_uri(params[:store_url] + '/wc-api/v2')
+      session_options[:base_uri] = HTTParty.normalize_base_uri(params[:store_url].sub(/(\/)+$/,'') + '/wc-api/v2')
       Thread.current["WoocommerceAPI"] = session_options
     end
   end

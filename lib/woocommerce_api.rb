@@ -7,6 +7,7 @@ require "virtus"
 
 require "woocommerce_api/concerns/associations"
 require "woocommerce_api/concerns/attribute_assignment"
+require "woocommerce_api/concerns/oauth"
 require "woocommerce_api/concerns/singleton"
 require "woocommerce_api/client"
 require "woocommerce_api/resource"
