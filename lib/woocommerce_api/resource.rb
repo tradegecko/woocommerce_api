@@ -18,14 +18,8 @@ module WoocommerceAPI
 
     def self.http_request(verb, url, options={})
       response = begin
-        if WoocommerceAPI::Client.default_options[:test_mode]
-          url = WoocommerceAPI::Client.default_options[:base_uri] + url
-          consumer_key = WoocommerceAPI::Client.default_options[:query][:consumer_key]
-          consumer_secret = WoocommerceAPI::Client.default_options[:query][:consumer_secret]
-          oauth = WoocommerceAPI::Oauth.new(url, verb, 'v2', consumer_key, consumer_secret)
-          # Not sure why WoocommerceAPI::Client.send(verb, url, options) won't work
-          # So I'm calling HTTParty direct on this one
-          HTTParty.send(verb, oauth.get_oauth_url, options)
+        if WoocommerceAPI::Client.default_options[:mode] == :oauth_http
+          WoocommerceAPI::OauthClient.send(verb, url, options)
         else
           WoocommerceAPI::Client.send(verb, url, options)
         end

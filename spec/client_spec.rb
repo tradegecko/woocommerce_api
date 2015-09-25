@@ -1,9 +1,31 @@
 require 'spec_helper'
 
 describe WoocommerceAPI::Client do
-  context "be thread safety" do
+  include_context "woocommerce_api_services", use_cassette: 'client'
 
+  context "oauth https mode" do
+    it { expect(WoocommerceAPI::Product.count).to eq 182 }
+  end
+
+  context "oauth http mode" do
+    let!(:woocommerce_params) do
+      Thread.current["WoocommerceAPI"] = nil
+      super().merge(mode: :oauth_http)
+    end
+    it { expect(WoocommerceAPI::Product.count).to eq 182 }
+  end
+
+  context "query https mode" do
+    let!(:woocommerce_params) do
+      Thread.current["WoocommerceAPI"] = nil
+      super().merge(mode: :query_https)
+    end
+    it { expect(WoocommerceAPI::Product.count).to eq 182 }
+  end
+
+  context "be thread safety" do
     it "can handle multi-thread" do
+      Thread.current["WoocommerceAPI"] = nil
       WoocommerceAPI::Client.new(consumer_key: 'ABC_KEY', consumer_secret: 'ABC_SECRET', store_url: 'https://api.woocommerce.com/ABC')
 
       Thread.new do

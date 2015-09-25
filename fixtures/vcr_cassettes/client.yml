@@ -1,0 +1,150 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/count
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 25 Sep 2015 07:47:06 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '13'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Cacheable:
+      - NO:Passed
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"count":182}'
+    http_version:
+  recorded_at: Fri, 25 Sep 2015 07:47:06 GMT
+- request:
+    method: get
+    uri: http://wpcommercetest.wpengine.com/wc-api/v2/products/count?oauth_consumer_key=ck_1234567890abcdefghijklmnopqrstuv&oauth_nonce=35a4b0649f139cb5cd0568f9b46c05df&oauth_signature=f%252FxyxWi3xqGzIp15RJBTDistz%2BO8P6qnH0UPpRUnl%252Fw%253D&oauth_signature_method=HMAC-SHA256&oauth_timestamp=1443167226
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 25 Sep 2015 07:47:06 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '13'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Cacheable:
+      - SHORT
+      Vary:
+      - Accept-Encoding,Cookie
+      Cache-Control:
+      - max-age=600, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - ''
+      X-Cache-Group:
+      - normal
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"count":182}'
+    http_version:
+  recorded_at: Fri, 25 Sep 2015 07:47:07 GMT
+- request:
+    method: get
+    uri: https://wpcommercetest.wpengine.com/wc-api/v2/products/count?consumer_key=ck_1234567890abcdefghijklmnopqrstuv&consumer_secret=cs_1234567890abcdefghijklmnopqrstuv
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 25 Sep 2015 07:47:08 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '13'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Cacheable:
+      - SHORT
+      Vary:
+      - Accept-Encoding,Cookie
+      Cache-Control:
+      - max-age=600, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - ''
+      X-Cache-Group:
+      - normal
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"count":182}'
+    http_version:
+  recorded_at: Fri, 25 Sep 2015 07:47:08 GMT
+recorded_with: VCR 2.9.3
