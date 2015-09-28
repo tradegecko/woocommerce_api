@@ -17,7 +17,14 @@ module WoocommerceAPI
     self.include_root_in_json = true
 
     def self.http_request(verb, url, options={})
-      response = WoocommerceAPI::Client.send(verb, url, options)
+      response = begin
+        if WoocommerceAPI::Client.default_options[:mode] == :oauth_http
+          WoocommerceAPI::OauthClient.send(verb, url, options)
+        else
+          WoocommerceAPI::Client.send(verb, url, options)
+        end
+      end
+
       if response.success?
         response
       else
