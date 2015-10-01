@@ -13,5 +13,6 @@ module WoocommerceAPI
     attribute :ssl_enabled, Boolean
     attribute :permalinks_enabled, Boolean
     attribute :links, Hash
+    attribute :generate_password, Boolean
   end
 end
