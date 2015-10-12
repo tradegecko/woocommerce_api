@@ -3,19 +3,19 @@ module WoocommerceAPI
     include HTTParty
 
     def self.get(path, options = {}, &block)
-      super(oauth_url(:get, path, options), {}, &block)
+      super(oauth_url(:get, path), options, &block)
     end
 
     def self.put(path, options = {}, &block)
-      super(oauth_url(:put, path, options), {}, &block)
+      super(oauth_url(:put, path), options, &block)
     end
 
     def self.post(path, options = {}, &block)
-      super(oauth_url(:post, path, options), {}, &block)
+      super(oauth_url(:post, path), options, &block)
     end
 
     def self.delete(path, options = {}, &block)
-      super(oauth_url(:delete, path, options), {}, &block)
+      super(oauth_url(:delete, path), options, &block)
     end
 
   private
