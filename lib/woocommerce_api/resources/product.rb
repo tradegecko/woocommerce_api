@@ -20,6 +20,11 @@ module WoocommerceAPI
           wc_attributes['product']['attributes'] = attributes[:wc_attributes]
         end
       end
+
+      # Do not override categories and tags if an empty array is passed
+      wc_attributes['product'].delete('categories')
+      wc_attributes['product'].delete('tags')
+
       wc_attributes
     end
 
