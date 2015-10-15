@@ -1,10 +1,25 @@
 module WoocommerceAPI
   class ClientError < StandardError
     attr_accessor :code
-    def initialize(code, message)
+    def initialize(code, response)
       @code = code
+      message = extract_response(response.parsed_response)
       super(message)
     end
+
+  private
+
+    def extract_response(response)
+      case response
+      when Array
+        response.map{ |value| extract_response(value) }.join(', ')
+      when Hash
+        extract_response(response.values)
+      else
+        response.to_s.gsub(/[,.]$/, '')
+      end
+    end
+
   end
 
   class Resource
@@ -25,12 +40,7 @@ module WoocommerceAPI
         end
       end
 
-      if response.success?
-        response
-      else
-        response_error = response["errors"].first
-        raise ClientError.new(response_error["code"], response_error["message"])
-      end
+      response.success? ? response : raise(ClientError.new(response.code, response))
     end
   end # Resource
 end
