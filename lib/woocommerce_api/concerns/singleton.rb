@@ -36,6 +36,7 @@ module WoocommerceAPI
       alias_method :size, :count
 
       def find(id)
+        return unless id.present?
         resource = http_request(:get, "#{collection_path}/#{id}")
         self.extract_resource(resource)
       end
