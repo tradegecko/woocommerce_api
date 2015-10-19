@@ -14,6 +14,7 @@ module WoocommerceAPI
       when Array
         response.map{ |value| extract_response(value) }.join(', ')
       when Hash
+        @code = response['code'] if response.has_key? 'code'
         extract_response(response.values)
       else
         response.to_s.gsub(/[,.]$/, '')
