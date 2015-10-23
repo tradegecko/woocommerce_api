@@ -32,6 +32,14 @@ module WoocommerceAPI
     include WoocommerceAPI::AttributeAssignment
     self.include_root_in_json = true
 
+    def initialize(params={})
+      params.each do |attr, value|
+        self.public_send("#{attr}=", value) if self.respond_to? attr
+      end if params
+
+      super()
+    end
+
     def self.http_request(verb, url, options={})
       response = begin
         if WoocommerceAPI::Client.default_options[:mode] == :oauth_http
