@@ -107,6 +107,7 @@ module WoocommerceAPI
     attribute :sale_price_dates_to, DateTime
     attribute :product_url
     attribute :button_text
+    attribute :enable_html_description, Boolean, default: true
 
     has_many :product_reviews, class_name: "ProductReview", resource_uri: '/reviews'
 
