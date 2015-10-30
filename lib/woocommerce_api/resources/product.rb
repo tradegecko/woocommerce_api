@@ -21,7 +21,8 @@ module WoocommerceAPI
         end
       end
 
-      # Do not override categories and tags if an empty array is passed
+      # Woocommerce does not support passing string of arrays for this attributes:
+      # See http://woothemes.github.io/woocommerce-rest-api-docs/#products-properties
       wc_attributes['product'].delete('categories')
       wc_attributes['product'].delete('tags')
 
