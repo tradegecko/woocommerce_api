@@ -109,5 +109,21 @@ describe WoocommerceAPI::Product do
         end
       end
     end
+
+    context "when categories are not present" do
+      subject { described_class.new(categories: []) }
+
+      it "does not include it in the JSON" do
+        expect(subject.as_json["product"].key?(:categories)).to be_falsey
+      end
+    end
+
+    context "when tags are not present" do
+      subject { described_class.new(tags: []) }
+
+      it "does not include it in the JSON" do
+        expect(subject.as_json["product"].key?(:tags)).to be_falsey
+      end
+    end
   end
 end

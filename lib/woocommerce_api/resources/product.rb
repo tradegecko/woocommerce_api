@@ -22,8 +22,8 @@ module WoocommerceAPI
       end
 
       # Do not override categories and tags if an empty array is passed
-      wc_attributes['product'].delete('categories')
-      wc_attributes['product'].delete('tags')
+      wc_attributes['product'].delete('categories') unless wc_attributes['product']['categories'].any?
+      wc_attributes['product'].delete('tags') unless wc_attributes['product']['tags'].any?
 
       wc_attributes
     end
