@@ -108,6 +108,7 @@ module WoocommerceAPI
     attribute :product_url
     attribute :button_text
     attribute :enable_html_description, Boolean, default: true
+    attribute :enable_html_short_description, Boolean, default: true
 
     has_many :product_reviews, class_name: "ProductReview", resource_uri: '/reviews'
 
