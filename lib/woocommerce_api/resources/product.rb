@@ -114,7 +114,7 @@ module WoocommerceAPI
     has_many :product_reviews, class_name: "ProductReview", resource_uri: '/reviews'
 
     def self.sku(sku)
-      extract_resource(http_request(:get, "/products/sku/#{sku}"))
+      extract_resource(http_request(:get, "/products/sku/#{CGI.escape(sku)}"))
     end
   end
 end
