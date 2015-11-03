@@ -72,7 +72,7 @@ module WoocommerceAPI
       alias_method :create, :save
 
       def destroy(params={})
-        self.class.http_request(:delete, self.to_path, query: params)
+        self.class.http_request(:delete, "#{self.to_path}#{self.class.string_query(params)}")
       end
 
       def persisted?
