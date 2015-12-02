@@ -2,6 +2,7 @@ module WoocommerceAPI
   module Singleton
     module ClassMethods
       attr_writer :singleton_name, :collection_name
+      DATE_KEYS = [:created_at_max, :created_at_min, :updated_at_min, :updated_at_max].freeze
 
       def singleton_name
         @singleton_name ||= model_name.element
@@ -15,8 +16,24 @@ module WoocommerceAPI
         "#{prefix_options}/#{collection_name}#{string_query(param_options)}"
       end
 
+      def count_path(param_options=nil)
+        "/#{collection_name}/count#{string_query(param_options)}"
+      end
+
       def string_query(param_options)
-        "?#{param_options.to_query}" unless param_options.nil? || param_options.empty?
+        "?#{convert_date_params(param_options).to_query}" unless param_options.blank?
+      end
+
+      def convert_date_params(param_options)
+        # Woocommerce requires all dates to be in RFC3339 format
+        # in UTC timezone: YYYY-MM-DDTHH:MM:SSZ
+
+        if param_options[:filter] && (param_options[:filter].keys & DATE_KEYS).present?
+          date_params = param_options[:filter].slice(*DATE_KEYS)
+          date_params.update(date_params) { |key, value| value.utc }
+          param_options[:filter].merge(date_params)
+        end
+        param_options
       end
 
       def all(params={})
@@ -29,8 +46,8 @@ module WoocommerceAPI
         end
       end
 
-      def count
-        response = http_request(:get, "#{collection_path}/count")
+      def count(params={})
+        response = http_request(:get, count_path(params.slice(:filter)))
         response['count'].to_i
       end
       alias_method :size, :count
