@@ -6,7 +6,7 @@ module WoocommerceAPI
         class_name.prepend("WoocommerceAPI::")
 
         define_method association_name do
-          association_class = class_n ame.constantize
+          association_class = class_name.constantize
           resource_uri = self.to_path
           resource_uri.concat(options[:resource_uri].presence || association_class.collection_path)
           association_class.all(resource_uri: resource_uri)

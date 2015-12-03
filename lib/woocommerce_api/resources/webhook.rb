@@ -15,6 +15,8 @@ module WoocommerceAPI
     attribute :event
     attribute :hooks, Array
     attribute :resource
+
+    has_many :deliveries, class_name: 'WebhookDelivery', resource_uri: '/deliveries'
   end
 end
 
