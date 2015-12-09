@@ -30,7 +30,7 @@ module WoocommerceAPI
 
         if param_options[:filter] && (param_options[:filter].keys & DATE_KEYS).present?
           date_params = param_options[:filter].slice(*DATE_KEYS)
-          date_params.update(date_params) { |key, value| value.utc }
+          date_params.update(date_params) { |key, value| value.in_time_zone('UTC') }
           param_options[:filter].merge(date_params)
         end
         param_options
