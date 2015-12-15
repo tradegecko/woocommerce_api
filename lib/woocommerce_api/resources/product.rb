@@ -112,6 +112,7 @@ module WoocommerceAPI
     attribute :enable_html_short_description, Boolean, default: true
 
     has_many :product_reviews, class_name: "ProductReview", resource_uri: '/reviews'
+    has_many :orders, class_name: "Order"
 
     def self.sku(sku)
       extract_resource(http_request(:get, "/products/sku/#{CGI.escape(sku)}"))
