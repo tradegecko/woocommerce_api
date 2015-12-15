@@ -43,5 +43,10 @@ module WoocommerceAPI
 
     has_many :order_notes, class_name: 'OrderNote', resource_uri: '/notes'
     has_many :order_refunds, class_name: 'OrderRefund', resource_uri: '/refunds'
+
+    def self.statuses
+      response = http_request(:get, '/orders/statuses')
+      response['order_statuses']
+    end
   end
 end
