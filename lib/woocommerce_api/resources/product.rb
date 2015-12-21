@@ -29,20 +29,6 @@ module WoocommerceAPI
       wc_attributes
     end
 
-    def save
-      return unless valid?
-      method = persisted? ? :put : :post
-      body = self.as_json
-
-      if method == :put
-        body["product"].except!('attributes')
-        body["product"]["variations"].each {|variation| variation.except!('attributes')}
-      end
-
-      resource = self.class.http_request(method, self.to_path, body: body.to_json)
-      self.class.extract_resource(resource)
-    end
-
     attribute :id, Integer
     attribute :wc_attributes, Array
     attribute :catalog_visibility
