@@ -3,7 +3,12 @@ module WoocommerceAPI
     attr_accessor :code
     def initialize(code, response)
       @code = code
-      message = extract_response(response.parsed_response)
+      message = case code
+                when 500
+                  "Internal Server Error"
+                else
+                  extract_response(response.parsed_response)
+                end
       super(message)
     end
 
