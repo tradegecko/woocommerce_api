@@ -35,6 +35,7 @@ module WoocommerceAPI
     include WoocommerceAPI::Singleton
     include WoocommerceAPI::Associations
     include WoocommerceAPI::AttributeAssignment
+    TIMEOUT_OPTIONS = {timeout: 30}
     self.include_root_in_json = true
 
     def initialize(params={})
@@ -46,6 +47,7 @@ module WoocommerceAPI
     end
 
     def self.http_request(verb, url, options={})
+      options = TIMEOUT_OPTIONS.merge(options)
       response = begin
         if WoocommerceAPI::Client.default_options[:mode] == :oauth_http
           WoocommerceAPI::OauthClient.send(verb, url, options)
