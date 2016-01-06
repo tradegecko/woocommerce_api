@@ -57,6 +57,7 @@ module WoocommerceAPI
     attribute :visible, Boolean
 
     # Write Only
+    attribute :backorders
     attribute :sale_price_dates_from, DateTime
     attribute :sale_price_dates_to, DateTime
   end

@@ -92,6 +92,7 @@ module WoocommerceAPI
     attribute :default_attributes, Hash
     attribute :sale_price_dates_from, DateTime
     attribute :sale_price_dates_to, DateTime
+    attribute :backorders
     attribute :product_url
     attribute :button_text
     attribute :enable_html_description, Boolean, default: true
