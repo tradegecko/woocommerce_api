@@ -90,11 +90,21 @@ describe WoocommerceAPI::Product do
         described_class.create(valid_attributes.merge(valid_nested_attributes))
       end
 
-      describe "expected attributes" do
+      context "expected attributes" do
         context "product" do
           it "product's attributes" do
             expect(wc_product.regular_price).to eq 0.0
             expect(wc_product.wc_attributes).to eq [{"name"=>"Size", "slug"=>"Size", "position"=>0, "visible"=>false, "variation"=>false, "options"=>["S", "M"]}]
+          end
+
+          context "when product's wc_attributes is empty" do
+            before do
+              wc_product.wc_attributes = []
+            end
+
+            it "should not create :attributes in json payload" do
+              expect(wc_product.as_json['product']['attributes']).to be_nil
+            end
           end
         end
 
@@ -104,6 +114,20 @@ describe WoocommerceAPI::Product do
             wc_product.variations.each do |variation|
               expect(variation.regular_price).to eq 123
               expect(variation.stock_quantity).to eq 321
+            end
+          end
+
+          context "when variations's wc_attributes is empty" do
+            before do
+              wc_product.variations.each do |variation|
+                variation.wc_attributes = []
+              end
+            end
+
+            it "should not create :attributes in json payload" do
+              wc_product.as_json['product']['variations'].each do |variation|
+                expect(variation[:attributes]).to be_nil
+              end
             end
           end
         end
