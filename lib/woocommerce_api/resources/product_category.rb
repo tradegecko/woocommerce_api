@@ -10,7 +10,11 @@ module WoocommerceAPI
     attribute :count, Integer
 
     def self.collection_name
-      'products/categories'
+      'product_categories'
+    end
+
+    def self.collection_path(prefix_options='', param_options=nil)
+      "/products/categories#{string_query(param_options)}"
     end
   end
 end
