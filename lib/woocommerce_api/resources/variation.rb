@@ -48,6 +48,7 @@ module WoocommerceAPI
     attribute :created_at, DateTime
     attribute :updated_at, DateTime
     attribute :backordered, Boolean
+    attribute :backorders_allowed, Boolean
     attribute :on_sale, Boolean
     attribute :permalink
     attribute :price, Decimal
