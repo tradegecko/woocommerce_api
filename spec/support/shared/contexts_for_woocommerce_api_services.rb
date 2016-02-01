@@ -6,7 +6,9 @@ shared_context "woocommerce_api_services" do |options|
     {
       consumer_key: "ck_1234567890abcdefghijklmnopqrstuv",
       consumer_secret: "cs_1234567890abcdefghijklmnopqrstuv",
-      store_url: "https://wpcommercetest.wpengine.com"
+      store_url: "https://wpcommercetest.wpengine.com",
+      version: (options[:version] || 'v2'),
+      mode: (options[:mode] || :oauth_https)
     }
   end
 
