@@ -2,13 +2,8 @@ module WoocommerceAPI
   module AttributeAssignment
     def assign_attributes(new_attributes)
       return if new_attributes.blank?
-      new_attributes.each do |k,v|
-        if respond_to?("#{k}=")
-          public_send("#{k}=", v)
-        else
-          # raise UnknownAttributeError.new(self, k)
-          puts 'Error'
-        end
+      new_attributes.each do |attr, value|
+        public_send("#{attr}=", value)
       end
     end
 

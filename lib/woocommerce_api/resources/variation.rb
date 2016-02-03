@@ -45,22 +45,22 @@ module WoocommerceAPI
     attribute :weight
 
     # Read Only
-    attribute :created_at, DateTime, writer: :private
-    attribute :updated_at, DateTime, writer: :private
-    attribute :backordered, Boolean, writer: :private
-    attribute :backorders_allowed, Boolean, writer: :private
-    attribute :on_sale, Boolean, writer: :private
-    attribute :permalink, String, writer: :private
-    attribute :price, Decimal, writer: :private
-    attribute :purchaseable, Boolean, writer: :private
-    attribute :shipping_class_id, Integer, writer: :private
-    attribute :taxable, Boolean, writer: :private
-    attribute :visible, Boolean, writer: :private
+    attribute :created_at           , DateTime, writer: :private
+    attribute :updated_at           , DateTime, writer: :private
+    attribute :backordered          , Boolean , writer: :private
+    attribute :backorders_allowed   , Boolean , writer: :private
+    attribute :on_sale              , Boolean , writer: :private
+    attribute :permalink            , String  , writer: :private
+    attribute :price                , Decimal , writer: :private
+    attribute :purchaseable         , Boolean , writer: :private
+    attribute :shipping_class_id    , Integer , writer: :private
+    attribute :taxable              , Boolean , writer: :private
+    attribute :visible              , Boolean , writer: :private
 
     # Write Only
-    attribute :backorders, Boolean, reader: :private
+    attribute :backorders           , Boolean , reader: :private
     attribute :sale_price_dates_from, DateTime, reader: :private
-    attribute :sale_price_dates_to, DateTime, reader: :private
+    attribute :sale_price_dates_to  , DateTime, reader: :private
   end
 end
 

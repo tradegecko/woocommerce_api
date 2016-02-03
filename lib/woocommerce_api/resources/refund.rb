@@ -8,6 +8,6 @@ module WoocommerceAPI
     attribute :line_items, Array[LineItem]
 
     # Read Only
-    attribute :created_at, DateTime
+    attribute :created_at, DateTime, writer: :private
   end
 end

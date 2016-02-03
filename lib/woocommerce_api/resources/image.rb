@@ -7,7 +7,7 @@ module WoocommerceAPI
     # Read Only
     attribute :created_at, DateTime, writer: :private
     attribute :updated_at, DateTime, writer: :private
-    attribute :title, String, writer: :private
-    attribute :alt, String, writer: :private
+    attribute :title     , String  , writer: :private
+    attribute :alt       , String  , writer: :private
   end
 end
