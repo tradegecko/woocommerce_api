@@ -5,6 +5,6 @@ module WoocommerceAPI
     attribute :note
 
     # Read Only
-    attribute :created_at, DateTime
+    attribute :created_at, DateTime, writer: :private
   end
 end

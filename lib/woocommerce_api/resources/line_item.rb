@@ -9,14 +9,13 @@ module WoocommerceAPI
     attribute :total_tax, Decimal
 
     # Read Only
-    attribute :sku
-    attribute :name
-    attribute :price, Decimal
-    attribute :tax_class
-
-    attribute :meta
+    attribute :sku, String, writer: :private
+    attribute :name, String, writer: :private
+    attribute :price, Decimal, writer: :private
+    attribute :tax_class, String, writer: :private
+    attribute :meta, Array[Hash], writer: :private
 
     # Write Only
-    attribute :variations
+    attribute :variations, Array[Hash], reader: :private
   end
 end

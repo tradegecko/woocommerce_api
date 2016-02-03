@@ -50,7 +50,6 @@ describe WoocommerceAPI::Product do
         expect(wc_product.title).to eq "Premium Quality (TEST)"
         expect(wc_product.regular_price).to eq 21.99
         expect(wc_product.stock_quantity).to eq 345
-        expect(wc_product.enable_html_description).to be_truthy
       end
 
       it "updates attributes" do

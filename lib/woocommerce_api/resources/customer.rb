@@ -13,10 +13,10 @@ module WoocommerceAPI
     attribute :role
 
     # Read Only
-    attribute :created_at, DateTime
-    attribute :updated_at, DateTime
-    attribute :total_spent, Integer
-    attribute :orders_count, Integer
-    attribute :last_order_date
+    attribute :created_at, DateTime, writer: :private
+    attribute :updated_at, DateTime, writer: :private
+    attribute :total_spent, Integer, writer: :private
+    attribute :orders_count, Integer, writer: :private
+    attribute :last_order_date, DateTime, writer: :private
   end
 end

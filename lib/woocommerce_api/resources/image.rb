@@ -5,9 +5,9 @@ module WoocommerceAPI
     attribute :position, Integer
 
     # Read Only
-    attribute :created_at, DateTime
-    attribute :updated_at, DateTime
-    attribute :title
-    attribute :alt
+    attribute :created_at, DateTime, writer: :private
+    attribute :updated_at, DateTime, writer: :private
+    attribute :title, String, writer: :private
+    attribute :alt, String, writer: :private
   end
 end

@@ -9,7 +9,7 @@ module WoocommerceAPI
     attribute :verified, Boolean
 
     # Read Only
-    attribute :created_at, DateTime
+    attribute :created_at, DateTime, writer: :private
 
   end
 end
