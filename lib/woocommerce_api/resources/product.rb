@@ -25,6 +25,7 @@ module WoocommerceAPI
       # See http://woothemes.github.io/woocommerce-rest-api-docs/#products-properties
       wc_attributes['product'].delete('categories')
       wc_attributes['product'].delete('tags')
+      wc_attributes['product'].delete('default_attributes')
 
       wc_attributes
     end
