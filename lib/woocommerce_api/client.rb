@@ -5,7 +5,9 @@ module WoocommerceAPI
       Thread.current["WoocommerceAPI"] ||= {
         parser: HTTParty::Parser,
         format: :json,
-        headers: { "Accept" => "application/json", "Content-Type" => "application/json" }
+        headers: { "Accept"       => "application/json",
+                   "Content-Type" => "application/json",
+                   "User-Agent"   => "TradeGecko Woocommerce/#{VERSION}" }
       }
     end
 
