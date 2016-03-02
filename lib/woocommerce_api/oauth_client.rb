@@ -27,6 +27,7 @@ module WoocommerceAPI
         CGI::parse(parsed_url.query).each do |key, value|
           params[key] = value[0]
         end
+        params = Hash[params.sort]
       end
       url = "http://#{parsed_url.host}#{parsed_url.path}"
       consumer_secret = if oauth_options[:version] == "v3"
@@ -59,7 +60,7 @@ module WoocommerceAPI
     end
 
     def self.encode_param(text)
-      CGI::escape(text).gsub('%', '%25')
+      CGI::escape(text).gsub("+", "%20").gsub("%", "%25")
     end
   end
 end
