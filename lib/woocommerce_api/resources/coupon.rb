@@ -21,9 +21,9 @@ module WoocommerceAPI
     attribute :usage_limit_per_user
 
     # Read Only
-    attribute :created_at, DateTime
-    attribute :updated_at, DateTime
-    attribute :usage_count, Integer
+    attribute :created_at, DateTime, writer: :private
+    attribute :updated_at, DateTime, writer: :private
+    attribute :usage_count, Integer, writer: :private
 
     def self.find_by_code(code)
       return if code.blank?

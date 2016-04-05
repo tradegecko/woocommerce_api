@@ -7,14 +7,14 @@ module WoocommerceAPI
     attribute :delivery_url
 
     # Write Only
-    attribute :secret
+    attribute :secret    , String       , reader: :private
 
     # Read Only
-    attribute :created_at, DateTime
-    attribute :updated_at, DateTime
-    attribute :event
-    attribute :hooks, Array
-    attribute :resource
+    attribute :created_at, DateTime     , writer: :private
+    attribute :updated_at, DateTime     , writer: :private
+    attribute :event     , String       , writer: :private
+    attribute :hooks     , Array[String], writer: :private
+    attribute :resource  , String       , writer: :private
 
     has_many :deliveries, class_name: 'WebhookDelivery', resource_uri: '/deliveries'
   end

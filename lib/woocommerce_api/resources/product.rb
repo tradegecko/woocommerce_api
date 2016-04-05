@@ -70,34 +70,34 @@ module WoocommerceAPI
     attribute :weight
 
     # Read Only
-    attribute :created_at, DateTime
-    attribute :updated_at, DateTime
-    attribute :average_rating
-    attribute :backordered, Boolean
-    attribute :backorders_allowed, Boolean
-    attribute :featured_src
-    attribute :on_sale, Boolean
-    attribute :permalink
-    attribute :price, Decimal
-    attribute :price_html
-    attribute :purchaseable, Boolean
-    attribute :rating_count, Integer
-    attribute :related_ids, Array
-    attribute :shipping_class_id, Integer
-    attribute :shipping_required, Boolean
-    attribute :shipping_taxable, Boolean
-    attribute :taxable, Boolean
-    attribute :visible, Boolean
+    attribute :created_at        , DateTime, writer: :private
+    attribute :updated_at        , DateTime, writer: :private
+    attribute :average_rating    , Decimal , writer: :private
+    attribute :backordered       , Boolean , writer: :private
+    attribute :backorders_allowed, Boolean , writer: :private
+    attribute :featured_src      , String  , writer: :private
+    attribute :on_sale           , Boolean , writer: :private
+    attribute :permalink         , String  , writer: :private
+    attribute :price             , Decimal , writer: :private
+    attribute :price_html        , String  , writer: :private
+    attribute :purchaseable      , Boolean , writer: :private
+    attribute :rating_count      , Integer , writer: :private
+    attribute :related_ids       , Array   , writer: :private
+    attribute :shipping_class_id , Integer , writer: :private
+    attribute :shipping_required , Boolean , writer: :private
+    attribute :shipping_taxable  , Boolean , writer: :private
+    attribute :taxable           , Boolean , writer: :private
+    attribute :visible           , Boolean , writer: :private
 
     # Write Only
-    attribute :default_attributes, Hash
-    attribute :sale_price_dates_from, DateTime
-    attribute :sale_price_dates_to, DateTime
-    attribute :backorders
-    attribute :product_url
-    attribute :button_text
-    attribute :enable_html_description, Boolean, default: true
-    attribute :enable_html_short_description, Boolean, default: true
+    attribute :default_attributes           , Hash    , reader: :private
+    attribute :sale_price_dates_from        , DateTime, reader: :private
+    attribute :sale_price_dates_to          , DateTime, reader: :private
+    attribute :backorders                   , Boolean , reader: :private
+    attribute :product_url                  , String  , reader: :private
+    attribute :button_text                  , String  , reader: :private
+    attribute :enable_html_description      , Boolean , reader: :private, default: true
+    attribute :enable_html_short_description, Boolean , reader: :private, default: true
 
     has_many :product_reviews, class_name: "ProductReview", resource_uri: '/reviews'
     has_many :orders, class_name: "Order"

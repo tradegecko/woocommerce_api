@@ -1,18 +1,18 @@
 module WoocommerceAPI
   class Meta < Resource
-    attribute :timezone
     attribute :currency
     attribute :currency_format
     attribute :currency_position
-    attribute :price_num_decimals, Integer
-    attribute :thousand_separator
     attribute :decimal_separator
-    attribute :tax_included, Boolean
-    attribute :weight_unit
     attribute :dimension_unit
-    attribute :ssl_enabled, Boolean
-    attribute :permalinks_enabled, Boolean
-    attribute :links, Hash
-    attribute :generate_password, Boolean
+    attribute :generate_password  , Boolean
+    attribute :links              , Hash
+    attribute :permalinks_enabled , Boolean
+    attribute :price_num_decimals , Integer
+    attribute :ssl_enabled        , Boolean
+    attribute :tax_included       , Boolean
+    attribute :thousand_separator
+    attribute :timezone
+    attribute :weight_unit
   end
 end
