@@ -1,0 +1,287 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/4737
+    body:
+      encoding: UTF-8
+      string: '{"product":{"id":4737,"wc_attributes":[{"name":"Color","slug":"Color","position":0,"visible":true,"variation":true,"options":["Gold","Silver","Red"]}],"catalog_visibility":"visible","categories":[],"cross_sell_ids":[],"description":"\u003cp\u003eThis
+        is Awesome powerbank\u003c/p\u003e\n","dimensions":{"length":"","width":"","height":"","unit":"cm"},"download_expiry":0,"download_limit":0,"download_type":"","downloadable":false,"downloads":[],"featured":false,"images":[{"id":4741,"src":"https://wpcommercetest.wpengine.com/wp-content/uploads/2016/03/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","position":0,"created_at":"2016-03-21T08:02:10.000+00:00","updated_at":"2016-03-21T08:02:10.000+00:00","title":"","alt":""}],"image":[],"in_stock":true,"managing_stock":true,"parent":[],"parent_id":0,"purchase_note":"","regular_price":"0.0","reviews_allowed":true,"sale_price":0.0,"shipping_class":"","short_description":"","sku":"","sold_individually":false,"status":"publish","stock_quantity":1,"tags":[],"tax_class":"","tax_status":"taxable","title":"Xiaomi
+        10000mAh","total_sales":0,"type":"variable","upsell_ids":[],"variations":[{"id":4738,"wc_attributes":[{"name":"color","slug":"color","option":"Gold"}],"catalog_visibility":null,"categories":[],"cross_sell_ids":[],"description":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"download_expiry":0,"download_limit":0,"download_type":null,"downloadable":false,"downloads":[],"featured":null,"images":[],"image":[{"id":5067,"src":"https://wpcommercetest.wpengine.com/wp-content/uploads/2016/04/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8311111111.jpg","position":0,"created_at":"2016-04-06T08:01:23.000+00:00","updated_at":"2016-04-06T08:01:23.000+00:00","title":"","alt":""}],"in_stock":true,"managing_stock":true,"parent":null,"parent_id":null,"purchase_note":null,"regular_price":"24.0","reviews_allowed":null,"sale_price":0.0,"shipping_class":"","short_description":null,"sku":"XXX-GOLD","sold_individually":null,"status":null,"stock_quantity":2,"tags":[],"tax_class":"","tax_status":"taxable","title":null,"total_sales":null,"type":null,"upsell_ids":[],"variations":[],"virtual":false,"weight":null,"created_at":"2016-03-21T08:02:08.000+00:00","updated_at":"2016-04-06T08:01:23.000+00:00","average_rating":0.0,"backordered":false,"backorders_allowed":null,"featured_src":null,"on_sale":true,"permalink":"https://wpcommercetest.wpengine.com/product/xiaomi-10000mah-2/?attribute_color=Gold","price":"0.0","price_html":null,"purchaseable":true,"rating_count":null,"related_ids":[],"shipping_class_id":null,"shipping_required":null,"shipping_taxable":null,"taxable":true,"visible":true,"attributes":[{"name":"color","slug":"color","option":"Gold"}]},{"id":4739,"wc_attributes":[{"name":"color","slug":"color","option":"Silver"}],"catalog_visibility":null,"categories":[],"cross_sell_ids":[],"description":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"download_expiry":0,"download_limit":0,"download_type":null,"downloadable":false,"downloads":[],"featured":null,"images":[],"image":[{"id":5068,"src":"https://wpcommercetest.wpengine.com/wp-content/uploads/2016/04/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK81111111111.jpg","position":0,"created_at":"2016-04-06T08:01:23.000+00:00","updated_at":"2016-04-06T08:01:23.000+00:00","title":"","alt":""}],"in_stock":true,"managing_stock":true,"parent":null,"parent_id":null,"purchase_note":null,"regular_price":"21.0","reviews_allowed":null,"sale_price":0.0,"shipping_class":"","short_description":null,"sku":"XXX-SILVER","sold_individually":null,"status":null,"stock_quantity":5,"tags":[],"tax_class":"","tax_status":"taxable","title":null,"total_sales":null,"type":null,"upsell_ids":[],"variations":[],"virtual":false,"weight":null,"created_at":"2016-03-21T08:02:08.000+00:00","updated_at":"2016-04-06T08:01:23.000+00:00","average_rating":0.0,"backordered":false,"backorders_allowed":null,"featured_src":null,"on_sale":true,"permalink":"https://wpcommercetest.wpengine.com/product/xiaomi-10000mah-2/?attribute_color=Silver","price":"0.0","price_html":null,"purchaseable":true,"rating_count":null,"related_ids":[],"shipping_class_id":null,"shipping_required":null,"shipping_taxable":null,"taxable":true,"visible":true,"attributes":[{"name":"color","slug":"color","option":"Silver"}]},{"id":4740,"wc_attributes":[{"name":"color","slug":"color","option":"Red"}],"catalog_visibility":null,"categories":[],"cross_sell_ids":[],"description":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"download_expiry":0,"download_limit":0,"download_type":null,"downloadable":false,"downloads":[],"featured":null,"images":[],"image":[{"id":5069,"src":"https://wpcommercetest.wpengine.com/wp-content/uploads/2016/04/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK82111111111.jpg","position":0,"created_at":"2016-04-06T08:01:23.000+00:00","updated_at":"2016-04-06T08:01:23.000+00:00","title":"","alt":""}],"in_stock":true,"managing_stock":true,"parent":null,"parent_id":null,"purchase_note":null,"regular_price":"199.9","reviews_allowed":null,"sale_price":0.0,"shipping_class":"","short_description":null,"sku":"XXX-RED","sold_individually":null,"status":null,"stock_quantity":1000,"tags":[],"tax_class":"","tax_status":"taxable","title":null,"total_sales":null,"type":null,"upsell_ids":[],"variations":[],"virtual":false,"weight":null,"created_at":"2016-03-21T08:02:08.000+00:00","updated_at":"2016-04-06T08:01:23.000+00:00","average_rating":0.0,"backordered":false,"backorders_allowed":null,"featured_src":null,"on_sale":true,"permalink":"https://wpcommercetest.wpengine.com/product/xiaomi-10000mah-2/?attribute_color=Red","price":"0.0","price_html":null,"purchaseable":true,"rating_count":null,"related_ids":[],"shipping_class_id":null,"shipping_required":null,"shipping_taxable":null,"taxable":true,"visible":true,"attributes":[{"name":"color","slug":"color","option":"Red"}]},{"id":null,"wc_attributes":[],"catalog_visibility":null,"categories":[],"cross_sell_ids":[],"description":null,"dimensions":null,"download_expiry":null,"download_limit":null,"download_type":null,"downloadable":null,"downloads":null,"featured":null,"images":[],"image":[],"in_stock":null,"managing_stock":null,"parent":null,"parent_id":null,"purchase_note":null,"regular_price":"19.99","reviews_allowed":null,"sale_price":0.0,"shipping_class":null,"short_description":null,"sku":null,"sold_individually":null,"status":null,"stock_quantity":null,"tags":[],"tax_class":null,"tax_status":null,"title":null,"total_sales":null,"type":null,"upsell_ids":[],"variations":[],"virtual":null,"weight":null,"created_at":null,"updated_at":null,"average_rating":0.0,"backordered":null,"backorders_allowed":null,"featured_src":null,"on_sale":null,"permalink":null,"price":0.0,"price_html":null,"purchaseable":null,"rating_count":null,"related_ids":[],"shipping_class_id":null,"shipping_required":null,"shipping_taxable":null,"taxable":null,"visible":null}],"virtual":false,"weight":null,"created_at":"2016-03-21T08:02:08.000+00:00","updated_at":"2016-04-06T08:01:23.000+00:00","average_rating":"0.0","backordered":false,"backorders_allowed":false,"featured_src":"https://wpcommercetest.wpengine.com/wp-content/uploads/2016/03/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","on_sale":true,"permalink":"https://wpcommercetest.wpengine.com/product/xiaomi-10000mah-2/","price":"0.0","price_html":"\u003cdel\u003e\u003cspan
+        class=\"amount\"\u003e\u0026#36;22.47\u003c/span\u003e\u0026ndash;\u003cspan
+        class=\"amount\"\u003e\u0026#36;213.89\u003c/span\u003e\u003c/del\u003e \u003cins\u003e\u003cspan
+        class=\"amount\"\u003e\u0026#36;0.00\u003c/span\u003e\u003c/ins\u003e","purchaseable":true,"rating_count":0,"related_ids":[],"shipping_class_id":null,"shipping_required":true,"shipping_taxable":true,"taxable":true,"visible":true,"attributes":[{"name":"Color","slug":"Color","position":0,"visible":true,"variation":true,"options":["Gold","Silver","Red"]}]}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Apr 2016 08:01:52 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '5748'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"product":{"title":"Xiaomi 10000mAh","id":4737,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","type":"variable","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/","sku":"","price":"0.00","regular_price":"0.00","sale_price":null,"price_html":"<del><span
+        class=\"amount\">&#36;21.39<\/span>&ndash;<span class=\"amount\">&#36;213.89<\/span><\/del>
+        <ins><span class=\"amount\">&#36;0.00<\/span><\/ins>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":1,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":true,"product_url":"","button_text":"","weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>This
+        is Awesome powerbank<\/p>\n","short_description":"","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":[],"tags":[],"images":[{"id":4741,"created_at":"2016-03-21T08:02:10Z","updated_at":"2016-03-21T08:02:10Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","title":"","alt":"","position":0}],"featured_src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","attributes":[{"name":"Color","slug":"Color","position":0,"visible":true,"variation":true,"options":["Gold","Silver","Red"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[{"id":4738,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/?attribute_color=Gold","sku":"XXX-GOLD","price":"0.00","regular_price":"24.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":2,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":true,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":5071,"created_at":"2016-04-06T08:01:52Z","updated_at":"2016-04-06T08:01:52Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/04\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK83111111111.jpg","title":"","alt":"","position":0}],"attributes":[{"name":"color","slug":"color","option":"Gold"}],"downloads":[],"download_limit":0,"download_expiry":0},{"id":4739,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/?attribute_color=Silver","sku":"XXX-SILVER","price":"0.00","regular_price":"21.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":5,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":true,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":5072,"created_at":"2016-04-06T08:01:52Z","updated_at":"2016-04-06T08:01:52Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/04\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK811111111111.jpg","title":"","alt":"","position":0}],"attributes":[{"name":"color","slug":"color","option":"Silver"}],"downloads":[],"download_limit":0,"download_expiry":0},{"id":4740,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/?attribute_color=Red","sku":"XXX-RED","price":"0.00","regular_price":"199.90","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":1000,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":true,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":5073,"created_at":"2016-04-06T08:01:52Z","updated_at":"2016-04-06T08:01:52Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/04\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK821111111111.jpg","title":"","alt":"","position":0}],"attributes":[{"name":"color","slug":"color","option":"Red"}],"downloads":[],"download_limit":0,"download_expiry":0},{"id":5074,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/","sku":"","price":"0.00","regular_price":"19.99","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":"parent","stock_quantity":1,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":true,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":4741,"created_at":"2016-03-21T08:02:10Z","updated_at":"2016-03-21T08:02:10Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","title":"","alt":"","position":0}],"attributes":[{"name":"color","slug":"color","option":""}],"downloads":[],"download_limit":0,"download_expiry":0}],"parent":[]}}'
+    http_version:
+  recorded_at: Wed, 06 Apr 2016 08:01:52 GMT
+- request:
+    method: put
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/5074
+    body:
+      encoding: UTF-8
+      string: '{"product":{"id":5074,"wc_attributes":[{"name":"color","slug":"color","option":""}],"catalog_visibility":null,"categories":[],"cross_sell_ids":[],"description":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"download_expiry":0,"download_limit":0,"download_type":null,"downloadable":false,"downloads":[],"featured":null,"images":[],"image":[{"id":4741,"src":"https://wpcommercetest.wpengine.com/wp-content/uploads/2016/03/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","position":0,"created_at":"2016-03-21T08:02:10.000+00:00","updated_at":"2016-03-21T08:02:10.000+00:00","title":"","alt":""}],"in_stock":true,"managing_stock":true,"parent":null,"parent_id":null,"purchase_note":null,"regular_price":"199.9","reviews_allowed":null,"sale_price":0.0,"shipping_class":"","short_description":null,"sku":"","sold_individually":null,"status":null,"stock_quantity":1000,"tags":[],"tax_class":"","tax_status":"taxable","title":null,"total_sales":null,"type":null,"upsell_ids":[],"variations":[],"virtual":false,"weight":null,"created_at":"2016-03-21T08:02:08.000+00:00","updated_at":"2016-04-06T08:01:52.000+00:00","average_rating":0.0,"backordered":false,"backorders_allowed":null,"featured_src":null,"on_sale":true,"permalink":"https://wpcommercetest.wpengine.com/product/xiaomi-10000mah-2/","price":"0.0","price_html":null,"purchaseable":true,"rating_count":null,"related_ids":[],"shipping_class_id":null,"shipping_required":null,"shipping_taxable":null,"taxable":true,"visible":true,"attributes":[{"name":"color","slug":"color","option":""}]}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Apr 2016 08:01:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '3513'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"product":{"title":"Xiaomi 10000mAh","id":5074,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","type":"variation","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/","sku":"","price":"0.00","regular_price":"199.90","sale_price":null,"price_html":"<del><span
+        class=\"amount\">&#36;213.89<\/span><\/del> <ins><span class=\"amount\">&#36;0.00<\/span><\/ins>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":1000,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":true,"product_url":"","button_text":"","weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>This
+        is Awesome powerbank<\/p>\n","short_description":"","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":[],"tags":[],"images":[{"id":4741,"created_at":"2016-03-21T08:02:10Z","updated_at":"2016-03-21T08:02:10Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","title":"","alt":"","position":0}],"featured_src":"","attributes":[{"name":"color","slug":"color","option":""}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":{"title":"Xiaomi
+        10000mAh","id":4737,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","type":"variable","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/","sku":"","price":"0.00","regular_price":"0.00","sale_price":null,"price_html":"<del><span
+        class=\"amount\">&#36;22.47<\/span>&ndash;<span class=\"amount\">&#36;213.89<\/span><\/del>
+        <ins><span class=\"amount\">&#36;0.00<\/span><\/ins>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":1,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":true,"product_url":"","button_text":"","weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>This
+        is Awesome powerbank<\/p>\n","short_description":"","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":[],"tags":[],"images":[{"id":4741,"created_at":"2016-03-21T08:02:10Z","updated_at":"2016-03-21T08:02:10Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","title":"","alt":"","position":0}],"featured_src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","attributes":[{"name":"Color","slug":"Color","position":0,"visible":true,"variation":true,"options":["Gold","Silver","Red"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]}}}'
+    http_version:
+  recorded_at: Wed, 06 Apr 2016 08:01:55 GMT
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/5074
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Apr 2016 08:01:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '3513'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Cacheable:
+      - NO:Passed
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"product":{"title":"Xiaomi 10000mAh","id":5074,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","type":"variation","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/","sku":"","price":"0.00","regular_price":"199.90","sale_price":null,"price_html":"<del><span
+        class=\"amount\">&#36;213.89<\/span><\/del> <ins><span class=\"amount\">&#36;0.00<\/span><\/ins>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":1000,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":true,"product_url":"","button_text":"","weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>This
+        is Awesome powerbank<\/p>\n","short_description":"","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":[],"tags":[],"images":[{"id":4741,"created_at":"2016-03-21T08:02:10Z","updated_at":"2016-03-21T08:02:10Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","title":"","alt":"","position":0}],"featured_src":"","attributes":[{"name":"color","slug":"color","option":""}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":{"title":"Xiaomi
+        10000mAh","id":4737,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","type":"variable","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/","sku":"","price":"0.00","regular_price":"0.00","sale_price":null,"price_html":"<del><span
+        class=\"amount\">&#36;22.47<\/span>&ndash;<span class=\"amount\">&#36;213.89<\/span><\/del>
+        <ins><span class=\"amount\">&#36;0.00<\/span><\/ins>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":1,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":true,"product_url":"","button_text":"","weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>This
+        is Awesome powerbank<\/p>\n","short_description":"","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":[],"tags":[],"images":[{"id":4741,"created_at":"2016-03-21T08:02:10Z","updated_at":"2016-03-21T08:02:10Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","title":"","alt":"","position":0}],"featured_src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","attributes":[{"name":"Color","slug":"Color","position":0,"visible":true,"variation":true,"options":["Gold","Silver","Red"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[],"parent":[]}}}'
+    http_version:
+  recorded_at: Wed, 06 Apr 2016 08:01:57 GMT
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/4737
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Apr 2016 08:01:58 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '5748'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Cacheable:
+      - NO:Passed
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"product":{"title":"Xiaomi 10000mAh","id":4737,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","type":"variable","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/","sku":"","price":"0.00","regular_price":"0.00","sale_price":null,"price_html":"<del><span
+        class=\"amount\">&#36;22.47<\/span>&ndash;<span class=\"amount\">&#36;213.89<\/span><\/del>
+        <ins><span class=\"amount\">&#36;0.00<\/span><\/ins>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":1,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":true,"product_url":"","button_text":"","weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>This
+        is Awesome powerbank<\/p>\n","short_description":"","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":[],"tags":[],"images":[{"id":4741,"created_at":"2016-03-21T08:02:10Z","updated_at":"2016-03-21T08:02:10Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","title":"","alt":"","position":0}],"featured_src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","attributes":[{"name":"Color","slug":"Color","position":0,"visible":true,"variation":true,"options":["Gold","Silver","Red"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[{"id":4738,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/?attribute_color=Gold","sku":"XXX-GOLD","price":"0.00","regular_price":"24.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":2,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":true,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":5071,"created_at":"2016-04-06T08:01:52Z","updated_at":"2016-04-06T08:01:52Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/04\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK83111111111.jpg","title":"","alt":"","position":0}],"attributes":[{"name":"color","slug":"color","option":"Gold"}],"downloads":[],"download_limit":0,"download_expiry":0},{"id":4739,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/?attribute_color=Silver","sku":"XXX-SILVER","price":"0.00","regular_price":"21.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":5,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":true,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":5072,"created_at":"2016-04-06T08:01:52Z","updated_at":"2016-04-06T08:01:52Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/04\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK811111111111.jpg","title":"","alt":"","position":0}],"attributes":[{"name":"color","slug":"color","option":"Silver"}],"downloads":[],"download_limit":0,"download_expiry":0},{"id":4740,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/?attribute_color=Red","sku":"XXX-RED","price":"0.00","regular_price":"199.90","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":1000,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":true,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":5073,"created_at":"2016-04-06T08:01:52Z","updated_at":"2016-04-06T08:01:52Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/04\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK821111111111.jpg","title":"","alt":"","position":0}],"attributes":[{"name":"color","slug":"color","option":"Red"}],"downloads":[],"download_limit":0,"download_expiry":0},{"id":5074,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/","sku":"","price":"0.00","regular_price":"199.90","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":1000,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":true,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":4741,"created_at":"2016-03-21T08:02:10Z","updated_at":"2016-03-21T08:02:10Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","title":"","alt":"","position":0}],"attributes":[{"name":"color","slug":"color","option":""}],"downloads":[],"download_limit":0,"download_expiry":0}],"parent":[]}}'
+    http_version:
+  recorded_at: Wed, 06 Apr 2016 08:01:58 GMT
+- request:
+    method: delete
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/5074?force=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Apr 2016 08:01:59 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '41'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"message":"Permanently deleted product"}'
+    http_version:
+  recorded_at: Wed, 06 Apr 2016 08:01:59 GMT
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/products/4737
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 06 Apr 2016 08:02:01 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '4811'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Cacheable:
+      - NO:Passed
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"product":{"title":"Xiaomi 10000mAh","id":4737,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","type":"variable","status":"publish","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/","sku":"","price":"0.00","regular_price":"0.00","sale_price":null,"price_html":"<del><span
+        class=\"amount\">&#36;22.47<\/span>&ndash;<span class=\"amount\">&#36;213.89<\/span><\/del>
+        <ins><span class=\"amount\">&#36;0.00<\/span><\/ins>","taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":1,"in_stock":true,"backorders_allowed":false,"backordered":false,"sold_individually":false,"purchaseable":true,"featured":false,"visible":true,"catalog_visibility":"visible","on_sale":true,"product_url":"","button_text":"","weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":null,"description":"<p>This
+        is Awesome powerbank<\/p>\n","short_description":"","reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"categories":[],"tags":[],"images":[{"id":4741,"created_at":"2016-03-21T08:02:10Z","updated_at":"2016-03-21T08:02:10Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","title":"","alt":"","position":0}],"featured_src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/03\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK8.jpg","attributes":[{"name":"Color","slug":"Color","position":0,"visible":true,"variation":true,"options":["Gold","Silver","Red"]}],"downloads":[],"download_limit":0,"download_expiry":0,"download_type":"","purchase_note":"","total_sales":0,"variations":[{"id":4738,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/?attribute_color=Gold","sku":"XXX-GOLD","price":"0.00","regular_price":"24.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":2,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":true,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":5071,"created_at":"2016-04-06T08:01:52Z","updated_at":"2016-04-06T08:01:52Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/04\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK83111111111.jpg","title":"","alt":"","position":0}],"attributes":[{"name":"color","slug":"color","option":"Gold"}],"downloads":[],"download_limit":0,"download_expiry":0},{"id":4739,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/?attribute_color=Silver","sku":"XXX-SILVER","price":"0.00","regular_price":"21.00","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":5,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":true,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":5072,"created_at":"2016-04-06T08:01:52Z","updated_at":"2016-04-06T08:01:52Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/04\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK811111111111.jpg","title":"","alt":"","position":0}],"attributes":[{"name":"color","slug":"color","option":"Silver"}],"downloads":[],"download_limit":0,"download_expiry":0},{"id":4740,"created_at":"2016-03-21T08:02:08Z","updated_at":"2016-04-06T08:01:52Z","downloadable":false,"virtual":false,"permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/xiaomi-10000mah-2\/?attribute_color=Red","sku":"XXX-RED","price":"0.00","regular_price":"199.90","sale_price":null,"taxable":true,"tax_status":"taxable","tax_class":"","managing_stock":true,"stock_quantity":1000,"in_stock":true,"backordered":false,"purchaseable":true,"visible":true,"on_sale":true,"weight":null,"dimensions":{"length":"","width":"","height":"","unit":"cm"},"shipping_class":"","shipping_class_id":null,"image":[{"id":5073,"created_at":"2016-04-06T08:01:52Z","updated_at":"2016-04-06T08:01:52Z","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2016\/04\/dO2o8D4jTGeGHbuiXdAw_T18sdgB7dT1RXrhCrK821111111111.jpg","title":"","alt":"","position":0}],"attributes":[{"name":"color","slug":"color","option":"Red"}],"downloads":[],"download_limit":0,"download_expiry":0}],"parent":[]}}'
+    http_version:
+  recorded_at: Wed, 06 Apr 2016 08:02:01 GMT
+recorded_with: VCR 2.9.3
