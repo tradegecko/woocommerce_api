@@ -41,7 +41,7 @@ WoocommerceAPI::Product.all
 => [collection of products]
 ```
 collection with parameters, check more http://woothemes.github.io/woocommerce-rest-api-docs/#parameters 
-```
+```ruby
 WoocommerceAPI::Product.all(filter: { limit: 50 })
 WoocommerceAPI::Order.all(filter: { status: "complete", created_at_min: "2015-11-01" })
 ```
@@ -68,4 +68,11 @@ product.save
 ```ruby
 product.destroy # Soft delete a product (move to trash)
 product.destroy(force: true) # Permanently delete a product
+```
+
+## Debugging 
+We are using HTTParty, then...
+```ruby
+WoocommerceAPI::OauthClient.debug_output $stdout
+WoocommerceAPI::Client.debug_output $stdout
 ```
