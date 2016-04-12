@@ -91,7 +91,7 @@ describe WoocommerceAPI::Product do
       context "expected attributes" do
         context "product" do
           it "product's attributes" do
-            expect(wc_product.regular_price).to eq 0.0
+            expect(wc_product.regular_price).to eq ""
             expect(wc_product.wc_attributes).to eq [{"name"=>"Size", "slug"=>"Size", "position"=>0, "visible"=>false, "variation"=>false, "options"=>["S", "M"]}]
           end
 
