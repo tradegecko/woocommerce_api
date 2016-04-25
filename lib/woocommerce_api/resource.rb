@@ -4,6 +4,8 @@ module WoocommerceAPI
     def initialize(code, response)
       @code = code
       message = case code
+                when 408
+                  response.to_s
                 when 500
                   "Internal Server Error"
                 else
@@ -57,6 +59,8 @@ module WoocommerceAPI
       end
 
       response.success? ? response : raise(ClientError.new(response.code, response))
+    rescue Net::ReadTimeout => ex
+      raise ClientError.new(408, ex)
     end
   end # Resource
 end
