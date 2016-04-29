@@ -40,9 +40,13 @@ module WoocommerceAPI
     TIMEOUT_OPTIONS = {timeout: 30}
     self.include_root_in_json = true
 
+    attr_reader :raw_params
+
     def initialize(params={})
+      @raw_params = params.dup
+
       params.each do |attr, value|
-        self.send("#{attr}=", value) if self.respond_to? attr
+        self.send("#{attr}=", value) if self.respond_to?("#{attr}=")
       end if params
 
       super()
