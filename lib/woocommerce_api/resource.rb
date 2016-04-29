@@ -42,7 +42,7 @@ module WoocommerceAPI
 
     def initialize(params={})
       params.each do |attr, value|
-        self.send("#{attr}=", value) if self.respond_to? attr
+        self.send("#{attr}=", value) if self.respond_to?("#{attr}=")
       end if params
 
       super()
