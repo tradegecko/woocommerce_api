@@ -46,7 +46,7 @@ module WoocommerceAPI
       @raw_params = params.dup
 
       params.each do |attr, value|
-        self.send("#{attr}=", value) if self.respond_to?("#{attr}=")
+        self.send("#{attr}=", value) if self.respond_to?("#{attr}=", true)
       end if params
 
       super()
