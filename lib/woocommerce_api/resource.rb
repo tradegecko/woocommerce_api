@@ -44,12 +44,15 @@ module WoocommerceAPI
 
     def initialize(params={})
       @raw_params = params.dup
+      load(params)
+      super()
+    end
 
+    def load(params)
       params.each do |attr, value|
         self.send("#{attr}=", value) if self.respond_to?("#{attr}=", true)
       end if params
-
-      super()
+      self
     end
 
     def self.http_request(verb, url, options={})

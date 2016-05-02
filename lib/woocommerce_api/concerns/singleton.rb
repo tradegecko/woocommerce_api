@@ -98,7 +98,7 @@ module WoocommerceAPI
 
       def reload
         return unless persisted?
-        self.send(:initialize, self.class.find(self.id).attributes)
+        self.load(self.class.find(self.id).attributes)
       end
 
       def to_path
