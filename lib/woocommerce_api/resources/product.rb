@@ -3,7 +3,7 @@ require "woocommerce_api/resources/variation"
 module WoocommerceAPI
   class Product < Resource
 
-    def initialize(attributes={})
+    def load(attributes)
       # Rename restricted attributes
       if attributes['attributes']
         attributes['wc_attributes'] = attributes.delete('attributes')
