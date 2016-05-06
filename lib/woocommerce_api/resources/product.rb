@@ -1,5 +1,3 @@
-require "woocommerce_api/resources/variation"
-
 module WoocommerceAPI
   class Product < Resource
 
@@ -18,14 +16,11 @@ module WoocommerceAPI
           wc_attributes['attributes'] = attributes[:wc_attributes]
         else
           wc_attributes['product']['attributes'] = attributes[:wc_attributes]
+          wc_attributes['product'].delete('categories')
+          wc_attributes['product'].delete('tags')
+          wc_attributes['product'].delete('default_attributes')
         end
       end
-
-      # Woocommerce does not support passing string of arrays for this attributes:
-      # See http://woothemes.github.io/woocommerce-rest-api-docs/#products-properties
-      wc_attributes['product'].delete('categories')
-      wc_attributes['product'].delete('tags')
-      wc_attributes['product'].delete('default_attributes')
 
       wc_attributes
     end
@@ -43,7 +38,8 @@ module WoocommerceAPI
     attribute :downloadable, Boolean
     attribute :downloads
     attribute :featured, Boolean
-    attribute :images, Array[Image]
+    attribute :images, Array[Image] # Product's images
+    attribute :image, Array[Image] # Variation's images
     attribute :in_stock, Boolean
     attribute :managing_stock, Boolean
     attribute :parent
@@ -65,7 +61,7 @@ module WoocommerceAPI
     attribute :total_sales, Integer
     attribute :type
     attribute :upsell_ids, Array
-    attribute :variations, Array[Variation]
+    attribute :variations, Array[Product]
     attribute :virtual, Boolean
     attribute :weight
 
