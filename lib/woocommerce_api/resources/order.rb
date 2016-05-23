@@ -41,8 +41,11 @@ module WoocommerceAPI
     attribute :view_order_url            , String         , writer: :private
     attribute :tax_lines                 , Array[TaxLine] , writer: :private
 
-    has_many :order_notes, class_name: 'OrderNote', resource_uri: '/notes'
     has_many :order_refunds, class_name: 'OrderRefund', resource_uri: '/refunds'
+
+    def order_notes
+      OrderNote.all(self.id)
+    end
 
     def self.statuses
       response = http_request(:get, '/orders/statuses')
