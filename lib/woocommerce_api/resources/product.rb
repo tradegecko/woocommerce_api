@@ -68,6 +68,8 @@ module WoocommerceAPI
     attribute :variations, Array[Variation]
     attribute :virtual, Boolean
     attribute :weight
+    attribute :enable_html_description      , Boolean , default: true
+    attribute :enable_html_short_description, Boolean , default: true
 
     # Read Only
     attribute :created_at        , DateTime, writer: :private
@@ -96,8 +98,6 @@ module WoocommerceAPI
     attribute :backorders                   , Boolean , reader: :private
     attribute :product_url                  , String  , reader: :private
     attribute :button_text                  , String  , reader: :private
-    attribute :enable_html_description      , Boolean , reader: :private, default: true
-    attribute :enable_html_short_description, Boolean , reader: :private, default: true
 
     has_many :product_reviews, class_name: "ProductReview", resource_uri: '/reviews'
     has_many :orders, class_name: "Order"
