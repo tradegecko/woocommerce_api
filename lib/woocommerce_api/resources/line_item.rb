@@ -16,6 +16,6 @@ module WoocommerceAPI
     attribute :meta      , Array[Hash], writer: :private
 
     # Write Only
-    attribute :variations, Array[Hash], reader: :private
+    attribute :variations, Array[Hash]
   end
 end

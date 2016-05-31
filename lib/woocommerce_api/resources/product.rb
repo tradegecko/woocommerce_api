@@ -92,12 +92,12 @@ module WoocommerceAPI
     attribute :visible           , Boolean , writer: :private
 
     # Write Only
-    attribute :default_attributes           , Hash    , reader: :private
-    attribute :sale_price_dates_from        , DateTime, reader: :private
-    attribute :sale_price_dates_to          , DateTime, reader: :private
-    attribute :backorders                   , Boolean , reader: :private
-    attribute :product_url                  , String  , reader: :private
-    attribute :button_text                  , String  , reader: :private
+    attribute :default_attributes           , Hash    
+    attribute :sale_price_dates_from        , DateTime
+    attribute :sale_price_dates_to          , DateTime
+    attribute :backorders                   , Boolean
+    attribute :product_url                  , String
+    attribute :button_text                  , String
 
     has_many :product_reviews, class_name: "ProductReview", resource_uri: '/reviews'
     has_many :orders, class_name: "Order"

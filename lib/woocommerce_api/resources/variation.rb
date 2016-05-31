@@ -58,9 +58,9 @@ module WoocommerceAPI
     attribute :visible              , Boolean , writer: :private
 
     # Write Only
-    attribute :backorders           , Boolean , reader: :private
-    attribute :sale_price_dates_from, DateTime, reader: :private
-    attribute :sale_price_dates_to  , DateTime, reader: :private
+    attribute :backorders           , Boolean 
+    attribute :sale_price_dates_from, DateTime
+    attribute :sale_price_dates_to  , DateTime
   end
 end
 

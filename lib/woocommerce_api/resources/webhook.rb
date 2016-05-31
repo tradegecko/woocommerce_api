@@ -7,7 +7,7 @@ module WoocommerceAPI
     attribute :delivery_url
 
     # Write Only
-    attribute :secret    , String       , reader: :private
+    attribute :secret    , String
 
     # Read Only
     attribute :created_at, DateTime     , writer: :private
