@@ -102,7 +102,7 @@ module WoocommerceAPI
       end
 
       def to_path
-        "/#{collection_name}#{"/#{id}" if id}"
+        "#{collection_path}#{"/#{id}" if id}"
       end
 
       # Every nested assocation. by default #as_json(root: false) could be applied
