@@ -11,6 +11,8 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
   response:
     status:
       code: 200
@@ -19,17 +21,17 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 17 Apr 2015 07:21:51 GMT
+      - Wed, 15 Jun 2016 03:00:31 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '1080'
+      - '4874'
       Connection:
       - keep-alive
       Keep-Alive:
       - timeout=20
       X-Wc-Total:
-      - '2'
+      - '9'
       X-Wc-Totalpages:
       - '1'
       X-Cacheable:
@@ -42,11 +44,18 @@ http_interactions:
       - MISS
       X-Pass-Why:
       - auth
+      X-Cache-Group:
+      - ''
       X-Type:
       - default
     body:
       encoding: UTF-8
-      string: '{"coupons":[{"id":1481,"code":"philtest","type":"fixed_cart","created_at":"2015-04-06T04:31:27Z","updated_at":"2015-04-06T04:32:06Z","amount":"10.00","individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":0,"usage_count":7,"expiry_date":"2015-04-30T00:00:00Z","enable_free_shipping":false,"product_category_ids":[],"exclude_product_category_ids":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","customer_emails":[],"description":""},{"id":1454,"code":"ztest","type":"percent_product","created_at":"2015-03-03T04:47:03Z","updated_at":"2015-03-03T04:47:03Z","amount":"10.00","individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":0,"usage_count":1,"expiry_date":"2015-04-04T00:00:00Z","enable_free_shipping":true,"product_category_ids":[],"exclude_product_category_ids":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","customer_emails":[],"description":""}]}'
+      string: '{"coupons":[{"id":4948,"code":"tg-test","type":"fixed_cart","created_at":"2016-03-30T13:36:07Z","updated_at":"2016-03-30T13:36:07Z","amount":"50.00","individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":0,"usage_count":0,"expiry_date":"2016-03-31T00:00:00Z","enable_free_shipping":false,"product_category_ids":[],"exclude_product_category_ids":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","customer_emails":[],"description":"Test
+        SO cycle"},{"id":4870,"code":"croutoncode","type":"fixed_product","created_at":"2016-03-29T07:38:19Z","updated_at":"2016-03-30T03:36:14Z","amount":"20.00","individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":0,"usage_count":4,"expiry_date":"2016-03-31T00:00:00Z","enable_free_shipping":false,"product_category_ids":[],"exclude_product_category_ids":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","customer_emails":[],"description":"Crouton"},{"id":4200,"code":"10usddiscount4197and4204","type":"fixed_product","created_at":"2016-02-29T07:21:01Z","updated_at":"2016-02-29T07:59:55Z","amount":"10.00","individual_use":false,"product_ids":[4197,4204],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":0,"usage_count":15,"expiry_date":null,"enable_free_shipping":false,"product_category_ids":[],"exclude_product_category_ids":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","customer_emails":[],"description":""},{"id":4199,"code":"10percentdiscount","type":"percent","created_at":"2016-02-29T07:19:09Z","updated_at":"2016-02-29T07:19:09Z","amount":"10.00","individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":0,"usage_count":15,"expiry_date":null,"enable_free_shipping":false,"product_category_ids":[],"exclude_product_category_ids":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","customer_emails":[],"description":""},{"id":4198,"code":"10usddiscount","type":"fixed_cart","created_at":"2016-02-29T07:18:30Z","updated_at":"2016-02-29T07:18:30Z","amount":"10.00","individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":0,"usage_count":6,"expiry_date":null,"enable_free_shipping":false,"product_category_ids":[],"exclude_product_category_ids":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","customer_emails":[],"description":""},{"id":1731,"code":"productpdiscount","type":"percent_product","created_at":"2015-06-15T10:22:35Z","updated_at":"2015-06-15T10:22:35Z","amount":"10.00","individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":0,"usage_count":59,"expiry_date":null,"enable_free_shipping":false,"product_category_ids":[],"exclude_product_category_ids":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","customer_emails":[],"description":"Product
+        Percent Discount"},{"id":1730,"code":"productdiscount","type":"fixed_product","created_at":"2015-06-15T10:21:39Z","updated_at":"2015-10-29T15:16:08Z","amount":"10.00","individual_use":false,"product_ids":[1505,285,1511],"exclude_product_ids":[3486],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":0,"usage_count":42,"expiry_date":null,"enable_free_shipping":false,"product_category_ids":[],"exclude_product_category_ids":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","customer_emails":[],"description":"Product
+        Discount"},{"id":1729,"code":"cartpdiscount","type":"percent","created_at":"2015-06-15T10:20:59Z","updated_at":"2015-06-15T10:20:59Z","amount":"10.00","individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":0,"usage_count":17,"expiry_date":null,"enable_free_shipping":false,"product_category_ids":[],"exclude_product_category_ids":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","customer_emails":[],"description":"cart
+        percent discount"},{"id":1727,"code":"cartdiscount","type":"fixed_cart","created_at":"2015-06-15T10:11:40Z","updated_at":"2015-06-15T10:18:17Z","amount":"10.00","individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":0,"usage_count":13,"expiry_date":null,"enable_free_shipping":false,"product_category_ids":[],"exclude_product_category_ids":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","customer_emails":[],"description":"Cart
+        Discount"}]}'
     http_version:
-  recorded_at: Fri, 17 Apr 2015 07:21:51 GMT
+  recorded_at: Wed, 15 Jun 2016 03:00:32 GMT
 recorded_with: VCR 2.9.3

@@ -37,15 +37,8 @@ describe WoocommerceAPI::Order do
       customer_id: 2,
       line_items: [
         {
-          product_id: 546,
+          product_id: 6512,
           quantity: 2
-        },
-        {
-          product_id: 613,
-          quantity: 1,
-          variations: {
-            pa_color: "Black"
-          }
         }
       ],
       shipping_lines: [
