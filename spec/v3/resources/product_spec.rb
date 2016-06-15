@@ -41,7 +41,7 @@ describe WoocommerceAPI::Product do
   it_behaves_like "a woocommerce resource"
 
   context "when CRUD with standalone product" do
-    include_context "woocommerce_api_services", version: 'v3', use_cassette: 'v3/product'#, record: :all
+    include_context "woocommerce_api_services", version: 'v3', use_cassette: 'v3/product'
     it_behaves_like "a woocommerce product CRUD" do
 
       let(:wc_product) { described_class.create(valid_attributes) }
@@ -62,7 +62,7 @@ describe WoocommerceAPI::Product do
   end
 
   context "when included variations" do
-    include_context "woocommerce_api_services", version: 'v3', use_cassette: 'v3/product_with_variants'#, record: :all
+    include_context "woocommerce_api_services", version: 'v3', use_cassette: 'v3/product_with_variants'
     it_behaves_like "a woocommerce product CRUD" do
       let(:valid_nested_attributes) do
         { type: 'variable',

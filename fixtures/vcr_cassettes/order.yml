@@ -11,6 +11,8 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
   response:
     status:
       code: 200
@@ -19,22 +21,22 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 22 Apr 2015 09:15:58 GMT
+      - Wed, 15 Jun 2016 04:20:10 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '25363'
+      - '23315'
       Connection:
       - keep-alive
       Keep-Alive:
       - timeout=20
       Link:
-      - <https://wpcommercetest.wpengine.com/wc-api/v2/orders?page=20>; rel="last"
       - <https://wpcommercetest.wpengine.com/wc-api/v2/orders?page=2>; rel="next"
+      - <https://wpcommercetest.wpengine.com/wc-api/v2/orders?page=34>; rel="last"
       X-Wc-Total:
-      - '196'
+      - '339'
       X-Wc-Totalpages:
-      - '20'
+      - '34'
       X-Cacheable:
       - NO:Passed
       Cache-Control:
@@ -45,125 +47,109 @@ http_interactions:
       - MISS
       X-Pass-Why:
       - auth
+      X-Cache-Group:
+      - ''
       X-Type:
       - default
     body:
       encoding: UTF-8
-      string: '{"orders":[{"id":1592,"order_number":1592,"created_at":"2015-04-20T23:53:00Z","updated_at":"2015-04-21T00:21:01Z","completed_at":"2015-04-21T00:21:01Z","status":"cancelled","currency":"USD","total":"1396.00","subtotal":"1205.00","total_line_items_quantity":3,"total_tax":"91.00","total_shipping":"100.00","cart_tax":"84.00","shipping_tax":"7.00","total_discount":"0.00","shipping_methods":"Flat
-        Rate","payment_details":{"method_id":"bacs","method_title":"Direct Bank Transfer","paid":false},"billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"},"note":"","customer_ip":"122.53.151.198","customer_user_agent":"Mozilla\/5.0
-        (Windows NT 6.3; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/42.0.2311.90
-        Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1592","line_items":[{"id":608,"subtotal":"1200.00","subtotal_tax":"84.00","total":"1200.00","total_tax":"84.00","price":"600.00","quantity":2,"tax_class":"zero-rate","name":"Martial
-        Cat Plushie","product_id":1511,"sku":"PLUSH001","meta":[]},{"id":612,"subtotal":"5.00","subtotal_tax":"0.00","total":"5.00","total_tax":"0.00","price":"5.00","quantity":1,"tax_class":null,"name":"Awesome
-        Subscription","product_id":285,"sku":"awesubs","meta":[]}],"shipping_lines":[{"id":609,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"100.00"}],"tax_lines":[{"id":610,"rate_id":"3","code":"TAX-1","title":"Tax","total":"84.00","compound":false},{"id":611,"rate_id":"1","code":"GST-1","title":"GST","total":"7.00","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"1592","last_order_date":"2015-04-20T23:53:00Z","orders_count":43,"total_spent":"5844.90","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"}}},{"id":1515,"order_number":1515,"created_at":"2015-04-16T01:38:29Z","updated_at":"2015-04-16T01:40:04Z","completed_at":"2015-04-16T01:40:04Z","status":"completed","currency":"USD","total":"181.90","subtotal":"70.00","total_line_items_quantity":2,"total_tax":"11.90","total_shipping":"100.00","cart_tax":"4.90","shipping_tax":"7.00","total_discount":"0.00","shipping_methods":"Flat
-        Rate","payment_details":{"method_id":"cheque","method_title":"Cheque Payment","paid":false},"billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"},"note":"","customer_ip":"122.53.151.198","customer_user_agent":"Mozilla\/5.0
-        (Windows NT 6.3; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/41.0.2272.118
-        Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1515","line_items":[{"id":605,"subtotal":"70.00","subtotal_tax":"4.90","total":"70.00","total_tax":"4.90","price":"35.00","quantity":2,"tax_class":null,"name":"Gecko
-        Juice","product_id":1510,"sku":"Juice-001","meta":[]}],"shipping_lines":[{"id":606,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"100.00"}],"tax_lines":[{"id":607,"rate_id":"1","code":"GST-1","title":"GST","total":"11.90","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"1592","last_order_date":"2015-04-20T23:53:00Z","orders_count":43,"total_spent":"5844.90","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"}}},{"id":1514,"order_number":1514,"created_at":"2015-04-16T00:25:38Z","updated_at":"2015-04-16T00:32:32Z","completed_at":"2015-04-16T00:32:32Z","status":"completed","currency":"USD","total":"749.00","subtotal":"600.00","total_line_items_quantity":1,"total_tax":"49.00","total_shipping":"100.00","cart_tax":"42.00","shipping_tax":"7.00","total_discount":"0.00","shipping_methods":"Flat
-        Rate","payment_details":{"method_id":"cod","method_title":"Cash on Delivery","paid":false},"billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"},"note":"","customer_ip":"122.53.151.198","customer_user_agent":"Mozilla\/5.0
-        (Windows NT 6.3; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/41.0.2272.118
-        Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1514","line_items":[{"id":601,"subtotal":"600.00","subtotal_tax":"42.00","total":"600.00","total_tax":"42.00","price":"600.00","quantity":1,"tax_class":"zero-rate","name":"Martial
-        Cat Plushie","product_id":1511,"sku":"PLUSH001","meta":[]}],"shipping_lines":[{"id":602,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"100.00"}],"tax_lines":[{"id":603,"rate_id":"3","code":"TAX-1","title":"Tax","total":"42.00","compound":false},{"id":604,"rate_id":"1","code":"GST-1","title":"GST","total":"7.00","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"1592","last_order_date":"2015-04-20T23:53:00Z","orders_count":43,"total_spent":"5844.90","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"}}},{"id":1513,"order_number":1513,"created_at":"2015-04-16T00:17:39Z","updated_at":"2015-04-16T00:22:20Z","completed_at":"2015-04-16T00:22:21Z","status":"completed","currency":"USD","total":"642.00","subtotal":"500.00","total_line_items_quantity":1,"total_tax":"42.00","total_shipping":"100.00","cart_tax":"35.00","shipping_tax":"7.00","total_discount":"0.00","shipping_methods":"Flat
-        Rate","payment_details":{"method_id":"bacs","method_title":"Direct Bank Transfer","paid":false},"billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"},"note":"","customer_ip":"122.53.151.198","customer_user_agent":"Mozilla\/5.0
-        (Windows NT 6.3; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/41.0.2272.118
-        Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1513","line_items":[{"id":598,"subtotal":"500.00","subtotal_tax":"35.00","total":"500.00","total_tax":"35.00","price":"500.00","quantity":1,"tax_class":null,"name":"Light
-        Inugami","product_id":1512,"sku":"PLUSH002","meta":[]}],"shipping_lines":[{"id":599,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"100.00"}],"tax_lines":[{"id":600,"rate_id":"1","code":"GST-1","title":"GST","total":"42.00","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"1592","last_order_date":"2015-04-20T23:53:00Z","orders_count":43,"total_spent":"5844.90","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"}}},{"id":1508,"order_number":1508,"created_at":"2015-04-09T10:21:49Z","updated_at":"2015-04-09T10:21:50Z","completed_at":"2015-04-09T10:21:50Z","status":"processing","currency":"PHP","total":"147.00","subtotal":"46.73","total_line_items_quantity":10,"total_tax":"9.62","total_shipping":"100.00","cart_tax":"2.62","shipping_tax":"7.00","total_discount":"9.35","shipping_methods":"Flat
-        Rate","payment_details":{"method_id":"cod","method_title":"Cash on Delivery","paid":false},"billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Billing Out","address_2":"","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Billing Out","address_2":"","city":"Singapore","state":"","postcode":"1234","country":"SG"},"note":"","customer_ip":"103.224.165.64","customer_user_agent":"Mozilla\/5.0
-        (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit\/537.36 (KHTML, like Gecko)
-        Chrome\/40.0.2214.115 Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1508","line_items":[{"id":594,"subtotal":"46.73","subtotal_tax":"3.27","total":"37.38","total_tax":"2.62","price":"3.74","quantity":10,"tax_class":null,"name":"Awesome
-        Subscription","product_id":285,"sku":"awesubs","meta":[]}],"shipping_lines":[{"id":595,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"100.00"}],"tax_lines":[{"id":596,"rate_id":"1","code":"GST-1","title":"GST","total":"9.62","compound":false}],"fee_lines":[],"coupon_lines":[{"id":597,"code":"philtest","amount":"9.35"}],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"1592","last_order_date":"2015-04-20T23:53:00Z","orders_count":43,"total_spent":"5844.90","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"}}},{"id":1504,"order_number":1504,"created_at":"2015-04-08T13:35:24Z","updated_at":"2015-04-08T13:35:25Z","completed_at":"2015-04-08T13:35:25Z","status":"processing","currency":"PHP","total":"147.00","subtotal":"46.73","total_line_items_quantity":10,"total_tax":"9.62","total_shipping":"100.00","cart_tax":"2.62","shipping_tax":"7.00","total_discount":"9.35","shipping_methods":"Flat
-        Rate","payment_details":{"method_id":"cod","method_title":"Cash on Delivery","paid":false},"billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Billing Out","address_2":"","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Billing Out","address_2":"","city":"Singapore","state":"","postcode":"1234","country":"SG"},"note":"","customer_ip":"103.224.117.170","customer_user_agent":"Mozilla\/5.0
-        (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit\/537.36 (KHTML, like Gecko)
-        Chrome\/40.0.2214.115 Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1504","line_items":[{"id":590,"subtotal":"46.73","subtotal_tax":"3.27","total":"37.38","total_tax":"2.62","price":"3.74","quantity":10,"tax_class":null,"name":"Awesome
-        Subscription","product_id":285,"sku":"awesubs","meta":[]}],"shipping_lines":[{"id":591,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"100.00"}],"tax_lines":[{"id":592,"rate_id":"1","code":"GST-1","title":"GST","total":"9.62","compound":false}],"fee_lines":[],"coupon_lines":[{"id":593,"code":"philtest","amount":"9.35"}],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"1592","last_order_date":"2015-04-20T23:53:00Z","orders_count":43,"total_spent":"5844.90","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"}}},{"id":1502,"order_number":1502,"created_at":"2015-04-08T09:52:54Z","updated_at":"2015-04-08T09:52:54Z","completed_at":"2015-04-08T09:52:54Z","status":"processing","currency":"PHP","total":"119.00","subtotal":"11.22","total_line_items_quantity":1,"total_tax":"7.79","total_shipping":"100.00","cart_tax":"0.79","shipping_tax":"7.00","total_discount":"0.00","shipping_methods":"Flat
-        Rate","payment_details":{"method_id":"cod","method_title":"Cash on Delivery","paid":false},"billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Billing Out","address_2":"","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Billing Out","address_2":"","city":"Singapore","state":"","postcode":"1234","country":"SG"},"note":"","customer_ip":"103.224.165.64","customer_user_agent":"Mozilla\/5.0
-        (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit\/537.36 (KHTML, like Gecko)
-        Chrome\/40.0.2214.115 Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1502","line_items":[{"id":587,"subtotal":"11.22","subtotal_tax":"0.79","total":"11.22","total_tax":"0.79","price":"11.22","quantity":1,"tax_class":null,"name":"THISISWOOTESTPHIL","product_id":1501,"sku":"THISISWOOTESTPHIL","meta":[]}],"shipping_lines":[{"id":588,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"100.00"}],"tax_lines":[{"id":589,"rate_id":"1","code":"GST-1","title":"GST","total":"7.79","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"1592","last_order_date":"2015-04-20T23:53:00Z","orders_count":43,"total_spent":"5844.90","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"}}},{"id":1499,"order_number":1499,"created_at":"2015-04-06T09:32:43Z","updated_at":"2015-04-06T09:32:43Z","completed_at":"2015-04-06T09:32:43Z","status":"processing","currency":"PHP","total":"147.00","subtotal":"46.73","total_line_items_quantity":10,"total_tax":"9.62","total_shipping":"100.00","cart_tax":"2.62","shipping_tax":"7.00","total_discount":"9.35","shipping_methods":"Flat
-        Rate","payment_details":{"method_id":"cod","method_title":"Cash on Delivery","paid":false},"billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Billing Out","address_2":"","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Billing Out","address_2":"","city":"Singapore","state":"","postcode":"1234","country":"SG"},"note":"","customer_ip":"103.224.165.64","customer_user_agent":"Mozilla\/5.0
-        (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit\/537.36 (KHTML, like Gecko)
-        Chrome\/40.0.2214.115 Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1499","line_items":[{"id":583,"subtotal":"46.73","subtotal_tax":"3.27","total":"37.38","total_tax":"2.62","price":"3.74","quantity":10,"tax_class":null,"name":"Awesome
-        Subscription","product_id":285,"sku":"awesubs","meta":[]}],"shipping_lines":[{"id":584,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"100.00"}],"tax_lines":[{"id":585,"rate_id":"1","code":"GST-1","title":"GST","total":"9.62","compound":false}],"fee_lines":[],"coupon_lines":[{"id":586,"code":"philtest","amount":"9.35"}],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"1592","last_order_date":"2015-04-20T23:53:00Z","orders_count":43,"total_spent":"5844.90","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"}}},{"id":1498,"order_number":1498,"created_at":"2015-04-06T09:28:59Z","updated_at":"2015-04-06T09:28:59Z","completed_at":"2015-04-06T09:28:59Z","status":"processing","currency":"PHP","total":"149.80","subtotal":"50.00","total_line_items_quantity":10,"total_tax":"9.80","total_shipping":"100.00","cart_tax":"2.80","shipping_tax":"7.00","total_discount":"10.00","shipping_methods":"Flat
-        Rate","payment_details":{"method_id":"cod","method_title":"Cash on Delivery","paid":false},"billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Billing Out","address_2":"","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Billing Out","address_2":"","city":"Singapore","state":"","postcode":"1234","country":"SG"},"note":"","customer_ip":"103.224.165.64","customer_user_agent":"Mozilla\/5.0
-        (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit\/537.36 (KHTML, like Gecko)
-        Chrome\/40.0.2214.115 Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1498","line_items":[{"id":579,"subtotal":"50.00","subtotal_tax":"3.50","total":"40.00","total_tax":"2.80","price":"4.00","quantity":10,"tax_class":null,"name":"Awesome
-        Subscription","product_id":285,"sku":"awesubs","meta":[]}],"shipping_lines":[{"id":580,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"100.00"}],"tax_lines":[{"id":581,"rate_id":"1","code":"GST-1","title":"GST","total":"9.80","compound":false}],"fee_lines":[],"coupon_lines":[{"id":582,"code":"philtest","amount":"10.00"}],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"1592","last_order_date":"2015-04-20T23:53:00Z","orders_count":43,"total_spent":"5844.90","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"}}},{"id":1497,"order_number":1497,"created_at":"2015-04-06T09:27:33Z","updated_at":"2015-04-06T09:27:33Z","completed_at":"2015-04-06T09:27:33Z","status":"processing","currency":"PHP","total":"117.70","subtotal":"10.00","total_line_items_quantity":2,"total_tax":"7.70","total_shipping":"100.00","cart_tax":"0.70","shipping_tax":"7.00","total_discount":"0.00","shipping_methods":"Flat
-        Rate","payment_details":{"method_id":"cod","method_title":"Cash on Delivery","paid":false},"billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Billing Out","address_2":"","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Billing Out","address_2":"","city":"Singapore","state":"","postcode":"1234","country":"SG"},"note":"","customer_ip":"103.224.165.64","customer_user_agent":"Mozilla\/5.0
-        (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit\/537.36 (KHTML, like Gecko)
-        Chrome\/40.0.2214.115 Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1497","line_items":[{"id":576,"subtotal":"10.00","subtotal_tax":"0.70","total":"10.00","total_tax":"0.70","price":"5.00","quantity":2,"tax_class":null,"name":"Awesome
-        Subscription","product_id":285,"sku":"awesubs","meta":[]}],"shipping_lines":[{"id":577,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"100.00"}],"tax_lines":[{"id":578,"rate_id":"1","code":"GST-1","title":"GST","total":"7.70","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"1592","last_order_date":"2015-04-20T23:53:00Z","orders_count":43,"total_spent":"5844.90","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG","email":"john@tradegecko.com","phone":"1234556611"},"shipping_address":{"first_name":"John","last_name":"Gecko","company":"Outkast
-        Inc.","address_1":"123 Shipping","address_2":"456","city":"Singapore","state":"","postcode":"1234","country":"SG"}}}]}'
+      string: '{"orders":[{"id":6377,"order_number":6377,"created_at":"2016-06-15T02:50:44Z","updated_at":"2016-06-15T02:50:44Z","completed_at":"2016-06-15T02:50:44Z","status":"on-hold","currency":"SGD","total":"738.30","subtotal":"600.00","total_line_items_quantity":1,"total_tax":"48.30","total_shipping":"100.00","cart_tax":"41.30","shipping_tax":"7.00","total_discount":"10.00","shipping_methods":"Flat
+        Rate","payment_details":{"method_id":"cheque","method_title":"Check Payments","paid":false},"billing_address":{"first_name":"Philip","last_name":"Deazeta","company":"TradeGecko","address_1":"66
+        Chestnut Avenue #07-14","address_2":"","city":"Singapore","state":"","postcode":"679520","country":"SG","email":"philip@tradegecko.com","phone":"96960589"},"shipping_address":{"first_name":"Philip","last_name":"Deazeta","company":"TradeGecko","address_1":"66
+        Chestnut Avenue #07-14","address_2":"","city":"Singapore","state":"","postcode":"679520","country":"SG"},"note":"","customer_ip":"202.55.70.117","customer_user_agent":"Mozilla\/5.0
+        (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit\/537.36 (KHTML, like Gecko)
+        Chrome\/50.0.2661.102 Safari\/537.36","customer_id":12,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6377","line_items":[{"id":1483,"subtotal":"600.00","subtotal_tax":"42.00","total":"590.00","total_tax":"41.30","price":"590.00","quantity":1,"tax_class":"zero-rate","name":"Martial
+        Cat Plushie","product_id":1511,"sku":"PLUSH001","meta":[]}],"shipping_lines":[{"id":1484,"method_id":"legacy_flat_rate","method_title":"Flat
+        Rate","total":"100.00"}],"tax_lines":[{"id":1485,"rate_id":"3","code":"TAX-1","title":"Tax","total":"41.30","compound":false},{"id":1486,"rate_id":"1","code":"GST-1","title":"GST","total":"7.00","compound":false}],"fee_lines":[],"coupon_lines":[{"id":1487,"code":"productdiscount","amount":"10.00"}],"customer":{"id":12,"created_at":"2016-03-22T02:23:49Z","email":"philip@tradegecko.com","first_name":"Philip","last_name":"Deazeta","username":"philip","role":"administrator","last_order_id":"6377","last_order_date":"2016-06-15T02:50:44Z","orders_count":32,"total_spent":"96121.31","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"Philip","last_name":"Deazeta","company":"TradeGecko","address_1":"66
+        Chestnut Avenue #07-14","address_2":"","city":"Singapore","state":"","postcode":"679520","country":"SG","email":"philip@tradegecko.com","phone":"96960589"},"shipping_address":{"first_name":"Philip","last_name":"Deazeta","company":"TradeGecko","address_1":"66
+        Chestnut Avenue #07-14","address_2":"","city":"Singapore","state":"","postcode":"679520","country":"SG"}}},{"id":6292,"order_number":6292,"created_at":"2016-06-09T18:27:00Z","updated_at":"2016-06-09T18:29:52Z","completed_at":"2016-06-09T18:29:46Z","status":"completed","currency":"SGD","total":"14.98","subtotal":"14.00","total_line_items_quantity":1,"total_tax":"0.98","total_shipping":"0.00","cart_tax":"0.98","shipping_tax":"0.00","total_discount":"0.00","shipping_methods":"","payment_details":{"method_id":"","method_title":"","paid":false},"billing_address":{"first_name":"Philip
+        Mark","last_name":"Deazeta","company":"TheGee","address_1":"8 Prome Road #03-02","address_2":"","city":"Singapore","state":"","postcode":"550241","country":"SG","email":"pmdeazeta@gmail.com","phone":"96960589"},"shipping_address":{"first_name":"Philip
+        Mark","last_name":"Deazeta","company":"TheGee","address_1":"8 Prome Road #03-02","address_2":"","city":"Singapore","state":"","postcode":"550241","country":"SG"},"note":"","customer_ip":"","customer_user_agent":"","customer_id":11,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6292","line_items":[{"id":1478,"subtotal":"14.00","subtotal_tax":"0.98","total":"14.00","total_tax":"0.98","price":"14.00","quantity":1,"tax_class":null,"name":"Pong","product_id":6290,"sku":"Pongtest12","meta":[]}],"shipping_lines":[],"tax_lines":[{"id":1480,"rate_id":"1","code":"GST-1","title":"GST","total":"0.98","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":11,"created_at":"2015-08-19T09:45:42Z","email":"pmdeazeta@gmail.com","first_name":"Philip
+        Mark","last_name":"Deazeta","username":"pmdeazeta","role":"wholesale_customer","last_order_id":"6292","last_order_date":"2016-06-09T18:27:00Z","orders_count":2,"total_spent":"14.98","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"Philip
+        Mark","last_name":"Deazeta","company":"TheGee","address_1":"8 Prome Road #03-02","address_2":"","city":"Singapore","state":"","postcode":"550241","country":"SG","email":"pmdeazeta@gmail.com","phone":"96960589"},"shipping_address":{"first_name":"Philip
+        Mark","last_name":"Deazeta","company":"TheGee","address_1":"8 Prome Road #03-02","address_2":"","city":"Singapore","state":"","postcode":"550241","country":"SG"}}},{"id":6281,"order_number":6281,"created_at":"2016-06-07T04:58:00Z","updated_at":"2016-06-14T06:39:31Z","completed_at":"2016-06-07T04:59:37Z","status":"completed","currency":"SGD","total":"235.40","subtotal":"220.00","total_line_items_quantity":11,"total_tax":"15.40","total_shipping":"0.00","cart_tax":"15.40","shipping_tax":"0.00","total_discount":"0.00","shipping_methods":"Free
+        Shipping","payment_details":{"method_id":"cheque","method_title":"Cheque Payment","paid":false},"billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH","email":"mariatest@tg.com","phone":"123421312"},"shipping_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH"},"note":"","customer_ip":"202.55.70.117","customer_user_agent":"Mozilla\/5.0
+        (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit\/537.36 (KHTML, like Gecko)
+        Chrome\/50.0.2661.102 Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6281","line_items":[{"id":1473,"subtotal":"220.00","subtotal_tax":"15.40","total":"220.00","total_tax":"15.40","price":"20.00","quantity":11,"tax_class":null,"name":"pong112","product_id":5889,"sku":"112","meta":[{"key":"size","label":"Size","value":"11331"}]}],"shipping_lines":[{"id":1474,"method_id":"free_shipping","method_title":"Free
+        Shipping","total":"0.00"}],"tax_lines":[{"id":1482,"rate_id":"1","code":"GST-1","title":"GST","total":"15.40","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"6281","last_order_date":"2016-06-07T04:58:00Z","orders_count":109,"total_spent":"169207.47","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH","email":"mariatest@tg.com","phone":"123421312"},"shipping_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH"}}},{"id":6280,"order_number":6280,"created_at":"2016-06-07T04:52:00Z","updated_at":"2016-06-07T04:57:31Z","completed_at":"2016-06-07T04:57:24Z","status":"completed","currency":"SGD","total":"21.40","subtotal":"20.00","total_line_items_quantity":1,"total_tax":"1.40","total_shipping":"0.00","cart_tax":"1.40","shipping_tax":"0.00","total_discount":"0.00","shipping_methods":"Free
+        Shipping","payment_details":{"method_id":"cheque","method_title":"Cheque Payment","paid":false},"billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH","email":"mariatest@tg.com","phone":"123421312"},"shipping_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH"},"note":"","customer_ip":"202.55.70.117","customer_user_agent":"Mozilla\/5.0
+        (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit\/537.36 (KHTML, like Gecko)
+        Chrome\/50.0.2661.102 Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6280","line_items":[{"id":1469,"subtotal":"20.00","subtotal_tax":"1.40","total":"20.00","total_tax":"1.40","price":"20.00","quantity":1,"tax_class":null,"name":"pong112","product_id":5890,"sku":"1231","meta":[{"key":"size","label":"Size","value":"2"}]}],"shipping_lines":[{"id":1470,"method_id":"free_shipping","method_title":"Free
+        Shipping","total":"0.00"}],"tax_lines":[{"id":1472,"rate_id":"1","code":"GST-1","title":"GST","total":"1.40","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"6281","last_order_date":"2016-06-07T04:58:00Z","orders_count":109,"total_spent":"169207.47","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH","email":"mariatest@tg.com","phone":"123421312"},"shipping_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH"}}},{"id":6279,"order_number":6279,"created_at":"2016-06-07T04:44:24Z","updated_at":"2016-06-07T04:44:24Z","completed_at":"2016-06-07T04:44:24Z","status":"on-hold","currency":"SGD","total":"588.50","subtotal":"550.00","total_line_items_quantity":1,"total_tax":"38.50","total_shipping":"0.00","cart_tax":"38.50","shipping_tax":"0.00","total_discount":"0.00","shipping_methods":"Free
+        Shipping","payment_details":{"method_id":"cheque","method_title":"Cheque Payment","paid":false},"billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH","email":"mariatest@tg.com","phone":"123421312"},"shipping_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH"},"note":"","customer_ip":"202.55.70.117","customer_user_agent":"Mozilla\/5.0
+        (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit\/537.36 (KHTML, like Gecko)
+        Chrome\/50.0.2661.102 Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6279","line_items":[{"id":1466,"subtotal":"550.00","subtotal_tax":"38.50","total":"550.00","total_tax":"38.50","price":"550.00","quantity":1,"tax_class":null,"name":"1
+        handed wooden Axe","product_id":3817,"sku":"test update","meta":[]}],"shipping_lines":[{"id":1467,"method_id":"free_shipping","method_title":"Free
+        Shipping","total":"0.00"}],"tax_lines":[{"id":1468,"rate_id":"1","code":"GST-1","title":"GST","total":"38.50","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"6281","last_order_date":"2016-06-07T04:58:00Z","orders_count":109,"total_spent":"169207.47","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH","email":"mariatest@tg.com","phone":"123421312"},"shipping_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH"}}},{"id":6149,"order_number":6149,"created_at":"2016-05-10T06:55:00Z","updated_at":"2016-06-14T03:53:58Z","completed_at":"2016-06-14T03:53:58Z","status":"on-hold","currency":"SGD","total":"131.61","subtotal":"23.00","total_line_items_quantity":1,"total_tax":"8.61","total_shipping":"100.00","cart_tax":"1.61","shipping_tax":"7.00","total_discount":"0.00","shipping_methods":"Flat
+        Rate","payment_details":{"method_id":"cheque","method_title":"Cheque Payment","paid":false},"billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH","email":"mariatest@tg.com","phone":"123421312"},"shipping_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH"},"note":"this
+        is a note created when checking out","customer_ip":"202.55.70.117","customer_user_agent":"Mozilla\/5.0
+        (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit\/537.36 (KHTML, like Gecko)
+        Chrome\/50.0.2661.94 Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6149","line_items":[{"id":1461,"subtotal":"23.00","subtotal_tax":"1.61","total":"23.00","total_tax":"1.61","price":"23.00","quantity":1,"tax_class":null,"name":"[Sample]
+        Tomorrow is today, Red printed scarf","product_id":3097,"sku":"232323","meta":[]}],"shipping_lines":[{"id":1462,"method_id":"flat_rate","method_title":"Flat
+        Rate","total":"100.00"}],"tax_lines":[{"id":1463,"rate_id":"1","code":"GST-1","title":"GST","total":"8.61","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"6281","last_order_date":"2016-06-07T04:58:00Z","orders_count":109,"total_spent":"169207.47","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH","email":"mariatest@tg.com","phone":"123421312"},"shipping_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH"}}},{"id":6148,"order_number":6148,"created_at":"2016-05-10T00:39:22Z","updated_at":"2016-05-10T00:39:22Z","completed_at":"2016-05-10T00:39:22Z","status":"processing","currency":"SGD","total":"107.00","subtotal":"0.00","total_line_items_quantity":1,"total_tax":"7.00","total_shipping":"100.00","cart_tax":"0.00","shipping_tax":"7.00","total_discount":"0.00","shipping_methods":"Flat
+        Rate","payment_details":{"method_id":"cod","method_title":"Cash on Delivery","paid":false},"billing_address":{"first_name":"k","last_name":"b","company":"","address_1":"123
+        very long drive","address_2":"","city":"singapore","state":"","postcode":"90210","country":"SG","email":"karen@tradegecko.com","phone":"0123498765"},"shipping_address":{"first_name":"k","last_name":"b","company":"","address_1":"123
+        very long drive","address_2":"","city":"singapore","state":"","postcode":"90210","country":"SG"},"note":"This
+        is a test customer order note","customer_ip":"202.55.70.117","customer_user_agent":"Mozilla\/5.0
+        (Windows NT 10.0; WOW64; Trident\/7.0; rv:11.0) like Gecko","customer_id":0,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6148","line_items":[{"id":1458,"subtotal":"0.00","subtotal_tax":"0.00","total":"0.00","total_tax":"0.00","price":"0.00","quantity":1,"tax_class":null,"name":"WC_Karen_test
+        02","product_id":null,"sku":null,"meta":[]}],"shipping_lines":[{"id":1459,"method_id":"flat_rate","method_title":"Flat
+        Rate","total":"100.00"}],"tax_lines":[{"id":1460,"rate_id":"1","code":"GST-1","title":"GST","total":"7.00","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":0,"email":"karen@tradegecko.com","first_name":"k","last_name":"b","billing_address":{"first_name":"k","last_name":"b","company":"","address_1":"123
+        very long drive","address_2":"","city":"singapore","state":"","postcode":"90210","country":"SG","email":"karen@tradegecko.com","phone":"0123498765"},"shipping_address":{"first_name":"k","last_name":"b","company":"","address_1":"123
+        very long drive","address_2":"","city":"singapore","state":"","postcode":"90210","country":"SG"}}},{"id":6142,"order_number":6142,"created_at":"2016-05-06T01:19:59Z","updated_at":"2016-05-06T01:20:48Z","completed_at":"2016-05-06T01:20:48Z","status":"completed","currency":"SGD","total":"1233.00","subtotal":"1233.00","total_line_items_quantity":1,"total_tax":"0.00","total_shipping":"0.00","cart_tax":"0.00","shipping_tax":"0.00","total_discount":"0.00","shipping_methods":"","payment_details":{"method_id":"cod","method_title":"Cash
+        on Delivery","paid":false},"billing_address":{"first_name":"Karen","last_name":"Becillote","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"SG","email":"karen@tradegecko.com","phone":""},"shipping_address":{"first_name":"Karen","last_name":"Becillote","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"SG"},"note":"","customer_ip":"","customer_user_agent":"","customer_id":0,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6142","line_items":[{"id":1457,"subtotal":"1233.00","subtotal_tax":"0.00","total":"1233.00","total_tax":"0.00","price":"1233.00","quantity":1,"tax_class":null,"name":"KeepSellingTest","product_id":3854,"sku":"KeepSellingTestS","meta":[{"key":"size","label":"Size","value":"Small"}]}],"shipping_lines":[],"tax_lines":[],"fee_lines":[],"coupon_lines":[],"customer":{"id":0,"email":"karen@tradegecko.com","first_name":"Karen","last_name":"Becillote","billing_address":{"first_name":"Karen","last_name":"Becillote","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"SG","email":"karen@tradegecko.com","phone":""},"shipping_address":{"first_name":"Karen","last_name":"Becillote","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"SG"}}},{"id":6093,"order_number":6093,"created_at":"2016-05-02T17:30:00Z","updated_at":"2016-05-04T06:35:18Z","completed_at":"2016-05-04T06:35:18Z","status":"processing","currency":"SGD","total":"108.07","subtotal":"1.00","total_line_items_quantity":1,"total_tax":"7.07","total_shipping":"100.00","cart_tax":"0.07","shipping_tax":"7.00","total_discount":"0.00","shipping_methods":"Flat
+        Rate","payment_details":{"method_id":"cod","method_title":"Cash on Delivery","paid":false},"billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH","email":"mariatest@tg.com","phone":"123421312"},"shipping_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH"},"note":"this
+        is custtomer shipping note","customer_ip":"202.55.70.117","customer_user_agent":"Mozilla\/5.0
+        (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/49.0.2623.112
+        Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6093","line_items":[{"id":1454,"subtotal":"1.00","subtotal_tax":"0.07","total":"1.00","total_tax":"0.07","price":"1.00","quantity":1,"tax_class":null,"name":"Strad
+        Violin","product_id":1522,"sku":"","meta":[{"key":"color","label":"Color","value":"brown"}]}],"shipping_lines":[{"id":1455,"method_id":"flat_rate","method_title":"Flat
+        Rate","total":"100.00"}],"tax_lines":[{"id":1456,"rate_id":"1","code":"GST-1","title":"GST","total":"7.07","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"6281","last_order_date":"2016-06-07T04:58:00Z","orders_count":109,"total_spent":"169207.47","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH","email":"mariatest@tg.com","phone":"123421312"},"shipping_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH"}}},{"id":5895,"order_number":5895,"created_at":"2016-04-12T15:57:08Z","updated_at":"2016-04-13T07:18:22Z","completed_at":"2016-04-13T07:18:22Z","status":"completed","currency":"SGD","total":"449.40","subtotal":"420.00","total_line_items_quantity":2,"total_tax":"29.40","total_shipping":"0.00","cart_tax":"29.40","shipping_tax":"0.00","total_discount":"0.00","shipping_methods":"","payment_details":{"method_id":"cod","method_title":"Cash
+        on Delivery","paid":false},"billing_address":{"first_name":"alvin","last_name":"laynes","company":"tg","address_1":"1234","address_2":"1234","city":"Alabang","state":"00","postcode":"","country":"PH","email":"alvin@tradegecko.com","phone":""},"shipping_address":{"first_name":"alvin","last_name":"laynes","company":"tg","address_1":"1234","address_2":"1234","city":"","state":"00","postcode":"","country":"PH"},"note":"","customer_ip":"","customer_user_agent":"","customer_id":0,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/5895","line_items":[{"id":1450,"subtotal":"20.00","subtotal_tax":"1.40","total":"20.00","total_tax":"1.40","price":"20.00","quantity":1,"tax_class":null,"name":"pong112","product_id":5889,"sku":"112","meta":[{"key":"size","label":"Size","value":"11331"}]},{"id":1451,"subtotal":"400.00","subtotal_tax":"28.00","total":"400.00","total_tax":"28.00","price":"400.00","quantity":1,"tax_class":null,"name":"pong112","product_id":5893,"sku":"IamNosferatu","meta":[{"key":"size","label":"Size","value":"1234"}]}],"shipping_lines":[],"tax_lines":[{"id":1453,"rate_id":"1","code":"GST-1","title":"GST","total":"29.40","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":0,"email":"alvin@tradegecko.com","first_name":"alvin","last_name":"laynes","billing_address":{"first_name":"alvin","last_name":"laynes","company":"tg","address_1":"1234","address_2":"1234","city":"Alabang","state":"00","postcode":"","country":"PH","email":"alvin@tradegecko.com","phone":""},"shipping_address":{"first_name":"alvin","last_name":"laynes","company":"tg","address_1":"1234","address_2":"1234","city":"","state":"00","postcode":"","country":"PH"}}}]}'
     http_version:
-  recorded_at: Wed, 22 Apr 2015 09:16:03 GMT
+  recorded_at: Wed, 15 Jun 2016 04:20:11 GMT
 - request:
     method: put
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders/1639
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders/6524
     body:
       encoding: UTF-8
-      string: '{"order":{"id":1639,"status":"processing","order_number":1638,"currency":"USD","payment_details":{"method":null,"method_id":"bacs","method_title":"Direct
-        Bank Transfer","paid":true},"billing_address":{"id":null,"address_1":"969
+      string: '{"order":{"id":6523,"billing_address":{"id":null,"address_1":"969 Market","address_2":"","city":"San
+        Francisco","company":"","country":"US","email":"john@example.com","first_name":"John","last_name":"Doe","phone":"(555)
+        555-5555","postcode":"94103","state":"CA"},"coupon_lines":[],"currency":"SGD","customer":{"id":2,"email":"cameron+woo@tradegecko.com","first_name":"Cameron","last_name":"Priest","username":"wpcommercetest","password":null,"last_order_id":6523,"avatar_url":"https://secure.gravatar.com/avatar/?s=96","billing_address":{"id":null,"address_1":"969
         Market","address_2":"","city":"San Francisco","company":"","country":"US","email":"john@example.com","first_name":"John","last_name":"Doe","phone":"(555)
         555-5555","postcode":"94103","state":"CA"},"shipping_address":{"id":null,"address_1":"969
-        Market","address_2":"","city":"San Francisco","company":"","country":"US","email":null,"first_name":"John","last_name":"Doe","phone":null,"postcode":"94103","state":"CA"},"note":"This
-        new note","customer_id":3,"line_items":[{"id":625,"product_id":546,"quantity":2,"subtotal":"0.0","subtotal_tax":"0.0","total":"0.0","total_tax":"0.0","sku":"7700","name":"Receiver
-        Rack","price":"0.0","tax_class":null,"meta":[],"variations":null},{"id":626,"product_id":613,"quantity":1,"subtotal":"0.0","subtotal_tax":"0.0","total":"0.0","total_tax":"0.0","sku":"47001","name":"Seating","price":"0.0","tax_class":null,"meta":[{"key":"pa_color","label":"Pa_color","value":"Black"}],"variations":null}],"shipping_lines":[{"id":627,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"10.0"}],"fee_lines":[],"coupon_lines":[],"customer":{"id":2,"email":"cameron+woo@tradegecko.com","first_name":"Cameron","last_name":"Priest","username":"wpcommercetest","password":null,"last_order_id":1638,"avatar_url":"https://secure.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"id":null,"address_1":"969
-        Market","address_2":"","city":"San Francisco","company":"","country":"US","email":"john@example.com","first_name":"John","last_name":"Doe","phone":"(555)
-        555-5555","postcode":"94103","state":"CA"},"shipping_address":{"id":null,"address_1":"969
-        Market","address_2":"","city":"San Francisco","company":"","country":"US","email":null,"first_name":"John","last_name":"Doe","phone":null,"postcode":"94103","state":"CA"},"role":"administrator","created_at":"2013-07-02T01:33:13.000+00:00","updated_at":null,"total_spent":2945,"orders_count":91,"last_order_date":"2015-04-22T09:16:13Z"},"created_at":"2015-04-22T09:16:13.000+00:00","updated_at":"2015-04-22T09:16:13.000+00:00","completed_at":"2015-04-22T09:16:13.000+00:00","total":"10.7","subtotal":"0.0","total_line_items_quantity":3,"total_tax":"0.7","total_shipping":"10.0","cart_tax":"0.0","shipping_tax":"0.7","total_discount":"0.0","shipping_methods":"Flat
-        Rate","customer_ip":"103.224.165.64","customer_user_agent":"","view_order_url":"https://wpcommercetest.wpengine.com/my-account/view-order/1638","tax_lines":[{"id":628,"code":"GST-1","compound":false,"rate_id":1,"title":"GST","total":"0.7"}]}}'
+        Market","address_2":"","city":"San Francisco","company":"","country":"US","email":null,"first_name":"John","last_name":"Doe","phone":null,"postcode":"94103","state":"CA"},"role":"administrator","created_at":"2013-07-02T01:33:13.000+00:00","updated_at":null,"total_spent":3050,"orders_count":92,"last_order_date":"2016-06-15T04:20:16.000+00:00"},"customer_id":3,"fee_lines":[],"line_items":[{"id":1500,"product_id":6512,"quantity":2,"subtotal":"43.98","subtotal_tax":"3.08","total":"43.98","total_tax":"3.08","sku":"","name":"Premium
+        Quality (TEST)","price":"21.99","tax_class":null,"meta":[],"variations":[]}],"note":"This
+        new note","order_number":6523,"payment_details":{"method":null,"method_id":"bacs","method_title":"Direct
+        Bank Transfer","paid":true},"shipping_address":{"id":null,"address_1":"969
+        Market","address_2":"","city":"San Francisco","company":"","country":"US","email":null,"first_name":"John","last_name":"Doe","phone":null,"postcode":"94103","state":"CA"},"shipping_lines":[{"id":1501,"method_id":"flat_rate","method_title":"Flat
+        Rate","total":"10.0"}],"status":"processing","created_at":"2016-06-15T04:20:16.000+00:00","updated_at":"2016-06-15T04:20:16.000+00:00","completed_at":"2016-06-15T04:20:16.000+00:00","total":"57.76","subtotal":"43.98","total_line_items_quantity":2,"total_tax":"3.78","total_shipping":"10.0","cart_tax":"3.08","shipping_tax":"0.7","total_discount":"0.0","shipping_methods":"Flat
+        Rate","customer_ip":"202.55.70.117","customer_user_agent":"TradeGecko Woocommerce/0.1.0","view_order_url":"https://wpcommercetest.wpengine.com/my-account/view-order/6523","tax_lines":[{"id":1502,"code":"GST-1","compound":false,"rate_id":1,"title":"GST","total":"3.78"}]}}'
     headers:
       Accept:
       - application/json
       Content-Type:
       - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
   response:
     status:
       code: 200
@@ -172,11 +158,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 22 Apr 2015 09:16:17 GMT
+      - Wed, 15 Jun 2016 04:20:18 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '2530'
+      - '2298'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -185,22 +171,23 @@ http_interactions:
       - default
     body:
       encoding: UTF-8
-      string: '{"order":{"id":1638,"order_number":1638,"created_at":"2015-04-22T09:16:13Z","updated_at":"2015-04-22T09:16:17Z","completed_at":"2015-04-22T09:16:17Z","status":"processing","currency":"USD","total":"10.70","subtotal":"0.00","total_line_items_quantity":3,"total_tax":"0.70","total_shipping":"10.00","cart_tax":"0.00","shipping_tax":"0.70","total_discount":"0.00","shipping_methods":"Flat
+      string: '{"order":{"id":6523,"order_number":6523,"created_at":"2016-06-15T04:20:16Z","updated_at":"2016-06-15T04:20:18Z","completed_at":"2016-06-15T04:20:18Z","status":"processing","currency":"SGD","total":"57.76","subtotal":"43.98","total_line_items_quantity":2,"total_tax":"3.78","total_shipping":"10.00","cart_tax":"3.08","shipping_tax":"0.70","total_discount":"0.00","shipping_methods":"Flat
         Rate","payment_details":{"method_id":"bacs","method_title":"Direct Bank Transfer","paid":true},"billing_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
         Market","address_2":"","city":"San Francisco","state":"CA","postcode":"94103","country":"US","email":"john@example.com","phone":"(555)
         555-5555"},"shipping_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
         Market","address_2":"","city":"San Francisco","state":"CA","postcode":"94103","country":"US"},"note":"This
-        new note","customer_ip":"103.224.165.64","customer_user_agent":"","customer_id":3,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1638","line_items":[{"id":625,"subtotal":"0.00","subtotal_tax":"0.00","total":"0.00","total_tax":"0.00","price":"0.00","quantity":2,"tax_class":null,"name":"Receiver
-        Rack","product_id":546,"sku":"7700","meta":[]},{"id":626,"subtotal":"0.00","subtotal_tax":"0.00","total":"0.00","total_tax":"0.00","price":"0.00","quantity":1,"tax_class":null,"name":"Seating","product_id":613,"sku":"47001","meta":[{"key":"pa_color","label":"Pa_color","value":"Black"}]}],"shipping_lines":[{"id":627,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"10.00"}],"tax_lines":[{"id":629,"rate_id":"1","code":"GST-1","title":"GST","total":"0.70","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":3,"created_at":"2013-07-10T11:05:08Z","email":"admin@vanbodevelops.com","first_name":"","last_name":"","username":"ivan","role":"administrator","last_order_id":"1638","last_order_date":"2015-04-22T09:16:13Z","orders_count":1,"total_spent":"10.70","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
+        new note","customer_ip":"202.55.70.117","customer_user_agent":"TradeGecko
+        Woocommerce\/0.1.0","customer_id":3,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6523","line_items":[{"id":1500,"subtotal":"43.98","subtotal_tax":"3.08","total":"43.98","total_tax":"3.08","price":"21.99","quantity":2,"tax_class":null,"name":"Premium
+        Quality (TEST)","product_id":6512,"sku":"","meta":[]}],"shipping_lines":[{"id":1501,"method_id":"flat_rate","method_title":"Flat
+        Rate","total":"10.00"}],"tax_lines":[{"id":1503,"rate_id":"1","code":"GST-1","title":"GST","total":"3.78","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":3,"created_at":"2013-07-10T11:05:08Z","email":"admin@vanbodevelops.com","first_name":"","last_name":"","username":"ivan","role":"administrator","last_order_id":"6523","last_order_date":"2016-06-15T04:20:16Z","orders_count":1,"total_spent":"57.76","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
         Market","address_2":"","city":"San Francisco","state":"CA","postcode":"94103","country":"US","email":"john@example.com","phone":"(555)
         555-5555"},"shipping_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
         Market","address_2":"","city":"San Francisco","state":"CA","postcode":"94103","country":"US"}}}}'
     http_version:
-  recorded_at: Wed, 22 Apr 2015 09:16:17 GMT
+  recorded_at: Wed, 15 Jun 2016 04:20:19 GMT
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders/1639
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders/6524
     body:
       encoding: US-ASCII
       string: ''
@@ -209,6 +196,8 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
   response:
     status:
       code: 200
@@ -217,11 +206,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 22 Apr 2015 09:16:20 GMT
+      - Wed, 15 Jun 2016 04:20:20 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '2530'
+      - '2298'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -236,40 +225,45 @@ http_interactions:
       - MISS
       X-Pass-Why:
       - auth
+      X-Cache-Group:
+      - ''
       X-Type:
       - default
     body:
       encoding: UTF-8
-      string: '{"order":{"id":1639,"order_number":1638,"created_at":"2015-04-22T09:16:13Z","updated_at":"2015-04-22T09:16:17Z","completed_at":"2015-04-22T09:16:17Z","status":"processing","currency":"USD","total":"10.70","subtotal":"0.00","total_line_items_quantity":3,"total_tax":"0.70","total_shipping":"10.00","cart_tax":"0.00","shipping_tax":"0.70","total_discount":"0.00","shipping_methods":"Flat
+      string: '{"order":{"id":6524,"order_number":6523,"created_at":"2016-06-15T04:20:16Z","updated_at":"2016-06-15T04:20:18Z","completed_at":"2016-06-15T04:20:18Z","status":"processing","currency":"SGD","total":"57.76","subtotal":"43.98","total_line_items_quantity":2,"total_tax":"3.78","total_shipping":"10.00","cart_tax":"3.08","shipping_tax":"0.70","total_discount":"0.00","shipping_methods":"Flat
         Rate","payment_details":{"method_id":"bacs","method_title":"Direct Bank Transfer","paid":true},"billing_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
         Market","address_2":"","city":"San Francisco","state":"CA","postcode":"94103","country":"US","email":"john@example.com","phone":"(555)
         555-5555"},"shipping_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
         Market","address_2":"","city":"San Francisco","state":"CA","postcode":"94103","country":"US"},"note":"This
-        new note","customer_ip":"103.224.165.64","customer_user_agent":"","customer_id":3,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1638","line_items":[{"id":625,"subtotal":"0.00","subtotal_tax":"0.00","total":"0.00","total_tax":"0.00","price":"0.00","quantity":2,"tax_class":null,"name":"Receiver
-        Rack","product_id":546,"sku":"7700","meta":[]},{"id":626,"subtotal":"0.00","subtotal_tax":"0.00","total":"0.00","total_tax":"0.00","price":"0.00","quantity":1,"tax_class":null,"name":"Seating","product_id":613,"sku":"47001","meta":[{"key":"pa_color","label":"Pa_color","value":"Black"}]}],"shipping_lines":[{"id":627,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"10.00"}],"tax_lines":[{"id":629,"rate_id":"1","code":"GST-1","title":"GST","total":"0.70","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":3,"created_at":"2013-07-10T11:05:08Z","email":"admin@vanbodevelops.com","first_name":"","last_name":"","username":"ivan","role":"administrator","last_order_id":"1638","last_order_date":"2015-04-22T09:16:13Z","orders_count":1,"total_spent":"10.70","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
+        new note","customer_ip":"202.55.70.117","customer_user_agent":"TradeGecko
+        Woocommerce\/0.1.0","customer_id":3,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6523","line_items":[{"id":1500,"subtotal":"43.98","subtotal_tax":"3.08","total":"43.98","total_tax":"3.08","price":"21.99","quantity":2,"tax_class":null,"name":"Premium
+        Quality (TEST)","product_id":6512,"sku":"","meta":[]}],"shipping_lines":[{"id":1501,"method_id":"flat_rate","method_title":"Flat
+        Rate","total":"10.00"}],"tax_lines":[{"id":1503,"rate_id":"1","code":"GST-1","title":"GST","total":"3.78","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":3,"created_at":"2013-07-10T11:05:08Z","email":"admin@vanbodevelops.com","first_name":"","last_name":"","username":"ivan","role":"administrator","last_order_id":"6523","last_order_date":"2016-06-15T04:20:16Z","orders_count":1,"total_spent":"57.76","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
         Market","address_2":"","city":"San Francisco","state":"CA","postcode":"94103","country":"US","email":"john@example.com","phone":"(555)
         555-5555"},"shipping_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
         Market","address_2":"","city":"San Francisco","state":"CA","postcode":"94103","country":"US"}}}}'
     http_version:
-  recorded_at: Wed, 22 Apr 2015 09:16:20 GMT
+  recorded_at: Wed, 15 Jun 2016 04:20:20 GMT
 - request:
     method: post
     uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders
     body:
       encoding: UTF-8
-      string: '{"order":{"id":null,"status":null,"order_number":null,"currency":null,"payment_details":{"method":null,"method_id":"bacs","method_title":"Direct
-        Bank Transfer","paid":true},"billing_address":{"id":null,"address_1":"969
-        Market","address_2":"","city":"San Francisco","company":null,"country":"US","email":"john@example.com","first_name":"John","last_name":"Doe","phone":"(555)
-        555-5555","postcode":"94103","state":"CA"},"shipping_address":{"id":null,"address_1":"969
-        Market","address_2":"","city":"San Francisco","company":null,"country":"US","email":null,"first_name":"John","last_name":"Doe","phone":null,"postcode":"94103","state":"CA"},"note":"This
-        is note","customer_id":2,"line_items":[{"id":null,"product_id":546,"quantity":2,"subtotal":null,"subtotal_tax":null,"total":null,"total_tax":null,"sku":null,"name":null,"price":null,"tax_class":null,"meta":null,"variations":null},{"id":null,"product_id":613,"quantity":1,"subtotal":null,"subtotal_tax":null,"total":null,"total_tax":null,"sku":null,"name":null,"price":null,"tax_class":null,"meta":null,"variations":{"pa_color":"Black"}}],"shipping_lines":[{"id":null,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"10.0"}],"fee_lines":[],"coupon_lines":[],"customer":null,"created_at":null,"updated_at":null,"completed_at":null,"total":null,"subtotal":null,"total_line_items_quantity":null,"total_tax":null,"total_shipping":null,"cart_tax":null,"shipping_tax":null,"total_discount":null,"shipping_methods":null,"customer_ip":null,"customer_user_agent":null,"view_order_url":null,"tax_lines":[]}}'
+      string: '{"order":{"id":null,"billing_address":{"id":null,"address_1":"969 Market","address_2":"","city":"San
+        Francisco","company":null,"country":"US","email":"john@example.com","first_name":"John","last_name":"Doe","phone":"(555)
+        555-5555","postcode":"94103","state":"CA"},"coupon_lines":[],"currency":null,"customer":null,"customer_id":2,"fee_lines":[],"line_items":[{"id":null,"product_id":6512,"quantity":2,"subtotal":null,"subtotal_tax":null,"total":null,"total_tax":null,"sku":null,"name":null,"price":null,"tax_class":null,"meta":[],"variations":[]}],"note":"This
+        is note","order_number":null,"payment_details":{"method":null,"method_id":"bacs","method_title":"Direct
+        Bank Transfer","paid":true},"shipping_address":{"id":null,"address_1":"969
+        Market","address_2":"","city":"San Francisco","company":null,"country":"US","email":null,"first_name":"John","last_name":"Doe","phone":null,"postcode":"94103","state":"CA"},"shipping_lines":[{"id":null,"method_id":"flat_rate","method_title":"Flat
+        Rate","total":"10.0"}],"status":null,"created_at":null,"updated_at":null,"completed_at":null,"total":null,"subtotal":null,"total_line_items_quantity":null,"total_tax":null,"total_shipping":null,"cart_tax":null,"shipping_tax":null,"total_discount":null,"shipping_methods":null,"customer_ip":null,"customer_user_agent":null,"view_order_url":null,"tax_lines":[]}}'
     headers:
       Accept:
       - application/json
       Content-Type:
       - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
   response:
     status:
       code: 201
@@ -278,11 +272,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 22 Apr 2015 09:16:24 GMT
+      - Wed, 15 Jun 2016 04:20:22 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '2558'
+      - '2326'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -291,22 +285,22 @@ http_interactions:
       - default
     body:
       encoding: UTF-8
-      string: '{"order":{"id":1639,"order_number":1639,"created_at":"2015-04-22T09:16:23Z","updated_at":"2015-04-22T09:16:23Z","completed_at":"2015-04-22T09:16:23Z","status":"processing","currency":"USD","total":"10.70","subtotal":"0.00","total_line_items_quantity":3,"total_tax":"0.70","total_shipping":"10.00","cart_tax":"0.00","shipping_tax":"0.70","total_discount":"0.00","shipping_methods":"Flat
+      string: '{"order":{"id":6524,"order_number":6524,"created_at":"2016-06-15T04:20:21Z","updated_at":"2016-06-15T04:20:21Z","completed_at":"2016-06-15T04:20:21Z","status":"processing","currency":"SGD","total":"57.76","subtotal":"43.98","total_line_items_quantity":2,"total_tax":"3.78","total_shipping":"10.00","cart_tax":"3.08","shipping_tax":"0.70","total_discount":"0.00","shipping_methods":"Flat
         Rate","payment_details":{"method_id":"bacs","method_title":"Direct Bank Transfer","paid":true},"billing_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
         Market","address_2":"","city":"San Francisco","state":"CA","postcode":"94103","country":"US","email":"john@example.com","phone":"(555)
         555-5555"},"shipping_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
         Market","address_2":"","city":"San Francisco","state":"CA","postcode":"94103","country":"US"},"note":"This
-        is note","customer_ip":"103.224.165.64","customer_user_agent":"","customer_id":2,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/1639","line_items":[{"id":630,"subtotal":"0.00","subtotal_tax":"0.00","total":"0.00","total_tax":"0.00","price":"0.00","quantity":2,"tax_class":null,"name":"Receiver
-        Rack","product_id":546,"sku":"7700","meta":[]},{"id":631,"subtotal":"0.00","subtotal_tax":"0.00","total":"0.00","total_tax":"0.00","price":"0.00","quantity":1,"tax_class":null,"name":"Seating","product_id":613,"sku":"47001","meta":[{"key":"pa_color","label":"Pa_color","value":"Black"}]}],"shipping_lines":[{"id":632,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"10.00"}],"tax_lines":[{"id":633,"rate_id":"1","code":"GST-1","title":"GST","total":"0.70","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":2,"created_at":"2013-07-02T01:33:13Z","email":"cameron+woo@tradegecko.com","first_name":"Cameron","last_name":"Priest","username":"wpcommercetest","role":"administrator","last_order_id":"1639","last_order_date":"2015-04-22T09:16:23Z","orders_count":91,"total_spent":"2945.70","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
+        is note","customer_ip":"202.55.70.117","customer_user_agent":"TradeGecko Woocommerce\/0.1.0","customer_id":2,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6524","line_items":[{"id":1504,"subtotal":"43.98","subtotal_tax":"3.08","total":"43.98","total_tax":"3.08","price":"21.99","quantity":2,"tax_class":null,"name":"Premium
+        Quality (TEST)","product_id":6512,"sku":"","meta":[]}],"shipping_lines":[{"id":1505,"method_id":"flat_rate","method_title":"Flat
+        Rate","total":"10.00"}],"tax_lines":[{"id":1506,"rate_id":"1","code":"GST-1","title":"GST","total":"3.78","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":2,"created_at":"2013-07-02T01:33:13Z","email":"cameron+woo@tradegecko.com","first_name":"Cameron","last_name":"Priest","username":"wpcommercetest","role":"administrator","last_order_id":"6524","last_order_date":"2016-06-15T04:20:21Z","orders_count":92,"total_spent":"3050.52","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
         Market","address_2":"","city":"San Francisco","state":"CA","postcode":"94103","country":"US","email":"john@example.com","phone":"(555)
         555-5555"},"shipping_address":{"first_name":"John","last_name":"Doe","company":"","address_1":"969
         Market","address_2":"","city":"San Francisco","state":"CA","postcode":"94103","country":"US"}}}}'
     http_version:
-  recorded_at: Wed, 22 Apr 2015 09:16:24 GMT
+  recorded_at: Wed, 15 Jun 2016 04:20:22 GMT
 - request:
     method: delete
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders/1639
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders/6524
     body:
       encoding: US-ASCII
       string: ''
@@ -315,6 +309,8 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
   response:
     status:
       code: 202
@@ -323,7 +319,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 22 Apr 2015 09:16:27 GMT
+      - Wed, 15 Jun 2016 04:20:25 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -336,5 +332,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"message":"Deleted order"}'
     http_version:
-  recorded_at: Wed, 22 Apr 2015 09:16:27 GMT
+  recorded_at: Wed, 15 Jun 2016 04:20:25 GMT
 recorded_with: VCR 2.9.3

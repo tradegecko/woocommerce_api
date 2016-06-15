@@ -22,7 +22,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 23 May 2016 09:07:30 GMT
+      - Wed, 15 Jun 2016 03:00:40 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -35,10 +35,10 @@ http_interactions:
       - default
     body:
       encoding: UTF-8
-      string: '{"order_note":{"id":"6957","created_at":"2016-05-23T09:07:30Z","note":"Carrier:
+      string: '{"order_note":{"id":"7805","created_at":"2016-06-15T03:00:40Z","note":"Carrier:
         Blah Blah\n               Tracking Number: BB1234567890","customer_note":false}}'
     http_version:
-  recorded_at: Mon, 23 May 2016 09:07:30 GMT
+  recorded_at: Wed, 15 Jun 2016 03:00:40 GMT
 - request:
     method: get
     uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders/6149
@@ -60,11 +60,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 23 May 2016 09:07:32 GMT
+      - Wed, 15 Jun 2016 03:00:42 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '2511'
+      - '2513'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -85,7 +85,7 @@ http_interactions:
       - default
     body:
       encoding: UTF-8
-      string: '{"order":{"id":6149,"order_number":6149,"created_at":"2016-05-10T06:55:00Z","updated_at":"2016-05-17T07:56:24Z","completed_at":"2016-05-17T07:56:24Z","status":"on-hold","currency":"SGD","total":"131.61","subtotal":"23.00","total_line_items_quantity":1,"total_tax":"8.61","total_shipping":"100.00","cart_tax":"1.61","shipping_tax":"7.00","total_discount":"0.00","shipping_methods":"Flat
+      string: '{"order":{"id":6149,"order_number":6149,"created_at":"2016-05-10T06:55:00Z","updated_at":"2016-06-14T03:53:58Z","completed_at":"2016-06-14T03:53:58Z","status":"on-hold","currency":"SGD","total":"131.61","subtotal":"23.00","total_line_items_quantity":1,"total_tax":"8.61","total_shipping":"100.00","cart_tax":"1.61","shipping_tax":"7.00","total_discount":"0.00","shipping_methods":"Flat
         Rate","payment_details":{"method_id":"cheque","method_title":"Cheque Payment","paid":false},"billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
         Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH","email":"mariatest@tg.com","phone":"123421312"},"shipping_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
         Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH"},"note":"this
@@ -93,11 +93,11 @@ http_interactions:
         (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit\/537.36 (KHTML, like Gecko)
         Chrome\/50.0.2661.94 Safari\/537.36","customer_id":5,"view_order_url":"https:\/\/wpcommercetest.wpengine.com\/my-account\/view-order\/6149","line_items":[{"id":1461,"subtotal":"23.00","subtotal_tax":"1.61","total":"23.00","total_tax":"1.61","price":"23.00","quantity":1,"tax_class":null,"name":"[Sample]
         Tomorrow is today, Red printed scarf","product_id":3097,"sku":"232323","meta":[]}],"shipping_lines":[{"id":1462,"method_id":"flat_rate","method_title":"Flat
-        Rate","total":"100.00"}],"tax_lines":[{"id":1463,"rate_id":"1","code":"GST-1","title":"GST","total":"8.61","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"6149","last_order_date":"2016-05-10T06:55:00Z","orders_count":82,"total_spent":"70229.00","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
+        Rate","total":"100.00"}],"tax_lines":[{"id":1463,"rate_id":"1","code":"GST-1","title":"GST","total":"8.61","compound":false}],"fee_lines":[],"coupon_lines":[],"customer":{"id":5,"created_at":"2013-10-01T04:13:10Z","email":"fazri@tradegecko.com","first_name":"Fazri","last_name":"Sapri","username":"fazri@tradegecko.com","role":"administrator","last_order_id":"6281","last_order_date":"2016-06-07T04:58:00Z","orders_count":109,"total_spent":"169207.47","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
         Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH","email":"mariatest@tg.com","phone":"123421312"},"shipping_address":{"first_name":"Maria","last_name":"Lopez","company":"TestAddress","address_1":"123
         Shippingtest","address_2":"","city":"Manila","state":"00","postcode":"1234","country":"PH"}}}}'
     http_version:
-  recorded_at: Mon, 23 May 2016 09:07:32 GMT
+  recorded_at: Wed, 15 Jun 2016 03:00:42 GMT
 - request:
     method: get
     uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders/6149/notes/
@@ -119,11 +119,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 23 May 2016 09:07:34 GMT
+      - Wed, 15 Jun 2016 03:00:43 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '1439'
+      - '855'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -144,19 +144,15 @@ http_interactions:
       - default
     body:
       encoding: UTF-8
-      string: '{"order_notes":[{"id":"6957","created_at":"2016-05-23T09:07:30Z","note":"Carrier:
-        Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"6956","created_at":"2016-05-23T08:52:33Z","note":"Carrier:
-        Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"6955","created_at":"2016-05-23T08:52:16Z","note":"Carrier:
-        Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"6954","created_at":"2016-05-23T08:42:08Z","note":"Carrier:
-        Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"6953","created_at":"2016-05-23T08:40:59Z","note":"Carrier:
-        Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"6952","created_at":"2016-05-23T08:32:42Z","note":"Carrier:
+      string: '{"order_notes":[{"id":"7805","created_at":"2016-06-15T03:00:40Z","note":"Carrier:
+        Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"7750","created_at":"2016-06-15T02:56:54Z","note":"Carrier:
         Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"6951","created_at":"2016-05-23T03:22:47Z","note":"Carrier:
         Moko shipping\nTracking number: TG4567891","customer_note":false},{"id":"6950","created_at":"2016-05-23T03:21:53Z","note":"Carrier:
         Moko shipping\nTracking number:  TG4567890","customer_note":false},{"id":"6765","created_at":"2016-05-10T06:55:15Z","note":"Item
         232323 stock reduced from 22 to 21.","customer_note":false},{"id":"6764","created_at":"2016-05-10T06:55:14Z","note":"Awaiting
         cheque payment Order status changed from Pending Payment to On Hold.","customer_note":false}]}'
     http_version:
-  recorded_at: Mon, 23 May 2016 09:07:34 GMT
+  recorded_at: Wed, 15 Jun 2016 03:00:44 GMT
 - request:
     method: get
     uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders/6149/notes/
@@ -178,11 +174,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 23 May 2016 09:07:36 GMT
+      - Wed, 15 Jun 2016 03:00:45 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '1439'
+      - '855'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -203,17 +199,13 @@ http_interactions:
       - default
     body:
       encoding: UTF-8
-      string: '{"order_notes":[{"id":"6957","created_at":"2016-05-23T09:07:30Z","note":"Carrier:
-        Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"6956","created_at":"2016-05-23T08:52:33Z","note":"Carrier:
-        Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"6955","created_at":"2016-05-23T08:52:16Z","note":"Carrier:
-        Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"6954","created_at":"2016-05-23T08:42:08Z","note":"Carrier:
-        Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"6953","created_at":"2016-05-23T08:40:59Z","note":"Carrier:
-        Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"6952","created_at":"2016-05-23T08:32:42Z","note":"Carrier:
+      string: '{"order_notes":[{"id":"7805","created_at":"2016-06-15T03:00:40Z","note":"Carrier:
+        Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"7750","created_at":"2016-06-15T02:56:54Z","note":"Carrier:
         Blah Blah\n               Tracking Number: BB1234567890","customer_note":false},{"id":"6951","created_at":"2016-05-23T03:22:47Z","note":"Carrier:
         Moko shipping\nTracking number: TG4567891","customer_note":false},{"id":"6950","created_at":"2016-05-23T03:21:53Z","note":"Carrier:
         Moko shipping\nTracking number:  TG4567890","customer_note":false},{"id":"6765","created_at":"2016-05-10T06:55:15Z","note":"Item
         232323 stock reduced from 22 to 21.","customer_note":false},{"id":"6764","created_at":"2016-05-10T06:55:14Z","note":"Awaiting
         cheque payment Order status changed from Pending Payment to On Hold.","customer_note":false}]}'
     http_version:
-  recorded_at: Mon, 23 May 2016 09:07:36 GMT
+  recorded_at: Wed, 15 Jun 2016 03:00:45 GMT
 recorded_with: VCR 2.9.3

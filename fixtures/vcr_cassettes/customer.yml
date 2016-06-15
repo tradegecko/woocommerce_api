@@ -11,6 +11,8 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      User-Agent:
+      - TradeGecko Woocommerce/0.1.0
   response:
     status:
       code: 200
@@ -19,17 +21,17 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 17 Apr 2015 07:23:28 GMT
+      - Wed, 15 Jun 2016 03:00:35 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '653'
+      - '1415'
       Connection:
       - keep-alive
       Keep-Alive:
       - timeout=20
       X-Wc-Total:
-      - '1'
+      - '2'
       X-Wc-Totalpages:
       - '1'
       X-Cacheable:
@@ -42,11 +44,15 @@ http_interactions:
       - MISS
       X-Pass-Why:
       - auth
+      X-Cache-Group:
+      - ''
       X-Type:
       - default
     body:
       encoding: UTF-8
-      string: '{"customers":[{"id":10,"created_at":"2014-09-15T07:09:55Z","email":"xenorapth@gmail.com","first_name":"Gabriel","last_name":"Leaf","username":"gableaf","role":"customer","last_order_id":null,"last_order_date":null,"orders_count":0,"total_spent":"0.00","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ad516503a11cd5ca435acc9bb6523536?s=96","billing_address":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"","phone":""},"shipping_address":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""}}]}'
+      string: '{"customers":[{"id":13,"created_at":"2016-03-30T03:59:08Z","email":"meantortoise@maildrop.cc","first_name":"Mean","last_name":"Tortoise","username":"meantortoise","role":"customer","last_order_id":"5252","last_order_date":"2016-04-07T10:07:58Z","orders_count":11,"total_spent":"43550.30","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"Mean","last_name":"Tortoise","company":"Mean
+        Tortoise","address_1":"Lake Street 2134","address_2":"","city":"Singapore","state":"","postcode":"12345","country":"SG","email":"meantortoise@maildrop.cc","phone":"12341234"},"shipping_address":{"first_name":"Mean","last_name":"Tortoise","company":"Mean
+        Tortoise","address_1":"Lake Street 2134","address_2":"","city":"Singapore","state":"","postcode":"12345","country":"SG"}},{"id":14,"created_at":"2016-03-30T08:26:23Z","email":"customer@tradegecko.com","first_name":"Custo","last_name":"Mer","username":"testcustomer","role":"customer","last_order_id":null,"last_order_date":null,"orders_count":0,"total_spent":"0.00","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/?s=96","billing_address":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"","phone":""},"shipping_address":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""}}]}'
     http_version:
-  recorded_at: Fri, 17 Apr 2015 07:23:28 GMT
+  recorded_at: Wed, 15 Jun 2016 03:00:35 GMT
 recorded_with: VCR 2.9.3

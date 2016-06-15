@@ -6,7 +6,7 @@ shared_examples_for "a woocommerce store details" do |options|
     expect(subject.description).to eq "TradeGecko WooCommerce Test"
     expect(subject.URL).to eq "http://wpcommercetest.wpengine.com"
     expect(subject.name).to eq "TradeGecko WooCommerce Test"
-    expect(subject.wc_version).to eq "2.5.1"
+    expect(subject.wc_version).to eq "2.6.0"
   end
 
   it "fetchs store details" do
@@ -16,7 +16,7 @@ shared_examples_for "a woocommerce store details" do |options|
        expect(subject.meta.decimal_separator).to eq "."
        expect(subject.meta.dimension_unit).to eq "cm"
        expect(subject.meta.generate_password).to be_falsey
-       expect(subject.meta.links).to eq({"help"=>"http://woothemes.github.io/woocommerce-rest-api-docs/"})
+       expect(subject.meta.links).to eq({"help"=>"https://woothemes.github.io/woocommerce-rest-api-docs/"})
        expect(subject.meta.permalinks_enabled).to be_truthy
        expect(subject.meta.price_num_decimals).to eq 2
        expect(subject.meta.ssl_enabled).to be_falsey
