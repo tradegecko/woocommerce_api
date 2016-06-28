@@ -110,11 +110,11 @@ module WoocommerceAPI
         attr_json = super(options)
         if options && options[:root]
           attr_json[singleton_name].each do |key, value|
-            attr_json[singleton_name][key] = value.as_json(root: false)
+            attr_json[singleton_name][key] = value.as_json(options.merge(root: false))
           end
         else
           attr_json.each do |key, value|
-            attr_json[key] = value.as_json(root: false)
+            attr_json[key] = value.as_json(options.merge(root: false))
           end
         end
         attr_json
