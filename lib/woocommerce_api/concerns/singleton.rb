@@ -80,10 +80,10 @@ module WoocommerceAPI
         self.class.collection_path(prefix_options, query_options)
       end
 
-      def save
+      def save(options={})
         return unless valid?
         method = persisted? ? :put : :post
-        resource = self.class.http_request(method, self.to_path, body: self.as_json.to_json)
+        resource = self.class.http_request(method, self.to_path, body: self.as_json(options).to_json)
         self.class.extract_resource(resource)
       end
       alias_method :create, :save
@@ -106,15 +106,15 @@ module WoocommerceAPI
       end
 
       # Every nested assocation. by default #as_json(root: false) could be applied
-      def as_json(options=nil)
+      def as_json(options={})
         attr_json = super(options)
         if options && options[:root]
           attr_json[singleton_name].each do |key, value|
-            attr_json[singleton_name][key] = value.as_json(root: false)
+            attr_json[singleton_name][key] = value.as_json(options.merge(root: false))
           end
         else
           attr_json.each do |key, value|
-            attr_json[key] = value.as_json(root: false)
+            attr_json[key] = value.as_json(options.merge(root: false))
           end
         end
         attr_json

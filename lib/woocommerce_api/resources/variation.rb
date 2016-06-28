@@ -16,10 +16,13 @@ module WoocommerceAPI
       if attributes[:wc_attributes] && !attributes[:wc_attributes].empty?
         if options && !options[:root]
           wc_attributes['attributes'] = attributes[:wc_attributes]
+          wc_attributes.delete('image') if options[:images]
         else
           wc_attributes['variation']['attributes'] = attributes[:wc_attributes]
+          wc_attributes['variation'].delete('images') unless options[:images]
         end
       end
+
       wc_attributes
     end
 
@@ -58,7 +61,7 @@ module WoocommerceAPI
     attribute :visible              , Boolean , writer: :private
 
     # Write Only
-    attribute :backorders           , Boolean 
+    attribute :backorders           , Boolean
     attribute :sale_price_dates_from, DateTime
     attribute :sale_price_dates_to  , DateTime
   end
