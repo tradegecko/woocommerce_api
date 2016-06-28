@@ -106,7 +106,7 @@ module WoocommerceAPI
       end
 
       # Every nested assocation. by default #as_json(root: false) could be applied
-      def as_json(options=nil)
+      def as_json(options={})
         attr_json = super(options)
         if options && options[:root]
           attr_json[singleton_name].each do |key, value|

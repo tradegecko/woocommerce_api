@@ -11,7 +11,7 @@ module WoocommerceAPI
       super
     end
 
-    def as_json(options=nil)
+    def as_json(options={})
       wc_attributes = super(options)
       if attributes[:wc_attributes] && !attributes[:wc_attributes].empty?
         if options && !options[:root]
@@ -26,6 +26,7 @@ module WoocommerceAPI
       wc_attributes['product'].delete('categories')
       wc_attributes['product'].delete('tags')
       wc_attributes['product'].delete('default_attributes')
+      wc_attributes['product'].delete('images') unless options[:include] && options[:include].include?(:images)
 
       wc_attributes
     end
@@ -92,7 +93,7 @@ module WoocommerceAPI
     attribute :visible           , Boolean , writer: :private
 
     # Write Only
-    attribute :default_attributes           , Hash    
+    attribute :default_attributes           , Hash
     attribute :sale_price_dates_from        , DateTime
     attribute :sale_price_dates_to          , DateTime
     attribute :backorders                   , Boolean
