@@ -12,14 +12,14 @@ module WoocommerceAPI
     end
 
     def as_json(options=nil)
-      wc_attributes = super
+      wc_attributes = super(options)
       if attributes[:wc_attributes] && !attributes[:wc_attributes].empty?
         if options && !options[:root]
           wc_attributes['attributes'] = attributes[:wc_attributes]
-          wc_attributes.delete('image') if options[:images]
+          wc_attributes.delete('image') unless options[:images]
         else
           wc_attributes['variation']['attributes'] = attributes[:wc_attributes]
-          wc_attributes['variation'].delete('images') unless options[:images]
+          wc_attributes['variation'].delete('image') unless options[:images]
         end
       end
 
