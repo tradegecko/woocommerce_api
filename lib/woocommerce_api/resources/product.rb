@@ -14,7 +14,7 @@ module WoocommerceAPI
     def as_json(options={})
       wc_attributes = super(options)
       if attributes[:wc_attributes] && !attributes[:wc_attributes].empty?
-        if options && !options[:root]
+        if options.present? && !options[:root]
           wc_attributes['attributes'] = attributes[:wc_attributes]
         else
           wc_attributes['product']['attributes'] = attributes[:wc_attributes]
