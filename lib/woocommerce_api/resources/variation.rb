@@ -16,11 +16,15 @@ module WoocommerceAPI
       if attributes[:wc_attributes] && !attributes[:wc_attributes].empty?
         if options.present? && !options[:root]
           wc_attributes['attributes'] = attributes[:wc_attributes]
-          wc_attributes.delete('image') unless options[:images]
         else
           wc_attributes['variation']['attributes'] = attributes[:wc_attributes]
-          wc_attributes['variation'].delete('image') unless options[:images]
         end
+      end
+
+      if options.present? && !options[:root]
+        wc_attributes.delete('image') unless options[:images]
+      else
+        wc_attributes['variation'].delete('image') unless options[:images]
       end
 
       wc_attributes
