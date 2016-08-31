@@ -31,6 +31,14 @@ module WoocommerceAPI
       Thread.current["WoocommerceAPI"] = session_options
     end
 
+    def self.perform_request(http_method, path, options = {}, &block)
+      ActiveSupport::Notifications.instrument("request.woocommerce_api") do |payload|
+        payload[:method]      = http_method::METHOD.downcase
+        payload[:request_uri] = path
+        payload[:result]      = super
+      end
+    end
+
   private
 
     def oauth_http_options(params)
