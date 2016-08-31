@@ -3,7 +3,11 @@ module WoocommerceAPI
     include HTTParty
 
     def self.perform_request(http_method, path, options = {}, &block)
-      super(http_method, oauth_url(http_method, path), options, &block)
+      ActiveSupport::Notifications.instrument("request.woocommerce_api") do |payload|
+        payload[:method]      = http_method::METHOD.downcase
+        payload[:request_uri] = oauth_url(http_method, path)
+        payload[:result]      = super(http_method, oauth_url(http_method, path), options, &block)
+      end
     end
 
   private

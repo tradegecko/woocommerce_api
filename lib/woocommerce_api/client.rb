@@ -11,7 +11,6 @@ module WoocommerceAPI
       }
     end
 
-
     def initialize(params={})
       client_options = case params[:mode]
                        when :query_https
@@ -25,6 +24,14 @@ module WoocommerceAPI
       client_options[:base_uri] = normalize_base_uri(params[:store_url], client_options[:version])
       session_options = self.class.default_options.merge(client_options)
       Thread.current["WoocommerceAPI"] = session_options
+    end
+
+    def self.perform_request(http_method, path, options = {}, &block)
+      ActiveSupport::Notifications.instrument("request.woocommerce_api") do |payload|
+        payload[:method]      = http_method::METHOD.downcase
+        payload[:request_uri] = path
+        payload[:result]      = super
+      end
     end
 
   private
