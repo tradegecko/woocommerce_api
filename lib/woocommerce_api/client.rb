@@ -12,7 +12,7 @@ module WoocommerceAPI
         format: :json,
         headers: { "Accept"       => "application/json",
                    "Content-Type" => "application/json",
-                   "User-Agent"   => "TradeGecko Woocommerce/#{VERSION}" }
+                   "User-Agent"   => "WoocommerceAPI/#{VERSION}" }
       }
     end
 
