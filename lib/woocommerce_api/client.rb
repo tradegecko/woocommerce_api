@@ -16,7 +16,7 @@ module WoocommerceAPI
       }
     end
 
-    def initialize(params={})
+    def self.activate(params={})
       client_options = case params[:mode]
                        when :query_https
                          query_https_options(params)
