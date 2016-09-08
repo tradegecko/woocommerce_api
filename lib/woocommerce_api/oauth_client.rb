@@ -2,25 +2,13 @@ module WoocommerceAPI
   class OauthClient
     include HTTParty
 
-    def self.get(path, options = {}, &block)
-      super(oauth_url(:get, path), options, &block)
-    end
-
-    def self.put(path, options = {}, &block)
-      super(oauth_url(:put, path), options, &block)
-    end
-
-    def self.post(path, options = {}, &block)
-      super(oauth_url(:post, path), options, &block)
-    end
-
-    def self.delete(path, options = {}, &block)
-      super(oauth_url(:delete, path), options, &block)
+    def self.perform_request(http_method, path, options = {}, &block)
+      super(http_method, oauth_url(http_method, path), options, &block)
     end
 
   private
 
-    def self.oauth_url(verb, path, params={})
+    def self.oauth_url(http_method, path, params={})
       oauth_options = Thread.current["WoocommerceAPI"]
       parsed_url = URI::parse("#{oauth_options[:base_uri]}#{path}")
       if parsed_url.query
@@ -40,21 +28,21 @@ module WoocommerceAPI
       params["oauth_nonce"] = SecureRandom.hex
       params["oauth_signature_method"] = "HMAC-SHA256"
       params["oauth_timestamp"] = Time.new.to_i
-      params["oauth_signature"] = CGI::escape(generate_oauth_signature(verb, url, params, consumer_secret))
+      params["oauth_signature"] = CGI::escape(generate_oauth_signature(http_method, url, params, consumer_secret))
 
       query_string = URI::encode(params.map{ |key, value| "#{key}=#{value}"}.join("&"))
 
       "#{url}?#{query_string}"
     end
 
-    def self.generate_oauth_signature(verb, url, params, consumer_secret)
+    def self.generate_oauth_signature(http_method, url, params, consumer_secret)
       base_request_uri = CGI::escape(url.to_s)
       query_params = params.sort.map do |key, value|
         encode_param(key.to_s) + "%3D" + encode_param(value.to_s)
       end
 
       query_string = query_params.join("%26")
-      string_to_sign = "#{verb.to_s.upcase}&#{base_request_uri}&#{query_string}"
+      string_to_sign = "#{http_method::METHOD}&#{base_request_uri}&#{query_string}"
 
       return Base64.strict_encode64(OpenSSL::HMAC.digest(OpenSSL::Digest.new('sha256'), consumer_secret, string_to_sign))
     end
