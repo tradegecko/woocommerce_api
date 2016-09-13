@@ -1,16 +1,20 @@
 module WoocommerceAPI
   class Client
     include HTTParty
+
     def self.default_options
-      Thread.current["WoocommerceAPI"] ||= {
+      Thread.current["WoocommerceAPI"] || raise("Session has not been activated yet")
+    end
+
+    def self.default_client_options
+      {
         parser: HTTParty::Parser,
         format: :json,
         headers: { "Accept"       => "application/json",
                    "Content-Type" => "application/json",
-                   "User-Agent"   => "TradeGecko Woocommerce/#{VERSION}" }
+                   "User-Agent"   => "WoocommerceAPI/#{VERSION}" }
       }
     end
-
 
     def initialize(params={})
       client_options = case params[:mode]
@@ -23,7 +27,7 @@ module WoocommerceAPI
                        end
       client_options[:version] = params.delete(:version) || 'v2'
       client_options[:base_uri] = normalize_base_uri(params[:store_url], client_options[:version])
-      session_options = self.class.default_options.merge(client_options)
+      session_options = self.class.default_client_options.merge(client_options)
       Thread.current["WoocommerceAPI"] = session_options
     end
 
