@@ -70,7 +70,7 @@ module WoocommerceAPI
           # Restric format to be JSON
           JSON.parse(response.body)
         rescue JSON::ParserError => ex
-          raise(ClientError.new('woocommerce_parse_json_error', ex.message))
+          raise(ClientError.new('woocommerce_parse_json_error', response))
         rescue Net::ReadTimeout => ex
           raise ClientError.new(408, ex)
         end
