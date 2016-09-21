@@ -39,11 +39,7 @@ module WoocommerceAPI
       def all(params={})
         uri = params[:resource_uri].presence || collection_path(params[:prefix_options], params.slice(:filter, :page, :fields))
         resources = http_request(:get, uri)
-        if !resources.nil? and resources.success?
-          resources[collection_name].collect { |r| self.new(r) }
-        else
-          []
-        end
+        resources[collection_name].collect { |r| self.new(r) }
       end
 
       def count(params={})

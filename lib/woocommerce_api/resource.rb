@@ -65,9 +65,18 @@ module WoocommerceAPI
         end
       end
 
-      response.success? ? response : raise(ClientError.new(response.code, response))
-    rescue Net::ReadTimeout => ex
-      raise ClientError.new(408, ex)
+      if response.success?
+        begin
+          # Restric format to be JSON
+          JSON.parse(response.body)
+        rescue JSON::ParserError => ex
+          raise(ClientError.new('woocommerce_parse_json_error', response))
+        rescue Net::ReadTimeout => ex
+          raise ClientError.new(408, ex)
+        end
+      else
+        raise(ClientError.new(response.code, response))
+      end
     end
   end # Resource
 end
