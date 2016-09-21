@@ -68,10 +68,7 @@ module WoocommerceAPI
       if response.success?
         # Restric format to be JSON
         begin
-          # Some websites are including Byte Order Mark (BOM) on the response body
-          # which causes the response body to parsed correctly
-          response.body.sub!(/^\xEF\xBB\xBF/, '')
-          JSON.parse(response.body)
+          parse_response(response)
         rescue JSON::ParserError => ex
           raise(ClientError.new('woocommerce_parse_json_error', response))
         rescue Net::ReadTimeout => ex
@@ -80,6 +77,10 @@ module WoocommerceAPI
       else
         raise(ClientError.new(response.code, response))
       end
+    end
+
+    def self.parse_response(response)
+      JSON.parse(response.body.match(/({.*})/).to_s)
     end
   end # Resource
 end
