@@ -66,9 +66,9 @@ module WoocommerceAPI
       end
 
       if response.success?
+        # Restric format to be JSON
         begin
-          # Restric format to be JSON
-          JSON.parse(response.body)
+          parse_response(response)
         rescue JSON::ParserError => ex
           raise(ClientError.new('woocommerce_parse_json_error', response))
         rescue Net::ReadTimeout => ex
@@ -77,6 +77,10 @@ module WoocommerceAPI
       else
         raise(ClientError.new(response.code, response))
       end
+    end
+
+    def self.parse_response(response)
+      JSON.parse(response.body.match(/({.*})/).to_s)
     end
   end # Resource
 end
