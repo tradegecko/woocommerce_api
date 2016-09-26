@@ -1,35 +1,4 @@
 module WoocommerceAPI
-  class ClientError < StandardError
-    attr_accessor :code
-    def initialize(code, response)
-      @code = code
-      message = case code
-                when 408
-                  response.to_s
-                when 500
-                  "Internal Server Error"
-                else
-                  extract_response(response.parsed_response)
-                end
-      super(message)
-    end
-
-  private
-
-    def extract_response(response)
-      case response
-      when Array
-        response.map{ |value| extract_response(value) }.join(', ')
-      when Hash
-        @code = response['code'] if response.has_key? 'code'
-        extract_response(response.values)
-      else
-        response.to_s.gsub(/[,.]$/, '')
-      end
-    end
-
-  end
-
   class Resource
     include Virtus.model
     include ActiveModel::Model
