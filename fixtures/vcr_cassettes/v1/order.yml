@@ -1,0 +1,523 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:32:25 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '19234'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Set-Cookie:
+      - wpe-auth=c9392ecd47e7561afbcd1eaf455c30b9; path=/; secure
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders?page=2>; rel="next"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      Last-Modified:
+      - ''
+      X-Qm-Overview-Time-Taken:
+      - '1.0132'
+      X-Qm-Overview-Time-Usage:
+      - 0.0% of 3,600s limit
+      X-Qm-Overview-Memory:
+      - 49,244 kB
+      X-Qm-Overview-Memory-Usage:
+      - 9.4% of 524,288 kB limit
+      X-Wp-Total:
+      - '640'
+      X-Wp-Totalpages:
+      - '64'
+      Allow:
+      - GET, POST
+      X-Cacheable:
+      - NO:Passed
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '[{"id":7850,"parent_id":0,"status":"completed","order_key":"wc_order_590128f89e0ea","number":"7850","currency":"SGD","version":"3.0.4","prices_include_tax":true,"date_created":"2017-04-26T23:08:00","date_modified":"2017-04-26T23:13:51","customer_id":23,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"0.00","shipping_tax":"0.00","cart_tax":"2.62","total":"40.00","total_tax":"2.62","billing":{"first_name":"grace","last_name":"estrella","company":"Grace
+        Estrella","address_1":"123","address_2":"very long drive","city":"beverly
+        hills","state":"CA","postcode":"90210","country":"US","email":"mgracev4@yahoo.com","phone":""},"shipping":{"first_name":"grace","last_name":"estrella","company":"Grace
+        Estrella","address_1":"123","address_2":"very long drive","city":"beverly
+        hills","state":"CA","postcode":"90210","country":"US"},"payment_method":"","payment_method_title":"","transaction_id":"","customer_ip_address":"54.234.50.252","customer_user_agent":"woocommerceapi\/0.1.0","created_via":"","customer_note":"","date_completed":"2017-04-27T07:13:51","date_paid":null,"cart_hash":"","line_items":[{"id":1790,"name":"Grace
+        Woocommerce Created item","sku":"GraceWoo","product_id":7583,"variation_id":0,"quantity":1,"tax_class":"","price":"37.38","subtotal":"37.38","subtotal_tax":"2.62","total":"37.38","total_tax":"2.62","taxes":[{"id":1,"total":"2.6166","subtotal":"2.6166"}],"meta":[]}],"tax_lines":[{"id":1791,"rate_code":"GST-1","rate_id":1,"label":"GST","compound":false,"tax_total":"2.62","shipping_tax_total":"0.00"}],"shipping_lines":[],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7850"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}],"customer":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/23"}]}},{"id":7837,"parent_id":0,"status":"on-hold","order_key":"wc_order_58fda46bf2476","number":"7837","currency":"SGD","version":"3.0.4","prices_include_tax":true,"date_created":"2017-04-24T07:08:27","date_modified":"2017-04-24T07:08:28","customer_id":12,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"100.00","shipping_tax":"7.00","cart_tax":"1.47","total":"129.50","total_tax":"8.47","billing":{"first_name":"Philip","last_name":"Deazeta","company":"TradeGecko","address_1":"66
+        Chestnut Avenue #07-14","address_2":"","city":"Singapore","state":"","postcode":"679520","country":"SG","email":"philip@tradegecko.com","phone":"96960589"},"shipping":{"first_name":"Philip","last_name":"Deazeta","company":"TradeGecko","address_1":"66
+        Chestnut Avenue #07-14","address_2":"","city":"Singapore","state":"","postcode":"679520","country":"SG"},"payment_method":"cheque","payment_method_title":"Check
+        payments","transaction_id":"","customer_ip_address":"202.55.70.76","customer_user_agent":"mozilla\/5.0
+        (macintosh; intel mac os x 10_12_3) applewebkit\/537.36 (khtml, like gecko)
+        chrome\/57.0.2987.133 safari\/537.36","created_via":"checkout","customer_note":"","date_completed":null,"date_paid":null,"cart_hash":"7ca1e6938a9e4bc7595863c7beef70b2","line_items":[{"id":1786,"name":"Almost
+        Famous Tee","sku":"XOXOX-2209","product_id":7605,"variation_id":0,"quantity":1,"tax_class":"","price":"21.03","subtotal":"21.03","subtotal_tax":"1.47","total":"21.03","total_tax":"1.47","taxes":[{"id":1,"total":"1.47","subtotal":"1.47"}],"meta":[]}],"tax_lines":[{"id":1788,"rate_code":"GST-1","rate_id":1,"label":"GST","compound":false,"tax_total":"1.47","shipping_tax_total":"7.00"}],"shipping_lines":[{"id":1787,"method_title":"Flat
+        Rate","method_id":"legacy_flat_rate","total":"100.00","total_tax":"7.00","taxes":[{"id":1,"total":"7"}]}],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7837"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}],"customer":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/12"}]}},{"id":7800,"parent_id":0,"status":"processing","order_key":"wc_order_58f8245062091","number":"7800","currency":"SGD","version":"2.6.8","prices_include_tax":true,"date_created":"2017-04-20T03:00:32","date_modified":"2017-04-20T03:00:32","customer_id":0,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"100.00","shipping_tax":"7.00","cart_tax":"1.47","total":"129.50","total_tax":"8.47","billing":{"first_name":"Philip","last_name":"Deazeta","company":"TradeGecko","address_1":"66
+        Chestnut Avenue #07-14","address_2":"","city":"Singapore","state":"","postcode":"679520","country":"SG","email":"philip@tradegecko.com","phone":"96960589"},"shipping":{"first_name":"Philip","last_name":"Deazeta","company":"TradeGecko","address_1":"66
+        Chestnut Avenue #07-14","address_2":"","city":"Singapore","state":"","postcode":"679520","country":"SG"},"payment_method":"cod","payment_method_title":"Cash
+        on Delivery","transaction_id":"","customer_ip_address":"202.55.70.76","customer_user_agent":"Mozilla\/5.0
+        (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit\/537.36 (KHTML, like Gecko)
+        Chrome\/57.0.2987.133 Safari\/537.36","created_via":"checkout","customer_note":"","date_completed":null,"date_paid":"2017-04-20T11:00:32","cart_hash":"fb9ccaebffa52e049329a78c3f637e93","line_items":[{"id":1783,"name":"Almost
+        Famous Tee","sku":"XOXOX-2209","product_id":7605,"variation_id":0,"quantity":1,"tax_class":"","price":"21.03","subtotal":"21.03","subtotal_tax":"1.47","total":"21.03","total_tax":"1.47","taxes":[{"id":1,"total":"1.472","subtotal":"1.472"}],"meta":[]}],"tax_lines":[{"id":1785,"rate_code":"GST-1","rate_id":1,"label":"GST","compound":false,"tax_total":"1.47","shipping_tax_total":"7.00"}],"shipping_lines":[{"id":1784,"method_title":"Flat
+        Rate","method_id":"legacy_flat_rate","total":"100.00","total_tax":"0.00","taxes":[]}],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7800"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}]}},{"id":7787,"parent_id":0,"status":"completed","order_key":"wc_order_58ec966c02d40","number":"7787","currency":"SGD","version":"2.6.8","prices_include_tax":true,"date_created":"2017-04-11T08:40:00","date_modified":"2017-04-11T08:42:37","customer_id":12,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"100.00","shipping_tax":"7.00","cart_tax":"0.65","total":"117.00","total_tax":"7.65","billing":{"first_name":"k","last_name":"b","company":"Canada","address_1":"123
+        very long drive","address_2":"","city":"Singapore","state":"","postcode":"12346","country":"SG","email":"karen@tradegecko.com","phone":"96960589"},"shipping":{"first_name":"k","last_name":"b","company":"Canada","address_1":"123
+        very long drive","address_2":"","city":"Singapore","state":"","postcode":"12346","country":"SG"},"payment_method":"cod","payment_method_title":"Cash
+        on Delivery","transaction_id":"","customer_ip_address":"202.55.70.76","customer_user_agent":"Mozilla\/5.0
+        (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/57.0.2987.133
+        Safari\/537.36","created_via":"checkout","customer_note":"Tracking Number:
+        KB123456789","date_completed":"2017-04-11T16:42:27","date_paid":null,"cart_hash":"ce4d1830192719b064768c0fa8f4aa0f","line_items":[{"id":1775,"name":"Copy
+        of Copy of Pen","sku":"penpineapplepen2","product_id":7785,"variation_id":0,"quantity":1,"tax_class":"","price":"9.35","subtotal":"9.35","subtotal_tax":"0.65","total":"9.35","total_tax":"0.65","taxes":[{"id":1,"total":"0.6545","subtotal":"0.6545"}],"meta":[]}],"tax_lines":[{"id":1782,"rate_code":"GST-1","rate_id":1,"label":"GST","compound":false,"tax_total":"0.65","shipping_tax_total":"7.00"}],"shipping_lines":[{"id":1776,"method_title":"Flat
+        Rate","method_id":"legacy_flat_rate","total":"100.00","total_tax":"0.00","taxes":[]}],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7787"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}],"customer":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/12"}]}},{"id":7786,"parent_id":0,"status":"processing","order_key":"wc_order_58ec8a1479fb8","number":"7786","currency":"SGD","version":"2.6.8","prices_include_tax":true,"date_created":"2017-04-11T07:47:32","date_modified":"2017-04-11T07:47:32","customer_id":12,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"100.00","shipping_tax":"7.00","cart_tax":"0.65","total":"117.00","total_tax":"7.65","billing":{"first_name":"k","last_name":"b","company":"Canada","address_1":"123
+        very long drive","address_2":"","city":"Singapore","state":"","postcode":"12346","country":"SG","email":"karen@tradegecko.com","phone":"96960589"},"shipping":{"first_name":"k","last_name":"b","company":"Canada","address_1":"123
+        very long drive","address_2":"","city":"Singapore","state":"","postcode":"12346","country":"SG"},"payment_method":"cod","payment_method_title":"Cash
+        on Delivery","transaction_id":"","customer_ip_address":"202.55.70.76","customer_user_agent":"Mozilla\/5.0
+        (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/57.0.2987.133
+        Safari\/537.36","created_via":"checkout","customer_note":"Carrier: test\r\nTracking
+        Number: BB1234567890","date_completed":null,"date_paid":"2017-04-11T15:47:32","cart_hash":"ce4d1830192719b064768c0fa8f4aa0f","line_items":[{"id":1772,"name":"Copy
+        of Copy of Pen","sku":"penpineapplepen2","product_id":7785,"variation_id":0,"quantity":1,"tax_class":"","price":"9.35","subtotal":"9.35","subtotal_tax":"0.65","total":"9.35","total_tax":"0.65","taxes":[{"id":1,"total":"0.6542","subtotal":"0.6542"}],"meta":[]}],"tax_lines":[{"id":1774,"rate_code":"GST-1","rate_id":1,"label":"GST","compound":false,"tax_total":"0.65","shipping_tax_total":"7.00"}],"shipping_lines":[{"id":1773,"method_title":"Flat
+        Rate","method_id":"legacy_flat_rate","total":"100.00","total_tax":"0.00","taxes":[]}],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7786"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}],"customer":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/12"}]}},{"id":7783,"parent_id":0,"status":"processing","order_key":"wc_order_58ec87e2023c4","number":"7783","currency":"SGD","version":"2.6.8","prices_include_tax":true,"date_created":"2017-04-11T07:38:10","date_modified":"2017-04-11T07:38:10","customer_id":12,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"100.00","shipping_tax":"7.00","cart_tax":"1.31","total":"127.00","total_tax":"8.31","billing":{"first_name":"k","last_name":"b","company":"Canada","address_1":"123
+        very long drive","address_2":"","city":"Singapore","state":"","postcode":"12346","country":"SG","email":"karen@tradegecko.com","phone":"96960589"},"shipping":{"first_name":"k","last_name":"b","company":"Canada","address_1":"123
+        very long drive","address_2":"","city":"Singapore","state":"","postcode":"12346","country":"SG"},"payment_method":"cod","payment_method_title":"Cash
+        on Delivery","transaction_id":"","customer_ip_address":"202.55.70.76","customer_user_agent":"Mozilla\/5.0
+        (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/57.0.2987.133
+        Safari\/537.36","created_via":"checkout","customer_note":"shipping details
+        here test","date_completed":null,"date_paid":"2017-04-11T15:38:10","cart_hash":"dc6de02f60c8e7a75002e9c2b980a998","line_items":[{"id":1769,"name":"Water
+        Bottle Blue","sku":"waterbottlesku2017","product_id":7777,"variation_id":0,"quantity":1,"tax_class":"","price":"18.69","subtotal":"18.69","subtotal_tax":"1.31","total":"18.69","total_tax":"1.31","taxes":[{"id":1,"total":"1.3084","subtotal":"1.3084"}],"meta":[]}],"tax_lines":[{"id":1771,"rate_code":"GST-1","rate_id":1,"label":"GST","compound":false,"tax_total":"1.31","shipping_tax_total":"7.00"}],"shipping_lines":[{"id":1770,"method_title":"Flat
+        Rate","method_id":"legacy_flat_rate","total":"100.00","total_tax":"0.00","taxes":[]}],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7783"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}],"customer":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/12"}]}},{"id":7781,"parent_id":0,"status":"processing","order_key":"order_58e9fa7223043","number":"7781","currency":"SGD","version":"2.6.8","prices_include_tax":true,"date_created":"2017-04-09T09:07:00","date_modified":"2017-04-09T09:10:14","customer_id":17,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"0.00","shipping_tax":"0.00","cart_tax":"0.00","total":"0.00","total_tax":"0.00","billing":{"first_name":"Billing","last_name":"Test","company":"","address_1":"Woo
+        Test Update","address_2":"","city":"","state":"","postcode":"","country":"AX","email":"","phone":""},"shipping":{"first_name":"Shipping","last_name":"Test","company":"","address_1":"Woo
+        Test Update - Test shipping address","address_2":"","city":"","state":"","postcode":"","country":"AX"},"payment_method":"cod","payment_method_title":"Cash
+        on Delivery","transaction_id":"","customer_ip_address":"","customer_user_agent":"","created_via":"","customer_note":"Shipping
+        details: Testing","date_completed":null,"date_paid":"2017-04-09T17:07:00","cart_hash":"","line_items":[{"id":1768,"name":"Strad
+        Violin","sku":"","product_id":1520,"variation_id":0,"quantity":1,"tax_class":"","price":"0.93","subtotal":"0.93","subtotal_tax":"0.00","total":"0.93","total_tax":"0.00","taxes":[],"meta":[]}],"tax_lines":[],"shipping_lines":[],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7781"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}],"customer":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/17"}]}},{"id":7731,"parent_id":0,"status":"completed","order_key":"order_58dcb895ccada","number":"7731","currency":"SGD","version":"2.6.8","prices_include_tax":true,"date_created":"2017-03-30T07:48:00","date_modified":"2017-03-30T07:49:56","customer_id":0,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"0.00","shipping_tax":"0.00","cart_tax":"0.79","total":"12.01","total_tax":"0.79","billing":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"","phone":""},"shipping":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""},"payment_method":"","payment_method_title":"","transaction_id":"","customer_ip_address":"","customer_user_agent":"","created_via":"","customer_note":"","date_completed":"2017-03-30T15:49:42","date_paid":null,"cart_hash":"","line_items":[{"id":1759,"name":"Karen
+        Test Product","sku":"Karen Test Product123456789","product_id":7720,"variation_id":0,"quantity":1,"tax_class":"","price":"11.22","subtotal":"11.22","subtotal_tax":"0.79","total":"11.22","total_tax":"0.79","taxes":[{"id":1,"total":"0.7854","subtotal":"0.7854"}],"meta":[]}],"tax_lines":[{"id":1765,"rate_code":"GST-1","rate_id":1,"label":"GST","compound":false,"tax_total":"0.79","shipping_tax_total":"0.00"}],"shipping_lines":[],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7731"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}]}},{"id":7693,"parent_id":0,"status":"completed","order_key":"order_58c8ad978a866","number":"7693","currency":"SGD","version":"2.6.8","prices_include_tax":true,"date_created":"2017-03-15T02:56:00","date_modified":"2017-03-15T02:57:41","customer_id":21,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"0.00","shipping_tax":"0.00","cart_tax":"1.05","total":"16.00","total_tax":"1.05","billing":{"first_name":"111","last_name":"111","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"","phone":""},"shipping":{"first_name":"111","last_name":"111","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""},"payment_method":"","payment_method_title":"","transaction_id":"","customer_ip_address":"","customer_user_agent":"","created_via":"","customer_note":"","date_completed":"2017-03-15T10:57:28","date_paid":"2017-03-15T10:56:00","cart_hash":"","line_items":[{"id":1754,"name":"Apple
+        Green - Kids - Classic Polo Contrast Logo","sku":null,"product_id":0,"variation_id":0,"quantity":1,"tax_class":"","price":"14.95","subtotal":"14.95","subtotal_tax":"1.05","total":"14.95","total_tax":"1.05","taxes":[{"id":1,"total":"1.0467","subtotal":"1.0467"}],"meta":[]}],"tax_lines":[{"id":1758,"rate_code":"GST-1","rate_id":1,"label":"GST","compound":false,"tax_total":"1.05","shipping_tax_total":"0.00"}],"shipping_lines":[],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7693"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}],"customer":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/21"}]}},{"id":7692,"parent_id":0,"status":"completed","order_key":"order_58c8aa030e28f","number":"7692","currency":"SGD","version":"2.6.8","prices_include_tax":true,"date_created":"2017-03-15T02:38:00","date_modified":"2017-03-15T02:43:16","customer_id":20,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"0.00","shipping_tax":"0.00","cart_tax":"2.62","total":"40.00","total_tax":"2.62","billing":{"first_name":"121","last_name":"121","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"","phone":""},"shipping":{"first_name":"121","last_name":"121","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""},"payment_method":"","payment_method_title":"","transaction_id":"","customer_ip_address":"","customer_user_agent":"","created_via":"","customer_note":"","date_completed":"2017-03-15T10:43:16","date_paid":null,"cart_hash":"","line_items":[{"id":1751,"name":"Sweatshirt
+        Hoodie","sku":"","product_id":3719,"variation_id":0,"quantity":1,"tax_class":"","price":"37.38","subtotal":"37.38","subtotal_tax":"2.62","total":"37.38","total_tax":"2.62","taxes":[{"id":1,"total":"2.6168","subtotal":"2.6168"}],"meta":[]}],"tax_lines":[{"id":1753,"rate_code":"GST-1","rate_id":1,"label":"GST","compound":false,"tax_total":"2.62","shipping_tax_total":"0.00"}],"shipping_lines":[],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7692"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}],"customer":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/20"}]}}]'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:32:25 GMT
+- request:
+    method: post
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders
+    body:
+      encoding: UTF-8
+      string: '{"id":null,"billing":null,"coupon_lines":[],"currency":null,"customer_id":2,"fee_lines":[],"line_items":[{"id":null,"product_id":6512,"quantity":2,"subtotal":null,"subtotal_tax":null,"total":null,"total_tax":null,"sku":null,"name":null,"price":null,"tax_class":null,"meta":[],"variations":[]}],"customer_note":"This
+        is note","parent_id":null,"payment_method":null,"payment_method_title":null,"shipping":null,"shipping_lines":[{"id":null,"method_id":"flat_rate","method_title":"Flat
+        Rate","total":"10.0"}],"status":null,"set_paid":null,"transaction_id":null,"cart_hash":null,"cart_tax":null,"created_via":null,"customer_ip_address":null,"customer_user_agent":null,"date_completed":null,"date_created":null,"date_modified":null,"date_paid":null,"discount_tax":null,"discount_total":null,"number":null,"order_key":null,"prices_include_tax":null,"refunds":[],"shipping_tax":null,"shipping_total":null,"subtotal":null,"subtotal_tax":null,"tax_lines":[],"total":null,"total_discount":null,"total_shipping":null,"total_tax":null,"version":null}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:32:27 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1425'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Set-Cookie:
+      - wpe-auth=c9392ecd47e7561afbcd1eaf455c30b9; path=/; secure
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate, max-age=0
+      Last-Modified:
+      - ''
+      X-Qm-Overview-Time-Taken:
+      - '1.0299'
+      X-Qm-Overview-Time-Usage:
+      - 0.0% of 3,600s limit
+      X-Qm-Overview-Memory:
+      - 48,249 kB
+      X-Qm-Overview-Memory-Usage:
+      - 9.2% of 524,288 kB limit
+      Location:
+      - https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders/7877
+      Allow:
+      - GET, POST
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"id":7877,"parent_id":0,"status":"pending","order_key":"wc_order_5901ac9b586e5","number":"7877","currency":"SGD","version":"3.0.4","prices_include_tax":true,"date_created":"2017-04-27T08:32:27","date_modified":"2017-04-27T08:32:27","customer_id":2,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"10.00","shipping_tax":"0.00","cart_tax":"0.00","total":"10.00","total_tax":"0.00","billing":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"cameron+woo@tradegecko.com","phone":""},"shipping":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""},"payment_method":"","payment_method_title":"","transaction_id":"","customer_ip_address":"","customer_user_agent":"","created_via":"rest-api","customer_note":"This
+        is note","date_completed":null,"date_paid":null,"cart_hash":"","line_items":[],"tax_lines":[],"shipping_lines":[{"id":1796,"method_title":"Flat
+        Rate","method_id":"flat_rate","total":"10.00","total_tax":"0.00","taxes":[]}],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7877"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}],"customer":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/2"}]}}'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:32:27 GMT
+- request:
+    method: put
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/7877
+    body:
+      encoding: UTF-8
+      string: '{"id":7877,"billing":{"address_1":"","address_2":"","city":"","company":"","country":"","email":"cameron+woo@tradegecko.com","first_name":"","last_name":"","phone":"","postcode":"","state":""},"coupon_lines":[],"currency":"SGD","customer_id":3,"fee_lines":[],"line_items":[],"customer_note":"This
+        new note","parent_id":0,"payment_method":"","payment_method_title":"","shipping":{"address_1":"","address_2":"","city":"","company":"","country":"","email":null,"first_name":"","last_name":"","phone":null,"postcode":"","state":""},"shipping_lines":[{"id":1796,"method_id":"flat_rate","method_title":"Flat
+        Rate","total":"10.0"}],"status":"pending","set_paid":null,"transaction_id":"","cart_hash":"","cart_tax":"0.0","created_via":"rest-api","customer_ip_address":"","customer_user_agent":"","date_completed":null,"date_created":"2017-04-27T08:32:27.000+00:00","date_modified":"2017-04-27T08:32:27.000+00:00","date_paid":null,"discount_tax":"0.0","discount_total":"0.0","number":"7877","order_key":"wc_order_5901ac9b586e5","prices_include_tax":true,"refunds":[],"shipping_tax":"0.0","shipping_total":"10.0","subtotal":null,"subtotal_tax":null,"tax_lines":[],"total":"10.0","total_discount":null,"total_shipping":null,"total_tax":"0.0","version":"3.0.4"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:32:44 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1426'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Set-Cookie:
+      - wpe-auth=c9392ecd47e7561afbcd1eaf455c30b9; path=/; secure
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate, max-age=0
+      Last-Modified:
+      - ''
+      X-Qm-Overview-Time-Taken:
+      - '0.7808'
+      X-Qm-Overview-Time-Usage:
+      - 0.0% of 3,600s limit
+      X-Qm-Overview-Memory:
+      - 47,978 kB
+      X-Qm-Overview-Memory-Usage:
+      - 9.2% of 524,288 kB limit
+      Allow:
+      - GET, POST, PUT, PATCH, DELETE
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"id":7877,"parent_id":0,"status":"pending","order_key":"wc_order_5901ac9b586e5","number":"7877","currency":"SGD","version":"3.0.4","prices_include_tax":true,"date_created":"2017-04-27T08:32:27","date_modified":"2017-04-27T08:32:44","customer_id":3,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"10.00","shipping_tax":"0.00","cart_tax":"0.00","total":"10.00","total_tax":"0.00","billing":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"cameron+woo@tradegecko.com","phone":""},"shipping":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""},"payment_method":"","payment_method_title":"","transaction_id":"","customer_ip_address":"","customer_user_agent":"","created_via":"rest-api","customer_note":"This
+        new note","date_completed":null,"date_paid":null,"cart_hash":"","line_items":[],"tax_lines":[],"shipping_lines":[{"id":1796,"method_title":"Flat
+        Rate","method_id":"flat_rate","total":"10.00","total_tax":"0.00","taxes":[]}],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7877"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}],"customer":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/3"}]}}'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:32:44 GMT
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/7877
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:32:46 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1426'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Set-Cookie:
+      - wpe-auth=c9392ecd47e7561afbcd1eaf455c30b9; path=/; secure
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      Last-Modified:
+      - ''
+      X-Qm-Overview-Time-Taken:
+      - '0.6835'
+      X-Qm-Overview-Time-Usage:
+      - 0.0% of 3,600s limit
+      X-Qm-Overview-Memory:
+      - 47,568 kB
+      X-Qm-Overview-Memory-Usage:
+      - 9.1% of 524,288 kB limit
+      Allow:
+      - GET, POST, PUT, PATCH, DELETE
+      X-Cacheable:
+      - NO:Passed
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"id":7877,"parent_id":0,"status":"pending","order_key":"wc_order_5901ac9b586e5","number":"7877","currency":"SGD","version":"3.0.4","prices_include_tax":true,"date_created":"2017-04-27T08:32:27","date_modified":"2017-04-27T08:32:44","customer_id":3,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"10.00","shipping_tax":"0.00","cart_tax":"0.00","total":"10.00","total_tax":"0.00","billing":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"cameron+woo@tradegecko.com","phone":""},"shipping":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""},"payment_method":"","payment_method_title":"","transaction_id":"","customer_ip_address":"","customer_user_agent":"","created_via":"rest-api","customer_note":"This
+        new note","date_completed":null,"date_paid":null,"cart_hash":"","line_items":[],"tax_lines":[],"shipping_lines":[{"id":1796,"method_title":"Flat
+        Rate","method_id":"flat_rate","total":"10.00","total_tax":"0.00","taxes":[]}],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7877"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}],"customer":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/3"}]}}'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:32:46 GMT
+- request:
+    method: delete
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/7877
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:32:48 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1426'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Set-Cookie:
+      - wpe-auth=c9392ecd47e7561afbcd1eaf455c30b9; path=/; secure
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate, max-age=0
+      Last-Modified:
+      - ''
+      X-Qm-Overview-Time-Taken:
+      - '0.8994'
+      X-Qm-Overview-Time-Usage:
+      - 0.0% of 3,600s limit
+      X-Qm-Overview-Memory:
+      - 47,950 kB
+      X-Qm-Overview-Memory-Usage:
+      - 9.1% of 524,288 kB limit
+      Allow:
+      - GET, POST, PUT, PATCH, DELETE
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"id":7877,"parent_id":0,"status":"pending","order_key":"wc_order_5901ac9b586e5","number":"7877","currency":"SGD","version":"3.0.4","prices_include_tax":true,"date_created":"2017-04-27T08:32:27","date_modified":"2017-04-27T08:32:44","customer_id":3,"discount_total":"0.00","discount_tax":"0.00","shipping_total":"10.00","shipping_tax":"0.00","cart_tax":"0.00","total":"10.00","total_tax":"0.00","billing":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"cameron+woo@tradegecko.com","phone":""},"shipping":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""},"payment_method":"","payment_method_title":"","transaction_id":"","customer_ip_address":"","customer_user_agent":"","created_via":"rest-api","customer_note":"This
+        new note","date_completed":null,"date_paid":null,"cart_hash":"","line_items":[],"tax_lines":[],"shipping_lines":[{"id":1796,"method_title":"Flat
+        Rate","method_id":"flat_rate","total":"10.00","total_tax":"0.00","taxes":[]}],"fee_lines":[],"coupon_lines":[],"refunds":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders\/7877"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/orders"}],"customer":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/3"}]}}'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:32:48 GMT
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:39:38 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '107'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      X-Cacheable:
+      - NO:Auth
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+    body:
+      encoding: UTF-8
+      string: '{"code":"woocommerce_rest_cannot_view","message":"Sorry, you cannot
+        list resources.","data":{"status":401}}'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:39:39 GMT
+- request:
+    method: post
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders
+    body:
+      encoding: UTF-8
+      string: '{"id":null,"billing":null,"coupon_lines":[],"currency":null,"customer_id":2,"fee_lines":[],"line_items":[{"id":null,"product_id":6512,"quantity":2,"subtotal":null,"subtotal_tax":null,"total":null,"total_tax":null,"sku":null,"name":null,"price":null,"tax_class":null,"meta":[],"variations":[]}],"customer_note":"This
+        is note","parent_id":null,"payment_method":null,"payment_method_title":null,"shipping":null,"shipping_lines":[{"id":null,"method_id":"flat_rate","method_title":"Flat
+        Rate","total":"10.0"}],"status":null,"set_paid":null,"transaction_id":null,"cart_hash":null,"cart_tax":null,"created_via":null,"customer_ip_address":null,"customer_user_agent":null,"date_completed":null,"date_created":null,"date_modified":null,"date_paid":null,"discount_tax":null,"discount_total":null,"number":null,"order_key":null,"prices_include_tax":null,"refunds":[],"shipping_tax":null,"shipping_total":null,"subtotal":null,"subtotal_tax":null,"tax_lines":[],"total":null,"total_discount":null,"total_shipping":null,"total_tax":null,"version":null}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:39:40 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '123'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+    body:
+      encoding: UTF-8
+      string: '{"code":"woocommerce_rest_cannot_create","message":"Sorry, you are
+        not allowed to create resources.","data":{"status":401}}'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:39:40 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,146 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/coupons
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:38:18 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '8300'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Set-Cookie:
+      - wpe-auth=c9392ecd47e7561afbcd1eaf455c30b9; path=/; secure
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      Last-Modified:
+      - ''
+      X-Qm-Overview-Time-Taken:
+      - '0.8269'
+      X-Qm-Overview-Time-Usage:
+      - 0.0% of 3,600s limit
+      X-Qm-Overview-Memory:
+      - 47,630 kB
+      X-Qm-Overview-Memory-Usage:
+      - 9.1% of 524,288 kB limit
+      X-Wp-Total:
+      - '10'
+      X-Wp-Totalpages:
+      - '1'
+      Allow:
+      - GET, POST
+      X-Cacheable:
+      - NO:Passed
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '[{"id":7427,"code":"tgtestcoupon","date_created":"2016-11-22T08:22:28","date_modified":"2016-11-22T08:22:28","discount_type":"fixed_product","description":"Test
+        coupon","amount":"50.00","expiry_date":"2016-11-28T16:00:00","usage_count":1,"individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":null,"free_shipping":false,"product_categories":[],"excluded_product_categories":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","email_restrictions":[],"used_by":["5"],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons\/7427"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons"}]}},{"id":4948,"code":"tg-test","date_created":"2016-03-30T21:36:07","date_modified":"2016-03-30T21:36:07","discount_type":"fixed_cart","description":"Test
+        SO cycle","amount":"50.00","expiry_date":"2016-03-30T16:00:00","usage_count":0,"individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":null,"free_shipping":false,"product_categories":[],"excluded_product_categories":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","email_restrictions":[],"used_by":[],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons\/4948"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons"}]}},{"id":4870,"code":"croutoncode","date_created":"2016-03-29T15:38:19","date_modified":"2016-03-30T11:36:14","discount_type":"fixed_product","description":"Crouton","amount":"20.00","expiry_date":"2016-03-30T16:00:00","usage_count":4,"individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":null,"free_shipping":false,"product_categories":[],"excluded_product_categories":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","email_restrictions":[],"used_by":["12","12","13","13"],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons\/4870"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons"}]}},{"id":4200,"code":"10usddiscount4197and4204","date_created":"2016-02-29T15:21:01","date_modified":"2016-02-29T15:59:55","discount_type":"fixed_product","description":"","amount":"10.00","expiry_date":null,"usage_count":15,"individual_use":false,"product_ids":[4197,4204],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":null,"free_shipping":false,"product_categories":[],"excluded_product_categories":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","email_restrictions":[],"used_by":["5","5","5","5","5","5","5","5","5","5","5","5","5","12","13"],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons\/4200"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons"}]}},{"id":4199,"code":"10percentdiscount","date_created":"2016-02-29T15:19:09","date_modified":"2016-02-29T15:19:09","discount_type":"percent","description":"","amount":"10.00","expiry_date":null,"usage_count":15,"individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":null,"free_shipping":false,"product_categories":[],"excluded_product_categories":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","email_restrictions":[],"used_by":["5","5","5","5","5","5","5","5","5","5","5","5","5","5","13"],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons\/4199"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons"}]}},{"id":4198,"code":"10usddiscount","date_created":"2016-02-29T15:18:30","date_modified":"2016-02-29T15:18:30","discount_type":"fixed_cart","description":"","amount":"10.00","expiry_date":null,"usage_count":6,"individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":null,"free_shipping":false,"product_categories":[],"excluded_product_categories":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","email_restrictions":[],"used_by":["13","13","13","13","13","13"],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons\/4198"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons"}]}},{"id":1731,"code":"productpdiscount","date_created":"2015-06-15T18:22:35","date_modified":"2015-06-15T18:22:35","discount_type":"percent","description":"Product
+        Percent Discount","amount":"10.00","expiry_date":null,"usage_count":59,"individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":null,"free_shipping":false,"product_categories":[],"excluded_product_categories":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","email_restrictions":[],"used_by":["5","5","5","5","5","5","5","5","5","5","5","5","5","5","5","5","5","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","13","13","12","12","13","13","13","13","13","13","13","13","13","13","13","13","13"],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons\/1731"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons"}]}},{"id":1730,"code":"productdiscount","date_created":"2015-06-15T18:21:39","date_modified":"2015-10-29T23:16:08","discount_type":"fixed_product","description":"Product
+        Discount","amount":"10.00","expiry_date":null,"usage_count":42,"individual_use":false,"product_ids":[1505,285,1511],"exclude_product_ids":[3486],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":null,"free_shipping":false,"product_categories":[],"excluded_product_categories":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","email_restrictions":[],"used_by":["5","5","5","5","5","5","5","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","12","13","13","13","13","13","13","13","12"],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons\/1730"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons"}]}},{"id":1729,"code":"cartpdiscount","date_created":"2015-06-15T18:20:59","date_modified":"2015-06-15T18:20:59","discount_type":"percent","description":"cart
+        percent discount","amount":"10.00","expiry_date":null,"usage_count":17,"individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":null,"free_shipping":false,"product_categories":[],"excluded_product_categories":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","email_restrictions":[],"used_by":["5","5","5","5","5","5","5","5","5","5","5","5","5","5","5","13","13"],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons\/1729"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons"}]}},{"id":1727,"code":"cartdiscount","date_created":"2015-06-15T18:11:40","date_modified":"2015-06-15T18:18:17","discount_type":"fixed_cart","description":"Cart
+        Discount","amount":"10.00","expiry_date":null,"usage_count":14,"individual_use":false,"product_ids":[],"exclude_product_ids":[],"usage_limit":null,"usage_limit_per_user":null,"limit_usage_to_x_items":null,"free_shipping":false,"product_categories":[],"excluded_product_categories":[],"exclude_sale_items":false,"minimum_amount":"0.00","maximum_amount":"0.00","email_restrictions":[],"used_by":["5","5","5","5","5","5","5","5","5","5","5","12","13","12"],"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons\/1727"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/coupons"}]}}]'
+    http_version:
+  recorded_at: Thu, 27 Apr 2017 08:38:18 GMT
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/coupons
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:39:30 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '107'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      X-Cacheable:
+      - NO:Auth
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+    body:
+      encoding: UTF-8
+      string: '{"code":"woocommerce_rest_cannot_view","message":"Sorry, you cannot
+        list resources.","data":{"status":401}}'
+    http_version:
+  recorded_at: Thu, 27 Apr 2017 08:39:30 GMT
+recorded_with: VCR 2.9.3
