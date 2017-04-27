@@ -1,13 +1,13 @@
 require 'spec_helper'
 
 shared_examples 'parsable response' do
-  let(:parsed_response) { WoocommerceAPI::Resource.parse_response(response) }
+  let(:parsed_response) { WoocommerceAPI::ResourceProxy.parse_response(response) }
   it 'parses response body to json' do
     expect(parsed_response).to be_kind_of(Hash)
     expect(parsed_response).to eq({"count" => 123})
   end
 end
-describe WoocommerceAPI::Resource do
+describe WoocommerceAPI::ResourceProxy do
   describe '.parse_response' do
     context 'Parsing json body' do
       it_should_behave_like 'parsable response' do
@@ -23,10 +23,9 @@ describe WoocommerceAPI::Resource do
       it 'raises error' do
         response = double(body: "something nonesense")
         expect{
-          WoocommerceAPI::Resource.parse_response(response)
+          WoocommerceAPI::ResourceProxy.parse_response(response)
         }.to raise_error(JSON::ParserError)
       end
     end
   end
 end
-

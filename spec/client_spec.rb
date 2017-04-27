@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe WoocommerceAPI::Client do
-  include_context "woocommerce_api_services", use_cassette: 'client'
+  include_context "woocommerce_api_services", use_cassette: 'legacy/client'
 
   context "oauth https mode" do
     it { expect(WoocommerceAPI::Product.count).to eq 201 }
