@@ -1,0 +1,151 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/customers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:37:10 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '7311'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Set-Cookie:
+      - wpe-auth=c9392ecd47e7561afbcd1eaf455c30b9; path=/; secure
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      Last-Modified:
+      - ''
+      X-Qm-Overview-Time-Taken:
+      - '0.6744'
+      X-Qm-Overview-Time-Usage:
+      - 0.0% of 3,600s limit
+      X-Qm-Overview-Memory:
+      - 47,803 kB
+      X-Qm-Overview-Memory-Usage:
+      - 9.1% of 524,288 kB limit
+      X-Wp-Total:
+      - '8'
+      X-Wp-Totalpages:
+      - '1'
+      Allow:
+      - GET, POST
+      X-Cacheable:
+      - NO:Passed
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '[{"id":14,"date_created":"2016-03-30T00:26:23","date_modified":null,"email":"customer@tradegecko.com","first_name":"Custo","last_name":"Mer","username":"testcustomer","last_order":{"id":7442,"date":"2016-11-24T14:19:00"},"orders_count":1,"total_spent":"0.00","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/7d880ab6de6761fc5cc0bd8834f175c1?s=96","billing":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"","phone":""},"shipping":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""},"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/14"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers"}]}},{"id":21,"date_created":"2017-03-14T18:52:56","date_modified":"2017-03-15T02:57:37","email":"GoGoGoTestWC@tradegecko.com","first_name":"EzzatiTestWC","last_name":"EzzatiTestWC","username":"GoGoGoTestWC","last_order":{"id":7693,"date":"2017-03-15T02:56:00"},"orders_count":1,"total_spent":"16.00","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/e37c558efd106eaabc535481fb35affc?s=96","billing":{"first_name":"111","last_name":"111","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"GoGoGoTestWC@tradegecko.com","phone":""},"shipping":{"first_name":"111","last_name":"111","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""},"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/21"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers"}]}},{"id":23,"date_created":"2017-04-26T15:01:47","date_modified":"2017-04-26T23:13:51","email":"grace.estrella@tradegecko.com","first_name":"Grace","last_name":"Estrella","username":"Woo
+        Created Grace","last_order":{"id":7850,"date":"2017-04-26T23:08:00"},"orders_count":1,"total_spent":"40.00","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/a48cd804fbff4eb1acf51643f32a19d0?s=96","billing":{"first_name":"grace","last_name":"estrella","company":"Grace
+        Estrella","address_1":"123","address_2":"very long drive","city":"beverly
+        hills","state":"CA","postcode":"90210","country":"US","email":"mgracev4@yahoo.com","phone":""},"shipping":{"first_name":"grace","last_name":"estrella","company":"Grace
+        Estrella","address_1":"123","address_2":"very long drive","city":"beverly
+        hills","state":"CA","postcode":"90210","country":"US"},"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/23"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers"}]}},{"id":17,"date_created":"2017-01-10T13:37:36","date_modified":"2017-01-10T21:43:05","email":"maria.lopez@tradegecko.com","first_name":"Maan","last_name":"hex","username":"irtest","last_order":{"id":7781,"date":"2017-04-09T09:07:00"},"orders_count":1,"total_spent":"0.00","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/7cc5015b7e0008e12c3f9c75e0d0e805?s=96","billing":{"first_name":"","last_name":"","company":"","address_1":"Woo
+        Test Update","address_2":"","city":"","state":"","postcode":"","country":"AX","email":"","phone":""},"shipping":{"first_name":"","last_name":"","company":"","address_1":"Woo
+        Test Update","address_2":"","city":"","state":"","postcode":"","country":"AX"},"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/17"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers"}]}},{"id":13,"date_created":"2016-03-29T19:59:08","date_modified":null,"email":"meantortoise@maildrop.cc","first_name":"Mean","last_name":"Tortoise","username":"meantortoise","last_order":{"id":5252,"date":"2016-04-07T10:07:58"},"orders_count":11,"total_spent":"43550.30","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/7a7773f40f7863c612382957cc0517d8?s=96","billing":{"first_name":"Mean","last_name":"Tortoise","company":"Mean
+        Tortoise","address_1":"Lake Street 2134","address_2":"","city":"Singapore","state":"","postcode":"12345","country":"SG","email":"meantortoise@maildrop.cc","phone":"12341234"},"shipping":{"first_name":"Mean","last_name":"Tortoise","company":"Mean
+        Tortoise","address_1":"Lake Street 2134","address_2":"","city":"Singapore","state":"","postcode":"12345","country":"SG"},"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/13"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers"}]}},{"id":19,"date_created":"2017-03-14T18:36:16","date_modified":null,"email":"merdin@tradegecko.com","first_name":"Merdin","last_name":"Coria","username":"MerdinCoria","last_order":{"id":null,"date":null},"orders_count":0,"total_spent":"0.00","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/8af1e7131e7ae10974ec917f4ead6d66?s=96","billing":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"","phone":""},"shipping":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""},"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/19"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers"}]}},{"id":15,"date_created":"2016-09-09T12:39:35","date_modified":"2016-09-09T20:39:35","email":"oscar@tradegecko.com","first_name":"Oscar","last_name":"Mazariegos","username":"oscar","last_order":{"id":null,"date":null},"orders_count":0,"total_spent":"0.00","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/c75161ab339fd3c7d0b37275270aee08?s=96","billing":{"first_name":"Oscar","last_name":"Mazariegos","company":"TradeGecko","address_1":"8338
+        King St W","address_2":"","city":"Toronto","state":"ON","postcode":"M3A 2P7","country":"CA","email":"oscar@tradegecko.com","phone":"4162002486"},"shipping":{"first_name":"Oscar","last_name":"Mazariegos","company":"TradeGecko","address_1":"8338
+        King St W","address_2":"","city":"Toronto","state":"ON","postcode":"M3A 2P7","country":"CA"},"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/15"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers"}]}},{"id":20,"date_created":"2017-03-14T18:37:10","date_modified":null,"email":"WooCommercetest@tradegecko.com","first_name":"WooCommercetest","last_name":"WooCommercetest","username":"TestContactWooCommerce","last_order":{"id":7692,"date":"2017-03-15T02:38:00"},"orders_count":1,"total_spent":"40.00","avatar_url":"https:\/\/secure.gravatar.com\/avatar\/ef1c72bd13a31cdd59d1f6ae4da083d1?s=96","billing":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":"","email":"","phone":""},"shipping":{"first_name":"","last_name":"","company":"","address_1":"","address_2":"","city":"","state":"","postcode":"","country":""},"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers\/20"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/customers"}]}}]'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:37:10 GMT
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/customers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:39:32 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '107'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      X-Cacheable:
+      - NO:Auth
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+    body:
+      encoding: UTF-8
+      string: '{"code":"woocommerce_rest_cannot_view","message":"Sorry, you cannot
+        list resources.","data":{"status":401}}'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:39:32 GMT
+recorded_with: VCR 2.9.3

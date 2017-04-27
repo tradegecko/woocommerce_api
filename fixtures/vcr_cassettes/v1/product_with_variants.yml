@@ -1,0 +1,343 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:07:10 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '34570'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Set-Cookie:
+      - wpe-auth=c9392ecd47e7561afbcd1eaf455c30b9; path=/; secure
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/wc/v1/products?page=2>; rel="next"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      Last-Modified:
+      - ''
+      X-Qm-Overview-Time-Taken:
+      - '1.1186'
+      X-Qm-Overview-Time-Usage:
+      - 0.0% of 3,600s limit
+      X-Qm-Overview-Memory:
+      - 50,681 kB
+      X-Qm-Overview-Memory-Usage:
+      - 9.7% of 524,288 kB limit
+      X-Wp-Total:
+      - '305'
+      X-Wp-Totalpages:
+      - '31'
+      Allow:
+      - GET, POST
+      X-Cacheable:
+      - NO:Passed
+      Cache-Control:
+      - max-age=0, must-revalidate
+      Accept-Ranges:
+      - bytes
+      X-Cache:
+      - MISS
+      X-Pass-Why:
+      - auth
+      X-Cache-Group:
+      - ''
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '[{"id":7863,"name":"UpdatedTitle","slug":"premium-quality-test-9","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-9\/","date_created":"2017-04-27T07:49:56","date_modified":"2017-04-27T07:49:58","type":"simple","status":"publish","featured":false,"catalog_visibility":"visible","description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","sku":"","price":"34.77","regular_price":"34.77","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"<span
+        class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;<\/span>34.77<\/span>","on_sale":false,"purchasable":true,"total_sales":0,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":345,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"sold_individually":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":false,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":7864,"date_created":"2017-04-27T07:49:58","date_modified":"2017-04-27T07:49:58","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2017\/04\/placeholder-4.png","name":"","alt":"Placeholder","position":0}],"attributes":[],"default_attributes":[],"variations":[],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7863"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}},{"id":7862,"name":"Premium
+        Quality (TEST)","slug":"premium-quality-test-2","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-2\/","date_created":"2017-04-27T07:49:54","date_modified":"2017-04-27T07:49:54","type":"simple","status":"publish","featured":false,"catalog_visibility":"visible","description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","sku":"","price":"21.99","regular_price":"21.99","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"<span
+        class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;<\/span>21.99<\/span>","on_sale":false,"purchasable":true,"total_sales":0,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":345,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"sold_individually":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":false,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"default_attributes":[],"variations":[],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7862"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}},{"id":7838,"name":"simple","slug":"pppublish","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/pppublish\/","date_created":"2017-04-26T07:33:22","date_modified":"2017-04-26T09:29:16","type":"variable","status":"publish","featured":false,"catalog_visibility":"visible","description":"<p>pppublish<\/p>\n","short_description":"","sku":"skuskusku","price":"","regular_price":"","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"","on_sale":false,"purchasable":false,"total_sales":0,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":false,"stock_quantity":null,"in_stock":false,"backorders":"no","backorders_allowed":false,"backordered":false,"sold_individually":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":7840,"date_created":"2017-04-26T07:52:24","date_modified":"2017-04-26T07:52:24","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2017\/04\/placeholder.png","name":"","alt":"Placeholder","position":0}],"attributes":[],"default_attributes":[],"variations":[],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7838"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}},{"id":7831,"name":"PublishMeLalala","slug":"publishmelalala","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/publishmelalala\/","date_created":"2017-04-24T04:36:59","date_modified":"2017-04-24T04:37:07","type":"variable","status":"publish","featured":false,"catalog_visibility":"visible","description":"<p>PublishMeLalala<\/p>\n","short_description":"","sku":"","price":"","regular_price":"","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"","on_sale":false,"purchasable":false,"total_sales":0,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":false,"stock_quantity":null,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"sold_individually":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"Size","position":0,"visible":true,"variation":true,"options":["S","M","L","XL","XXL"]}],"default_attributes":[],"variations":[{"id":7836,"date_created":"2017-04-24T04:45:07","date_modified":"2017-04-24T04:45:07","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/publishmelalala\/?attribute_size=XXL","sku":"PUB01-XXL","price":"","regular_price":"","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":false,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":10,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"size","option":"XXL"}]}],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7831"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}},{"id":7822,"name":"TEst
+        Blanket","slug":"test-blanket","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/test-blanket\/","date_created":"2017-04-21T05:07:41","date_modified":"2017-04-24T13:50:46","type":"variable","status":"private","featured":false,"catalog_visibility":"visible","description":"<p>testing<\/p>\n","short_description":"","sku":"","price":"15.0","regular_price":"","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"<span
+        class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;<\/span>15.00<\/span>
+        &ndash; <span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;<\/span>90.00<\/span>","on_sale":false,"purchasable":true,"total_sales":0,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":false,"stock_quantity":null,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"sold_individually":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"Quantity","position":0,"visible":true,"variation":true,"options":["One
+        Blanket","Six Blankets"]},{"id":0,"name":"Colour","position":0,"visible":true,"variation":true,"options":["red","blue","white","Pink","Red","Blue","White"]}],"default_attributes":[],"variations":[{"id":7823,"date_created":"2017-04-21T05:07:44","date_modified":"2017-04-21T05:07:44","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/test-blanket\/?attribute_colour=red&attribute_quantity=One+Blanket","sku":"SKU-TEst-R-1","price":"15.0","regular_price":"15.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":500,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"1.0","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"colour","option":"red"},{"id":0,"name":"quantity","option":"One
+        Blanket"}]},{"id":7824,"date_created":"2017-04-21T05:07:44","date_modified":"2017-04-21T05:07:44","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/test-blanket\/?attribute_colour=blue&attribute_quantity=One+Blanket","sku":"SKU-TEst-B-1","price":"15.0","regular_price":"15.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":500,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"1.0","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"colour","option":"blue"},{"id":0,"name":"quantity","option":"One
+        Blanket"}]},{"id":7825,"date_created":"2017-04-21T05:07:44","date_modified":"2017-04-21T05:07:44","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/test-blanket\/?attribute_colour=white&attribute_quantity=One+Blanket","sku":"SKU-TEst-W-1","price":"15.0","regular_price":"15.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":500,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"1.0","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"colour","option":"white"},{"id":0,"name":"quantity","option":"One
+        Blanket"}]},{"id":7826,"date_created":"2017-04-21T05:07:45","date_modified":"2017-04-21T05:07:45","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/test-blanket\/?attribute_colour=Pink&attribute_quantity=One+Blanket","sku":"SKU-TEst-P-1","price":"15.0","regular_price":"15.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":500,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"1.0","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"colour","option":"Pink"},{"id":0,"name":"quantity","option":"One
+        Blanket"}]},{"id":7827,"date_created":"2017-04-21T05:07:45","date_modified":"2017-04-21T05:07:45","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/test-blanket\/?attribute_colour=Red&attribute_quantity=Six+Blankets","sku":"SKU-Test-R-6","price":"90.0","regular_price":"90.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":83,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"6.0","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"colour","option":"Red"},{"id":0,"name":"quantity","option":"Six
+        Blankets"}]},{"id":7828,"date_created":"2017-04-21T05:07:45","date_modified":"2017-04-21T05:07:45","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/test-blanket\/?attribute_colour=Blue&attribute_quantity=Six+Blankets","sku":"SKU-Test-B-6","price":"90.0","regular_price":"90.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":83,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"6.0","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"colour","option":"Blue"},{"id":0,"name":"quantity","option":"Six
+        Blankets"}]},{"id":7829,"date_created":"2017-04-21T05:07:45","date_modified":"2017-04-21T05:07:45","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/test-blanket\/?attribute_colour=White&attribute_quantity=Six+Blankets","sku":"SKU-Test-W-6","price":"90.0","regular_price":"90.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":83,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"6.0","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"colour","option":"White"},{"id":0,"name":"quantity","option":"Six
+        Blankets"}]},{"id":7830,"date_created":"2017-04-21T05:07:46","date_modified":"2017-04-21T05:07:46","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/test-blanket\/?attribute_colour=Pink&attribute_quantity=Six+Blankets","sku":"SKU-Test-P-6","price":"90.0","regular_price":"90.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":83,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"6.0","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"colour","option":"Pink"},{"id":0,"name":"quantity","option":"Six
+        Blankets"}]}],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7822"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}},{"id":7807,"name":"Pong
+        MAC","slug":"pong-mac","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/pong-mac\/","date_created":"2017-04-21T04:38:32","date_modified":"2017-04-21T04:38:32","type":"variable","status":"publish","featured":false,"catalog_visibility":"visible","description":"","short_description":"","sku":"","price":"90.0","regular_price":"","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"<span
+        class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;<\/span>90.00<\/span>","on_sale":false,"purchasable":true,"total_sales":0,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":false,"stock_quantity":null,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"sold_individually":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":7812,"date_created":"2017-04-21T04:38:41","date_modified":"2017-04-21T04:38:41","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2017\/04\/go9Wd8c5SwWpVjQodXmj_PO77310.gif","name":"","alt":"","position":0}],"attributes":[{"id":0,"name":"Size","position":0,"visible":true,"variation":true,"options":["X-Large","Medium","Small","Large"]}],"default_attributes":[],"variations":[{"id":7808,"date_created":"2017-04-21T04:38:35","date_modified":"2017-04-21T04:38:35","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/pong-mac\/?attribute_size=X-Large","sku":"PONGmac4","price":"90.0","regular_price":"90.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":-1,"in_stock":false,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"size","option":"X-Large"}]},{"id":7809,"date_created":"2017-04-21T04:38:35","date_modified":"2017-04-21T04:38:35","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/pong-mac\/?attribute_size=Medium","sku":"PONGmac2","price":"90.0","regular_price":"90.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":367,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"0.0","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"size","option":"Medium"}]},{"id":7810,"date_created":"2017-04-21T04:38:36","date_modified":"2017-04-21T04:38:36","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/pong-mac\/?attribute_size=Small","sku":"PONGmac1","price":"90.0","regular_price":"90.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":357,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"0.0","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"size","option":"Small"}]},{"id":7811,"date_created":"2017-04-21T04:38:36","date_modified":"2017-04-21T04:38:36","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/pong-mac\/?attribute_size=Large","sku":"PONGmac3","price":"90.0","regular_price":"90.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":423,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"0.0","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"size","option":"Large"}]}],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7807"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}},{"id":7793,"name":"Gecko
+        Plushie","slug":"gecko-plushie","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/gecko-plushie\/","date_created":"2017-04-18T02:00:03","date_modified":"2017-04-18T02:01:29","type":"variable","status":"publish","featured":false,"catalog_visibility":"visible","description":"","short_description":"","sku":"","price":"20.0","regular_price":"","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"<span
+        class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;<\/span>20.00<\/span>","on_sale":false,"purchasable":true,"total_sales":0,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":false,"stock_quantity":null,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"sold_individually":false,"weight":"1.0","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":7794,"date_created":"2017-04-18T02:00:07","date_modified":"2017-04-18T02:00:07","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2017\/04\/lDziRMTGRBaGtQcrgBh5_firebird-logo-500.png","name":"","alt":"","position":0}],"attributes":[{"id":0,"name":"Color","position":0,"visible":true,"variation":true,"options":["red"]}],"default_attributes":[],"variations":[{"id":7795,"date_created":"2017-04-18T02:01:29","date_modified":"2017-04-18T02:01:29","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/gecko-plushie\/?attribute_color=red","sku":"gecko-plushie-2","price":"20.0","regular_price":"20.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":50,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"1.0","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"color","option":"red"}]}],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7793"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}},{"id":7791,"name":"A23","slug":"a23","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/a23\/","date_created":"2017-04-14T15:50:40","date_modified":"2017-04-25T17:53:04","type":"variable","status":"publish","featured":false,"catalog_visibility":"visible","description":"<p>testing
+        desc update 22222<\/p>\n","short_description":"","sku":"T11-433-F","price":"","regular_price":"","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"","on_sale":false,"purchasable":false,"total_sales":0,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":62,"in_stock":true,"backorders":"notify","backorders_allowed":true,"backordered":false,"sold_individually":false,"weight":"0.0","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":7792,"date_created":"2017-04-14T15:50:43","date_modified":"2017-04-14T15:50:43","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/uploads\/2017\/04\/FUvMt8ZKQzW7tQBJLtQp_desktop.jpg","name":"","alt":"","position":0}],"attributes":[{"id":0,"name":"Size","position":0,"visible":true,"variation":true,"options":[""]}],"default_attributes":[],"variations":[],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7791"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}},{"id":7785,"name":"Copy
+        of Copy of Pen","slug":"copy-of-copy-of-pen","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/copy-of-copy-of-pen\/","date_created":"2017-04-11T07:46:03","date_modified":"2017-04-11T09:02:34","type":"simple","status":"publish","featured":false,"catalog_visibility":"visible","description":"","short_description":"","sku":"penpineapplepen2","price":"10.0","regular_price":"10.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"<span
+        class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;<\/span>10.00<\/span>","on_sale":false,"purchasable":true,"total_sales":2,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":97,"in_stock":true,"backorders":"","backorders_allowed":false,"backordered":false,"sold_individually":false,"weight":"0.0","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"default_attributes":[],"variations":[],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7785"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}},{"id":7784,"name":"Uniqlo","slug":"","permalink":"https:\/\/wpcommercetest.wpengine.com\/?post_type=product&p=7784","date_created":null,"date_modified":"2017-04-11T07:44:36","type":"simple","status":"draft","featured":false,"catalog_visibility":"visible","description":"","short_description":"","sku":"","price":"","regular_price":"","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"","on_sale":false,"purchasable":false,"total_sales":0,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":false,"stock_quantity":null,"in_stock":true,"backorders":"","backorders_allowed":false,"backordered":false,"sold_individually":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":true,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":0,"date_created":"2017-04-27T16:07:09","date_modified":"2017-04-27T16:07:09","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[],"default_attributes":[],"variations":[],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7784"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}}]'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:07:10 GMT
+- request:
+    method: post
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/products
+    body:
+      encoding: UTF-8
+      string: '{"id":null,"wc_attributes":[{"name":"Size","options":["S","M"]}],"backorders":null,"button_text":null,"catalog_visibility":null,"categories":["Clothing","T-shirts"],"cross_sell_ids":[],"date_on_sale_from":null,"date_on_sale_to":null,"default_attributes":{},"description":"Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.","dimensions":null,"download_expiry":null,"download_limit":null,"download_type":null,"downloadable":null,"downloads":null,"external_url":null,"featured":null,"images":[],"in_stock":null,"manage_stock":true,"name":"Premium
+        Quality (TEST)","parent_id":null,"purchase_note":null,"regular_price":"21.99","reviews_allowed":null,"sale_price":null,"shipping_class":null,"short_description":"Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.","sku":null,"slug":null,"sold_individually":null,"status":null,"stock_quantity":345,"tags":[],"tax_class":null,"tax_status":null,"type":"variable","upsell_ids":[],"variations":[{"id":null,"wc_attributes":[{"name":"Size","option":"S"}],"backorders":null,"button_text":null,"catalog_visibility":null,"categories":[],"cross_sell_ids":[],"date_on_sale_from":null,"date_on_sale_to":null,"default_attributes":{},"description":null,"dimensions":null,"download_expiry":null,"download_limit":null,"download_type":null,"downloadable":null,"downloads":null,"external_url":null,"featured":null,"images":[],"in_stock":null,"manage_stock":true,"name":null,"parent_id":null,"purchase_note":null,"regular_price":"123.0","reviews_allowed":null,"sale_price":null,"shipping_class":null,"short_description":null,"sku":null,"slug":null,"sold_individually":null,"status":null,"stock_quantity":321,"tags":[],"tax_class":null,"tax_status":null,"type":null,"upsell_ids":[],"variations":[],"virtual":null,"weight":null,"average_rating":null,"date_created":null,"date_modified":null,"backordered":null,"backorders_allowed":null,"on_sale":null,"grouped_products":[],"permalink":null,"price":null,"price_html":null,"purchasable":null,"rating_count":null,"related_ids":[],"shipping_class_id":null,"shipping_required":null,"shipping_taxable":null,"total_sales":null,"attributes":[{"name":"Size","option":"S"}]},{"id":null,"wc_attributes":[{"name":"Size","option":"M"}],"backorders":null,"button_text":null,"catalog_visibility":null,"categories":[],"cross_sell_ids":[],"date_on_sale_from":null,"date_on_sale_to":null,"default_attributes":{},"description":null,"dimensions":null,"download_expiry":null,"download_limit":null,"download_type":null,"downloadable":null,"downloads":null,"external_url":null,"featured":null,"images":[],"in_stock":null,"manage_stock":true,"name":null,"parent_id":null,"purchase_note":null,"regular_price":"123.0","reviews_allowed":null,"sale_price":null,"shipping_class":null,"short_description":null,"sku":null,"slug":null,"sold_individually":null,"status":null,"stock_quantity":321,"tags":[],"tax_class":null,"tax_status":null,"type":null,"upsell_ids":[],"variations":[],"virtual":null,"weight":null,"average_rating":null,"date_created":null,"date_modified":null,"backordered":null,"backorders_allowed":null,"on_sale":null,"grouped_products":[],"permalink":null,"price":null,"price_html":null,"purchasable":null,"rating_count":null,"related_ids":[],"shipping_class_id":null,"shipping_required":null,"shipping_taxable":null,"total_sales":null,"attributes":[{"name":"Size","option":"M"}]}],"virtual":null,"weight":null,"average_rating":null,"date_created":null,"date_modified":null,"backordered":null,"backorders_allowed":null,"on_sale":null,"grouped_products":[],"permalink":null,"price":null,"price_html":null,"purchasable":null,"rating_count":null,"related_ids":[],"shipping_class_id":null,"shipping_required":null,"shipping_taxable":null,"total_sales":null,"attributes":[{"name":"Size","options":["S","M"]}]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:07:13 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '4289'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Set-Cookie:
+      - wpe-auth=c9392ecd47e7561afbcd1eaf455c30b9; path=/; secure
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate, max-age=0
+      Last-Modified:
+      - ''
+      X-Qm-Overview-Time-Taken:
+      - '1.7262'
+      X-Qm-Overview-Time-Usage:
+      - 0.0% of 3,600s limit
+      X-Qm-Overview-Memory:
+      - 50,940 kB
+      X-Qm-Overview-Memory-Usage:
+      - 9.7% of 524,288 kB limit
+      X-Qm-Php-Errors-Error-Count:
+      - '2'
+      X-Qm-Php-Errors-Error-1:
+      - '{"type":"notice-suppressed","message":"Undefined index: path","file":"\/nas\/content\/live\/wpcommercetest\/wp-content\/mu-plugins\/wpengine-common\/plugin.php","line":2015,"stack":["WpeCommon->purge_varnish_cache()","do_action(''save_post'')","wp_insert_post()","WC_Product_Data_Store_CPT->create()","WC_Data_Store->create()","WC_Product_Variable->save()","WC_REST_Products_V1_Controller->save_product()","WC_REST_Products_V1_Controller->create_item()","WP_REST_Server->dispatch()","WP_REST_Server->serve_request()","rest_api_loaded()","do_action_ref_array(''parse_request'')","WP->parse_request()","WP->main()","wp()"],"component":"Plugin:
+        woocommerce"}'
+      X-Qm-Php-Errors-Error-2:
+      - '{"type":"warning","message":"Illegal string offset ''id''","file":"\/nas\/content\/live\/wpcommercetest\/wp-includes\/functions.php","line":3557,"stack":["wp_list_pluck()","WC_REST_Products_V1_Controller->save_taxonomy_terms()","WC_REST_Products_V1_Controller->set_product_meta()","WC_REST_Products_V1_Controller->update_post_meta_fields()","WC_REST_Products_V1_Controller->create_item()","WP_REST_Server->dispatch()","WP_REST_Server->serve_request()","rest_api_loaded()","do_action_ref_array(''parse_request'')","WP->parse_request()","WP->main()","wp()"],"component":"Plugin:
+        woocommerce"}'
+      Location:
+      - https://wpcommercetest.wpengine.com/wp-json/wc/v1/products/7872
+      Allow:
+      - GET, POST
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"id":7872,"name":"Premium Quality (TEST)","slug":"premium-quality-test-26","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-26\/","date_created":"2017-04-27T08:07:11","date_modified":"2017-04-27T08:07:11","type":"variable","status":"publish","featured":false,"catalog_visibility":"visible","description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","sku":"","price":"","regular_price":"","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"<span
+        class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;<\/span>123.00<\/span>","on_sale":false,"purchasable":false,"total_sales":0,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":345,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"sold_individually":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":false,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":0,"date_created":"2017-04-27T16:07:13","date_modified":"2017-04-27T16:07:13","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"Size","position":0,"visible":false,"variation":false,"options":["S","M"]}],"default_attributes":[],"variations":[{"id":7873,"date_created":"2017-04-27T08:07:12","date_modified":"2017-04-27T08:07:12","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-26\/","sku":"","price":"123.0","regular_price":"123.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":321,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:13","date_modified":"2017-04-27T16:07:13","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[]},{"id":7874,"date_created":"2017-04-27T08:07:12","date_modified":"2017-04-27T08:07:12","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-26\/","sku":"","price":"123.0","regular_price":"123.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":321,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:13","date_modified":"2017-04-27T16:07:13","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[]}],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7872"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}}'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:07:13 GMT
+- request:
+    method: delete
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/products/7872
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:07:15 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '4293'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Set-Cookie:
+      - wpe-auth=c9392ecd47e7561afbcd1eaf455c30b9; path=/; secure
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate, max-age=0
+      Last-Modified:
+      - ''
+      X-Qm-Overview-Time-Taken:
+      - '1.4618'
+      X-Qm-Overview-Time-Usage:
+      - 0.0% of 3,600s limit
+      X-Qm-Overview-Memory:
+      - 49,303 kB
+      X-Qm-Overview-Memory-Usage:
+      - 9.4% of 524,288 kB limit
+      Allow:
+      - GET, POST, PUT, PATCH, DELETE
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"id":7872,"name":"Premium Quality (TEST)","slug":"premium-quality-test-26","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-26\/","date_created":"2017-04-27T08:07:11","date_modified":"2017-04-27T08:07:11","type":"variable","status":"publish","featured":false,"catalog_visibility":"visible","description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","sku":"","price":"123.0","regular_price":"","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"<span
+        class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;<\/span>123.00<\/span>","on_sale":false,"purchasable":true,"total_sales":0,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":345,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"sold_individually":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":false,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":0,"date_created":"2017-04-27T16:07:14","date_modified":"2017-04-27T16:07:14","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"Size","position":0,"visible":false,"variation":false,"options":["S","M"]}],"default_attributes":[],"variations":[{"id":7873,"date_created":"2017-04-27T08:07:12","date_modified":"2017-04-27T08:07:12","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-26\/","sku":"","price":"123.0","regular_price":"123.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":321,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:14","date_modified":"2017-04-27T16:07:14","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[]},{"id":7874,"date_created":"2017-04-27T08:07:12","date_modified":"2017-04-27T08:07:12","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-26\/","sku":"","price":"123.0","regular_price":"123.0","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","on_sale":false,"purchasable":true,"visible":true,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":321,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_class":"","shipping_class_id":0,"image":[{"id":0,"date_created":"2017-04-27T16:07:14","date_modified":"2017-04-27T16:07:14","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[]}],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7872"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}}'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:07:16 GMT
+- request:
+    method: delete
+    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/products/7872?force=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - WoocommerceAPI/0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 27 Apr 2017 08:07:19 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2378'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Set-Cookie:
+      - wpe-auth=c9392ecd47e7561afbcd1eaf455c30b9; path=/; secure
+      X-Robots-Tag:
+      - noindex
+      Link:
+      - <https://wpcommercetest.wpengine.com/wp-json/>; rel="https://api.w.org/"
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages
+      Access-Control-Allow-Headers:
+      - Authorization
+      Expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate, max-age=0
+      Last-Modified:
+      - ''
+      X-Qm-Overview-Time-Taken:
+      - '2.1537'
+      X-Qm-Overview-Time-Usage:
+      - 0.1% of 3,600s limit
+      X-Qm-Overview-Memory:
+      - 49,224 kB
+      X-Qm-Overview-Memory-Usage:
+      - 9.4% of 524,288 kB limit
+      Allow:
+      - GET, POST, PUT, PATCH, DELETE
+      X-Type:
+      - default
+    body:
+      encoding: UTF-8
+      string: '{"id":7872,"name":"Premium Quality (TEST)","slug":"premium-quality-test-26__trashed-3","permalink":"https:\/\/wpcommercetest.wpengine.com\/product\/premium-quality-test-26__trashed-3\/","date_created":"2017-04-27T08:07:11","date_modified":"2017-04-27T08:07:15","type":"variable","status":"trash","featured":false,"catalog_visibility":"visible","description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        Mauris placerat eleifend leo.<\/p>\n","short_description":"<p>Pellentesque
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p>\n","sku":"","price":"123.0","regular_price":"","sale_price":"","date_on_sale_from":"","date_on_sale_to":"","price_html":"<span
+        class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;<\/span>123.00<\/span>","on_sale":false,"purchasable":true,"total_sales":0,"virtual":false,"downloadable":false,"downloads":[],"download_limit":-1,"download_expiry":-1,"download_type":"standard","external_url":"","button_text":"","tax_status":"taxable","tax_class":"","manage_stock":true,"stock_quantity":345,"in_stock":true,"backorders":"no","backorders_allowed":false,"backordered":false,"sold_individually":false,"weight":"","dimensions":{"length":"","width":"","height":""},"shipping_required":true,"shipping_taxable":true,"shipping_class":"","shipping_class_id":0,"reviews_allowed":false,"average_rating":"0.00","rating_count":0,"related_ids":[],"upsell_ids":[],"cross_sell_ids":[],"parent_id":0,"purchase_note":"","categories":[],"tags":[],"images":[{"id":0,"date_created":"2017-04-27T16:07:18","date_modified":"2017-04-27T16:07:18","src":"https:\/\/wpcommercetest.wpengine.com\/wp-content\/plugins\/woocommerce\/assets\/images\/placeholder.png","name":"Placeholder","alt":"Placeholder","position":0}],"attributes":[{"id":0,"name":"Size","position":0,"visible":false,"variation":false,"options":["S","M"]}],"default_attributes":[],"variations":[],"grouped_products":[],"menu_order":0,"_links":{"self":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products\/7872"}],"collection":[{"href":"https:\/\/wpcommercetest.wpengine.com\/wp-json\/wc\/v1\/products"}]}}'
+    http_version: 
+  recorded_at: Thu, 27 Apr 2017 08:07:19 GMT
+recorded_with: VCR 2.9.3
