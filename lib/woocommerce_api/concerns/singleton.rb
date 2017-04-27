@@ -2,7 +2,6 @@ module WoocommerceAPI
   module Singleton
     module ClassMethods
       attr_writer :singleton_name, :collection_name
-      DATE_KEYS = [:created_at_max, :created_at_min, :updated_at_min, :updated_at_max].freeze
 
       def singleton_name
         @singleton_name ||= model_name.element
@@ -21,32 +20,29 @@ module WoocommerceAPI
       end
 
       def string_query(param_options)
-        "?#{convert_date_params(param_options).to_query}" unless param_options.blank?
-      end
-
-      def convert_date_params(param_options)
-        # Woocommerce requires all dates to be in RFC3339 format
-        # in UTC timezone: YYYY-MM-DDTHH:MM:SSZ
-
-        if param_options[:filter] && (param_options[:filter].keys & DATE_KEYS).present?
-          date_params = param_options[:filter].slice(*DATE_KEYS)
-          date_params.update(date_params) { |key, value| value.to_datetime.strftime("%FT%TZ") }
-          param_options[:filter].merge!(date_params)
-        end
-        param_options
+        "?#{converted_params(param_options).to_query}" unless param_options.blank?
       end
 
       def all(params={})
-        uri = params[:resource_uri].presence || collection_path(params[:prefix_options], params.slice(:filter, :page, :fields))
+        uri = params[:resource_uri].presence || collection_path(params[:prefix_options], params)
         resources = http_request(:get, uri)
-        resources[collection_name].collect { |r| self.new(r) }
+        extract_resources(resources)
       end
 
       def count(params={})
-        response = http_request(:get, count_path(params.slice(:filter)))
-        response['count'].to_i
+        if legacy_api?
+          response = http_request(:get, count_path(params))
+          response['count'].to_i
+        else
+          headers(params).fetch('x-wp-total').to_i
+        end
       end
       alias_method :size, :count
+
+      def headers(params={})
+        params.merge!({page: 1, per_page: 1})
+        http_request(:get, collection_path(params[:prefix_options], converted_params(params)), header_request: true)
+      end
 
       def find(id)
         return unless id.present?
@@ -58,8 +54,20 @@ module WoocommerceAPI
         self.new(attributes).create
       end
 
+      def extract_resources(resources)
+        if legacy_api?
+          resources[collection_name]
+        else
+          resources
+        end.collect { |r| self.new(r) }
+      end
+
       def extract_resource(resource)
-        self.new(resource[singleton_name])
+        if legacy_api?
+          self.new(resource[singleton_name])
+        else
+          self.new(resource)
+        end
       end
     end
 
@@ -94,7 +102,7 @@ module WoocommerceAPI
 
       def reload
         return unless persisted?
-        self.load(self.class.find(self.id).attributes)
+        self.load(self.class.find(self.id).model.attributes)
       end
 
       def to_path
@@ -103,7 +111,7 @@ module WoocommerceAPI
 
       # Every nested assocation. by default #as_json(root: false) could be applied
       def as_json(options={})
-        attr_json = HashWithIndifferentAccess.new(super(options))
+        attr_json = HashWithIndifferentAccess.new(self.model.as_json(options))
         if options.present? && options[:root]
           attr_json[singleton_name].each do |key, value|
             attr_json[singleton_name][key] = value.as_json(options.merge(root: false))

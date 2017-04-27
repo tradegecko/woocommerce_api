@@ -62,7 +62,8 @@ module WoocommerceAPI
     end
 
     def normalize_base_uri(uri, version)
-      HTTParty.normalize_base_uri(uri.sub(/(\/)+$/,'') + "/wc-api/#{version}" )
+      namespace = version == "v1" ? "wp-json/wc" : "wc-api"
+      HTTParty.normalize_base_uri(uri.sub(/(\/)+$/,'') + "/#{namespace}/#{version}" )\
     end
   end
 end

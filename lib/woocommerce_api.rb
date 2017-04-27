@@ -8,31 +8,74 @@ require "virtus"
 require "woocommerce_api/concerns/associations"
 require "woocommerce_api/concerns/attribute_assignment"
 require "woocommerce_api/concerns/singleton"
+require "woocommerce_api/concerns/params_converter"
 require "woocommerce_api/client"
 require "woocommerce_api/client_error"
 require "woocommerce_api/oauth_client"
 require "woocommerce_api/resource"
+require "woocommerce_api/resource_proxy"
+require "woocommerce_api/resources/proxy.rb"
 require "woocommerce_api/version"
-require "woocommerce_api/resources/address.rb"
-require "woocommerce_api/resources/coupon.rb"
-require "woocommerce_api/resources/coupon_line.rb"
-require "woocommerce_api/resources/customer.rb"
-require "woocommerce_api/resources/delivery.rb"
-require "woocommerce_api/resources/dimensions.rb"
-require "woocommerce_api/resources/fee_line.rb"
-require "woocommerce_api/resources/image.rb"
-require "woocommerce_api/resources/line_item.rb"
-require "woocommerce_api/resources/meta.rb"
-require "woocommerce_api/resources/order.rb"
-require "woocommerce_api/resources/order_note.rb"
-require "woocommerce_api/resources/payment_details.rb"
-require "woocommerce_api/resources/product.rb"
-require "woocommerce_api/resources/product_attribute.rb"
-require "woocommerce_api/resources/product_category.rb"
-require "woocommerce_api/resources/product_review.rb"
-require "woocommerce_api/resources/refund.rb"
-require "woocommerce_api/resources/shipping_line.rb"
-require "woocommerce_api/resources/store.rb"
-require "woocommerce_api/resources/tax_line.rb"
-require "woocommerce_api/resources/variation.rb"
-require "woocommerce_api/resources/webhook.rb"
+
+require "woocommerce_api/resources/legacy/address.rb"
+require "woocommerce_api/resources/v1/address.rb"
+
+require "woocommerce_api/resources/legacy/coupon.rb"
+require "woocommerce_api/resources/v1/coupon.rb"
+
+require "woocommerce_api/resources/legacy/coupon_line.rb"
+require "woocommerce_api/resources/v1/coupon_line.rb"
+
+require "woocommerce_api/resources/legacy/customer.rb"
+require "woocommerce_api/resources/v1/customer.rb"
+
+require "woocommerce_api/resources/legacy/delivery.rb"
+require "woocommerce_api/resources/v1/delivery.rb"
+
+require "woocommerce_api/resources/legacy/dimensions.rb"
+require "woocommerce_api/resources/v1/dimensions.rb"
+
+require "woocommerce_api/resources/legacy/fee_line.rb"
+require "woocommerce_api/resources/v1/fee_line.rb"
+
+require "woocommerce_api/resources/legacy/image.rb"
+require "woocommerce_api/resources/v1/image.rb"
+
+require "woocommerce_api/resources/legacy/line_item.rb"
+require "woocommerce_api/resources/v1/line_item.rb"
+
+require "woocommerce_api/resources/legacy/meta.rb"
+
+require "woocommerce_api/resources/legacy/order.rb"
+require "woocommerce_api/resources/v1/order.rb"
+
+require "woocommerce_api/resources/legacy/order_note.rb"
+require "woocommerce_api/resources/v1/order_note.rb"
+
+require "woocommerce_api/resources/legacy/payment_details.rb"
+require "woocommerce_api/resources/v1/payment_details.rb"
+
+require "woocommerce_api/resources/legacy/product_attribute.rb"
+require "woocommerce_api/resources/legacy/product_category.rb"
+
+require "woocommerce_api/resources/legacy/product_review.rb"
+require "woocommerce_api/resources/v1/product_review.rb"
+
+require "woocommerce_api/resources/legacy/refund.rb"
+require "woocommerce_api/resources/v1/refund.rb"
+
+require "woocommerce_api/resources/legacy/shipping_line.rb"
+require "woocommerce_api/resources/v1/shipping_line.rb"
+
+require "woocommerce_api/resources/legacy/store.rb"
+require "woocommerce_api/resources/v1/store.rb"
+
+require "woocommerce_api/resources/legacy/tax_line.rb"
+require "woocommerce_api/resources/v1/tax_line.rb"
+
+require "woocommerce_api/resources/legacy/webhook.rb"
+require "woocommerce_api/resources/v1/webhook.rb"
+
+
+require "woocommerce_api/resources/legacy/product.rb"
+require "woocommerce_api/resources/v1/product.rb"
