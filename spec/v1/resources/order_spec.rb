@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe WoocommerceAPI::Order do
   it_behaves_like "a woocommerce resource"
-  include_context "woocommerce_api_services", version: 'v1', use_cassette: 'v1/order'
+  include_context "woocommerce_api_services", version: 'v1', wordpress_api: true, use_cassette: 'v1/order'
 
   let(:valid_attributes) do
     {

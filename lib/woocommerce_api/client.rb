@@ -26,7 +26,8 @@ module WoocommerceAPI
                          oauth_https_options(params)
                        end
       client_options[:version] = params.delete(:version) || 'v2'
-      client_options[:base_uri] = normalize_base_uri(params[:store_url], client_options[:version])
+      client_options[:wordpress_api] = params.delete(:wordpress_api)
+      client_options[:base_uri] = normalize_base_uri(params[:store_url], client_options[:version], client_options[:wordpress_api])
       session_options = self.class.default_client_options.merge(client_options)
       Thread.current["WoocommerceAPI"] = session_options
     end
@@ -61,8 +62,8 @@ module WoocommerceAPI
         mode: :query_https }
     end
 
-    def normalize_base_uri(uri, version)
-      namespace = version == "v1" ? "wp-json/wc" : "wc-api"
+    def normalize_base_uri(uri, version='v3', wordpress_api=false)
+      namespace = wordpress_api ? "wp-json/wc" : "wc-api"
       HTTParty.normalize_base_uri(uri.sub(/(\/)+$/,'') + "/#{namespace}/#{version}" )\
     end
   end

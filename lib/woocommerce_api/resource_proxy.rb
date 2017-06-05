@@ -16,7 +16,7 @@ module WoocommerceAPI
     end
 
     def self.legacy_api?
-      WoocommerceAPI::Client.default_options[:version] != "v1"
+      !WoocommerceAPI::Client.default_options[:wordpress_api]
     end
 
     def method_missing(method, *args, &block)
@@ -58,7 +58,13 @@ module WoocommerceAPI
   private
 
     def version_model
-      "WoocommerceAPI::#{self.class.legacy_api? ? "V3" : "V1"}::#{singleton_name.classify}".constantize
+      current_version = if !!WoocommerceAPI::Client.default_options[:wordpress_api]
+                          WoocommerceAPI::Client.default_options[:version]&.upcase
+                        else
+                          'V3'
+                        end
+
+      "WoocommerceAPI::#{current_version}::#{singleton_name.classify}".constantize
     end
   end
 end

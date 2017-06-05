@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe WoocommerceAPI::OrderNote do
   it_behaves_like "a woocommerce resource"
-  include_context "woocommerce_api_services", version: 'v1', use_cassette: 'v1/order_note'
+  include_context "woocommerce_api_services", version: 'v1', wordpress_api: true, use_cassette: 'v1/order_note'
 
   describe ".all" do
     it "returns order's notes collection" do
