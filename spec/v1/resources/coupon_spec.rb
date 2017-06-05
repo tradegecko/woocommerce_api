@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe WoocommerceAPI::Coupon do
   it_behaves_like "a woocommerce resource"
-  include_context "woocommerce_api_services", version: 'v1', use_cassette: 'v1/coupon'
+  include_context "woocommerce_api_services", version: 'v1', wordpress_api: true, use_cassette: 'v1/coupon'
 
   let(:coupons) { described_class.all }
   let(:coupon) { coupons.first }

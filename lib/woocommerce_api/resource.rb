@@ -4,6 +4,7 @@ module WoocommerceAPI
     include ActiveModel::Model
     include ActiveModel::Serializers::JSON
     include WoocommerceAPI::Associations
+    include WoocommerceAPI::AttributeAssignment
 
     def initialize(params={})
       self.class.include_root_in_json = !!legacy_api?
@@ -19,7 +20,7 @@ module WoocommerceAPI
     end
 
     def self.legacy_api?
-      WoocommerceAPI::Client.default_options[:version] != "v1"
+      !WoocommerceAPI::Client.default_options[:wordpress_api]
     end
 
     def load(params)

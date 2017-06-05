@@ -8,6 +8,7 @@ shared_context "woocommerce_api_services" do |options|
       consumer_secret: "cs_1234567890abcdefghijklmnopqrstuv",
       store_url: "https://wpcommercetest.wpengine.com",
       version: (options[:version] || 'v2'),
+      wordpress_api: (options[:wordpress_api] || nil),
       mode: (options[:mode] || :oauth_https)
     }
   end
