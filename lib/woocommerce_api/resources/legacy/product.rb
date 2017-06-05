@@ -1,3 +1,5 @@
+require "woocommerce_api/resources/legacy/variation"
+
 module WoocommerceAPI
   module V3
     class Product < Resource
@@ -59,7 +61,7 @@ module WoocommerceAPI
       attribute :total_sales, Integer
       attribute :type
       attribute :upsell_ids, Array
-      attribute :variations, Array[Product]
+      attribute :variations, Array[Variation]
       attribute :virtual, Boolean
       attribute :weight
       attribute :enable_html_description      , Boolean , default: true
