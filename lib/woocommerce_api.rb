@@ -79,3 +79,5 @@ require "woocommerce_api/resources/v1/webhook.rb"
 
 require "woocommerce_api/resources/legacy/product.rb"
 require "woocommerce_api/resources/v1/product.rb"
+
+require "woocommerce_api/resources/legacy/variation.rb"
