@@ -1,9 +1,11 @@
+require "woocommerce_api/resources/v1/variation"
+
 module WoocommerceAPI
   module V1
     class Product < Resource
       def as_json(options={})
         product_attributes = super(options)
-        if product_attributes[:wc_attributes] && !product_attributes[:wc_attributes].empty?
+        if attributes[:wc_attributes] && !attributes[:wc_attributes].empty?
           product_attributes['attributes'] = product_attributes[:wc_attributes]
         end
 
@@ -12,7 +14,7 @@ module WoocommerceAPI
         product_attributes.delete('categories')
         product_attributes.delete('tags')
         product_attributes.delete('default_attributes')
-        #product_attributes.delete('images') unless options[:images]
+        product_attributes.delete('images') unless options[:images]
 
         product_attributes
       end
@@ -36,7 +38,7 @@ module WoocommerceAPI
       attribute :downloads
       attribute :external_url
       attribute :featured, Boolean
-      attribute :images, Array[Image] # Product's images
+      attribute :images, Array[Image]
       attribute :in_stock, Boolean
       attribute :manage_stock, Boolean
       attribute :name
@@ -57,7 +59,7 @@ module WoocommerceAPI
       attribute :tax_status
       attribute :type
       attribute :upsell_ids, Array
-      attribute :variations, Array[Product]
+      attribute :variations, Array[Variation]
       attribute :virtual, Boolean
       attribute :weight
 
