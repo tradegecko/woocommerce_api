@@ -9,6 +9,7 @@ module WoocommerceAPI
     TIMEOUT_OPTIONS = {timeout: 30}
 
     attr_reader :raw_params, :model
+    delegate :attributes, to: :model
 
     def initialize(params={})
       @raw_params = params.dup

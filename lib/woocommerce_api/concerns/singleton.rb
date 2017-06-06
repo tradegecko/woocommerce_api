@@ -109,19 +109,8 @@ module WoocommerceAPI
         "#{collection_path}#{"/#{id}" if id}"
       end
 
-      # Every nested assocation. by default #as_json(root: false) could be applied
       def as_json(options={})
-        attr_json = HashWithIndifferentAccess.new(self.model.as_json(options))
-        if options.present? && options[:root]
-          attr_json[singleton_name].each do |key, value|
-            attr_json[singleton_name][key] = value.as_json(options.merge(root: false))
-          end
-        else
-          attr_json.each do |key, value|
-            attr_json[key] = value.as_json(options.merge(root: false))
-          end
-        end
-        attr_json
+        self.model.as_json(options)
       end
     end
 
