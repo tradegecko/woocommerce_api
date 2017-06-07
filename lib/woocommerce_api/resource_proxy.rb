@@ -56,6 +56,10 @@ module WoocommerceAPI
       JSON.parse(response.body.match(/({.*}|\[.*\])/).to_s)
     end
 
+    def respond_to?(method, include_private=false)
+      @model.respond_to?(method) || super
+    end
+
   private
 
     def version_model
