@@ -4,10 +4,11 @@ module WoocommerceAPI
 
     def self.perform_request(http_method, path, options = {}, &block)
       ActiveSupport::Notifications.instrument("request.woocommerce_api") do |payload|
+        request_uri = oauth_url(http_method, path)
         payload[:method]        = http_method::METHOD.downcase
-        payload[:request_uri]   = oauth_url(http_method, path)
+        payload[:request_uri]   = request_uri
         payload[:request_body]  = options[:body]
-        payload[:response_body] = super(http_method, oauth_url(http_method, path), options, &block)
+        payload[:response_body] = super(http_method, request_uri, options, &block)
       end
     end
 
@@ -23,7 +24,8 @@ module WoocommerceAPI
         params = Hash[params.sort]
       end
       url = "http://#{parsed_url.host}#{parsed_url.path}"
-      consumer_secret = if oauth_options[:version] == "v3"
+
+      consumer_secret = if oauth_options[:version] == "v3" || oauth_options[:wordpress_api]
                           "#{oauth_options[:oauth_consumer_secret]}&"
                         else
                           oauth_options[:oauth_consumer_secret]
