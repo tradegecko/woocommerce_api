@@ -6,8 +6,11 @@ module WoocommerceAPI
     include WoocommerceAPI::Associations
     include WoocommerceAPI::AttributeAssignment
 
+    attr_reader :raw_params
+
     def initialize(params={})
       self.class.include_root_in_json = !!legacy_api?
+      @raw_params = params.dup
       if params['attributes']
         params['wc_attributes'] = params.delete('attributes')
       end
