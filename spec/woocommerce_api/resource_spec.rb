@@ -1,31 +1,22 @@
 require 'spec_helper'
 
-shared_examples 'parsable response' do
-  let(:parsed_response) { WoocommerceAPI::ResourceProxy.parse_response(response) }
-  it 'parses response body to json' do
-    expect(parsed_response).to be_kind_of(Hash)
-    expect(parsed_response).to eq({"count" => 123})
-  end
-end
-describe WoocommerceAPI::ResourceProxy do
-  describe '.parse_response' do
-    context 'Parsing json body' do
-      it_should_behave_like 'parsable response' do
-        let(:response) { double(body: "{\"count\": 123}") }
-      end
-      it_should_behave_like 'parsable response' do
-        let(:response) { double(body: "unrelated text {\"count\": 123} blah") }
-      end
-      it_should_behave_like 'parsable response' do
-        let(:response) { double(body: "\uFEFF\uFEFF{\"count\": 123}") }
+describe WoocommerceAPI::Resource do
+  context "include_root_in_json" do
+    it "can handle multi-thread" do
+      Thread.current["WoocommerceAPI"] = nil
+      WoocommerceAPI::Client.new(consumer_key: 'ABC_KEY', consumer_secret: 'ABC_SECRET', store_url: 'https://api.woocommerce.com/ABC', wordpress_api: true)
+
+      Thread.new do
+        WoocommerceAPI::Client.new(consumer_key: 'DEF_KEY', consumer_secret: 'DEF_SECRET', store_url: 'https://api.woocommerce.com/DEF')
+        expect(WoocommerceAPI::Resource.new.class.include_root_in_json).to be_truthy
       end
 
-      it 'raises error' do
-        response = double(body: "something nonesense")
-        expect{
-          WoocommerceAPI::ResourceProxy.parse_response(response)
-        }.to raise_error(JSON::ParserError)
+      Thread.new do
+        WoocommerceAPI::Client.new(consumer_key: 'HIJ_KEY', consumer_secret: 'HIJ_SECRET', store_url: 'https://api.woocommerce.com/HIJ', wordpress_api: false)
+        expect(WoocommerceAPI::Resource.new.class.include_root_in_json).to be_truthy
       end
+
+      expect(WoocommerceAPI::Resource.new.class.include_root_in_json).to be_falsey
     end
   end
 end
