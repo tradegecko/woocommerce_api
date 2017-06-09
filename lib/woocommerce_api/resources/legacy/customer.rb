@@ -16,7 +16,9 @@ module WoocommerceAPI
       # Read Only
       alias_attribute :date_created, :created_at
       alias_attribute :date_modified, :updated_at
-      
+      alias_attribute :billing, :billing_address
+      alias_attribute :shipping, :shipping_address
+
       attribute :created_at     , DateTime, writer: :private
       attribute :updated_at     , DateTime, writer: :private
       attribute :total_spent    , Integer , writer: :private
