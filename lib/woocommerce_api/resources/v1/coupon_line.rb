@@ -1,5 +1,5 @@
 module WoocommerceAPI
-  module V3
+  module V1
     class CouponLine < Resource
       attribute :id, Integer
       attribute :code
