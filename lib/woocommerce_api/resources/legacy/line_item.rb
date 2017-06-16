@@ -3,6 +3,7 @@ module WoocommerceAPI
     class LineItem < Resource
       attribute :id          , Integer
       attribute :product_id  , Integer
+      attribute :variation_id, Integer
       attribute :quantity    , Integer
       attribute :subtotal    , Decimal
       attribute :subtotal_tax, Decimal
