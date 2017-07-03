@@ -12,6 +12,10 @@ module WoocommerceAPI
                   extract_response(response.parsed_response)
                 end
       super(message)
+    rescue
+      # There are cases where calling just response would raise a JSON::ParserError
+      # but response.body and response.code would be returned normally.
+      super(response.body)
     end
 
   private
