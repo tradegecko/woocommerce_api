@@ -19,7 +19,7 @@ module WoocommerceAPI
         end
 
         variant_attributes.delete('image') unless options[:images]
-        variant_attributes['backorders'] = nil if product_attributes['backorders'].blank?
+        variant_attributes['backorders'] = nil if variant_attributes['backorders'].blank?
         variant_attributes
       end
 
