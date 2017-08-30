@@ -6,27 +6,27 @@ module WoocommerceAPI
       def as_json(options={})
         wc_attributes = super(options)
 
-        if options.present? && !options[:root]
-          wc_attributes.delete('images') unless options[:images]
-          if options[:description_sync_disabled]
-            wc_attributes.delete('description')
-            wc_attributes.delete('short_description')
-          end
-        else
+        if wc_attributes['product'].present?
           wc_attributes['product'].delete('images') unless options[:images]
           if options[:description_sync_disabled]
             wc_attributes['product'].delete('description')
             wc_attributes['product'].delete('short_description')
           end
+        else
+          wc_attributes.delete('images') unless options[:images]
+          if options[:description_sync_disabled]
+            wc_attributes.delete('description')
+            wc_attributes.delete('short_description')
+          end
         end
 
         if attributes[:wc_attributes] && !attributes[:wc_attributes].empty?
-          if options.present? && !options[:root]
-            wc_attributes['attributes'] = attributes[:wc_attributes]
-            wc_attributes.delete('wc_attributes')
-          else
+          if wc_attributes['product'].present?
             wc_attributes['product']['attributes'] = attributes[:wc_attributes]
             wc_attributes['product'].delete('wc_attributes')
+          else
+            wc_attributes['attributes'] = attributes[:wc_attributes]
+            wc_attributes.delete('wc_attributes')
           end
         end
 
