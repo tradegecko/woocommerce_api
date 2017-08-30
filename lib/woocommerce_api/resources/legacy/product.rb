@@ -8,8 +8,16 @@ module WoocommerceAPI
 
         if options.present? && !options[:root]
           wc_attributes.delete('images') unless options[:images]
+          if options[:description_sync_disabled]
+            wc_attributes.delete('description')
+            wc_attributes.delete('short_description')
+          end
         else
           wc_attributes['product'].delete('images') unless options[:images]
+          if options[:description_sync_disabled]
+            wc_attributes['product'].delete('description')
+            wc_attributes['product'].delete('short_description')
+          end
         end
 
         if attributes[:wc_attributes] && !attributes[:wc_attributes].empty?

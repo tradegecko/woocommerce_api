@@ -10,6 +10,10 @@ module WoocommerceAPI
           product_attributes.delete('wc_attributes')
         end
         product_attributes.delete('images') unless options[:images]
+        if options[:description_sync_disabled]
+          product_attributes.delete('description')
+          product_attributes.delete('short_description')
+        end
         product_attributes['backorders'] = nil if product_attributes['backorders'].blank?
         product_attributes
       end
