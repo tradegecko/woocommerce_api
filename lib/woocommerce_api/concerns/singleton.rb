@@ -100,18 +100,9 @@ module WoocommerceAPI
         !!id
       end
 
-      def reload
-        return unless persisted?
-        self.load(self.class.find(self.id).model.attributes)
-      end
-
       def to_path
         "#{collection_path}#{"/#{id}" if id}"
-      end
-
-      def as_json(options={})
-        self.model.as_json(options)
-      end
+      end  
     end
 
     def self.included(receiver)

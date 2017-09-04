@@ -4,6 +4,7 @@ module WoocommerceAPI
     include ActiveModel::Model
     include ActiveModel::Serializers::JSON
     include WoocommerceAPI::Associations
+    include WoocommerceAPI::Singleton
     include WoocommerceAPI::AttributeAssignment
 
     attr_reader :raw_params
