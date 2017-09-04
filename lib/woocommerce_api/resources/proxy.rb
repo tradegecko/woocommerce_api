@@ -1,4 +1,23 @@
 class WoocommerceAPI::Variation < WoocommerceAPI::ResourceProxy
+  def self.collection_path(prefix_options='', param_options=nil)
+    "/products/#{@product_id}/variations"
+  end
+
+  def self.all(product_id)
+    return [] unless product_id
+    @product_id = product_id
+    super({})
+  end
+
+  def find(product_id, id)
+    @product_id = product_id
+    super(id)
+  end
+
+  def self.create(product_id, attributes)
+    @product_id = product_id
+    super(attributes)
+  end
 end
 
 class WoocommerceAPI::Product < WoocommerceAPI::ResourceProxy
