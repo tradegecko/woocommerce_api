@@ -60,6 +60,15 @@ module WoocommerceAPI
       @model.respond_to?(method) || super
     end
 
+    def reload
+      return unless persisted?
+      self.load(self.class.find(self.id).model.attributes)
+    end
+
+    def as_json(options={})
+      self.model.as_json(options)
+    end
+
   private
 
     def version_model
