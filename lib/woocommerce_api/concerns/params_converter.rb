@@ -7,7 +7,7 @@ module WoocommerceAPI
         :after, :attribute_term, :attribute, :before, :category, :context,
         :customer, :email, :exclude, :fields, :filter, :force, :include, :offset,
         :order, :orderBy, :page, :per_page, :role, :search, :shipping_class, :sku,
-        :slug, :status, :tag
+        :slug, :status, :tag, :type
       ].freeze
 
       KEYS_MAPPING = {
