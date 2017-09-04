@@ -73,6 +73,26 @@ Gem::Specification.new do |s|
     "lib/woocommerce_api/resources/v1/tax_line.rb",
     "lib/woocommerce_api/resources/v1/variation.rb",
     "lib/woocommerce_api/resources/v1/webhook.rb",
+    "lib/woocommerce_api/resources/v2/address.rb",
+    "lib/woocommerce_api/resources/v2/coupon.rb",
+    "lib/woocommerce_api/resources/v2/coupon_line.rb",
+    "lib/woocommerce_api/resources/v2/customer.rb",
+    "lib/woocommerce_api/resources/v2/delivery.rb",
+    "lib/woocommerce_api/resources/v2/dimensions.rb",
+    "lib/woocommerce_api/resources/v2/fee_line.rb",
+    "lib/woocommerce_api/resources/v2/image.rb",
+    "lib/woocommerce_api/resources/v2/line_item.rb",
+    "lib/woocommerce_api/resources/v2/order.rb",
+    "lib/woocommerce_api/resources/v2/order_note.rb",
+    "lib/woocommerce_api/resources/v2/payment_details.rb",
+    "lib/woocommerce_api/resources/v2/product.rb",
+    "lib/woocommerce_api/resources/v2/product_review.rb",
+    "lib/woocommerce_api/resources/v2/refund.rb",
+    "lib/woocommerce_api/resources/v2/shipping_line.rb",
+    "lib/woocommerce_api/resources/v2/store.rb",
+    "lib/woocommerce_api/resources/v2/tax_line.rb",
+    "lib/woocommerce_api/resources/v2/variation.rb",
+    "lib/woocommerce_api/resources/v2/webhook.rb",
     "lib/woocommerce_api/version.rb"
   ]
   s.homepage = "http://github.com/tradegecko/woocommerce_api".freeze
@@ -122,4 +142,3 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<pry>.freeze, [">= 0"])
   end
 end
-
