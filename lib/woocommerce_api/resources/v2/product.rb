@@ -80,7 +80,7 @@ module WoocommerceAPI
       has_many :product_reviews, class_name: "ProductReview", resource_uri: '/reviews'
 
       def variations
-        WoocommerceAPI::Variation.all(self.id)
+        @variations ||= WoocommerceAPI::Variation.all(self.id)
       end
     end
   end
