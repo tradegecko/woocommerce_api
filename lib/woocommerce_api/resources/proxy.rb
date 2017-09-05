@@ -114,3 +114,6 @@ end
 
 class WoocommerceAPI::WebhookDelivery < WoocommerceAPI::ResourceProxy
 end
+
+class WoocommerceAPI::PaymentGateway < WoocommerceAPI::ResourceProxy
+end

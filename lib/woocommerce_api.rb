@@ -102,3 +102,5 @@ require "woocommerce_api/resources/v2/product.rb"
 require "woocommerce_api/resources/legacy/variation.rb"
 require "woocommerce_api/resources/v1/variation.rb"
 require "woocommerce_api/resources/v2/variation.rb"
+
+require "woocommerce_api/resources/v2/payment_gateway.rb"

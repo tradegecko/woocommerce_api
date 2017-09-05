@@ -93,6 +93,7 @@ Gem::Specification.new do |s|
     "lib/woocommerce_api/resources/v2/tax_line.rb",
     "lib/woocommerce_api/resources/v2/variation.rb",
     "lib/woocommerce_api/resources/v2/webhook.rb",
+    "lib/woocommerce_api/resources/v2/payment_gateway.rb",
     "lib/woocommerce_api/version.rb"
   ]
   s.homepage = "http://github.com/tradegecko/woocommerce_api".freeze
