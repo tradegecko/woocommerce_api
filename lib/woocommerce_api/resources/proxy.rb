@@ -118,6 +118,17 @@ end
 class WoocommerceAPI::PaymentGateway < WoocommerceAPI::ResourceProxy
 end
 
+class WoocommerceAPI::Tool < WoocommerceAPI::ResourceProxy
+  def self.collection_path(prefix_options='', param_options=nil)
+    "/system_status/tools"
+  end
+
+  def run
+    self.model.confirm = true
+    save
+  end
+end
+
 class WoocommerceAPI::SystemStatus < WoocommerceAPI::ResourceProxy
   def self.info
     http_request(:get, "/system_status")
