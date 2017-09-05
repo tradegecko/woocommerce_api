@@ -9,7 +9,7 @@ class WoocommerceAPI::Variation < WoocommerceAPI::ResourceProxy
     super({})
   end
 
-  def find(product_id, id)
+  def self.find(product_id, id)
     @product_id = product_id
     super(id)
   end
