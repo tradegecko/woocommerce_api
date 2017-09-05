@@ -117,3 +117,16 @@ end
 
 class WoocommerceAPI::PaymentGateway < WoocommerceAPI::ResourceProxy
 end
+
+class WoocommerceAPI::SystemStatus < WoocommerceAPI::ResourceProxy
+  def self.info
+    http_request(:get, "/system_status")
+  end
+end
+
+module WoocommerceAPI
+  module V2
+    class SystemStatus < Resource
+    end
+  end
+end
