@@ -50,6 +50,7 @@ module WoocommerceAPI
       attribute :on_sale           , Boolean , writer: :private
       attribute :permalink         , String  , writer: :private
       attribute :price             , Decimal , writer: :private
+      attribute :product_id        , Integer , writer: :private
       attribute :purchasable       , Boolean , writer: :private
       attribute :shipping_class    , String  , writer: :private
       attribute :tax_class         , String  , writer: :private

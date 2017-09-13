@@ -1,22 +1,38 @@
 class WoocommerceAPI::Variation < WoocommerceAPI::ResourceProxy
-  def self.collection_path(prefix_options='', param_options=nil)
-    "/products/#{@product_id}/variations"
+  def self.collection_path(product_id)
+    "/products/#{product_id}/variations"
+  end
+
+  def collection_path
+    "/products/#{model.product_id}/variations"
+  end
+
+  def reload
+    return unless persisted?
+    self.load(self.class.find(product_id, id).model.attributes)
   end
 
   def self.all(product_id)
-    return [] unless product_id
-    @product_id = product_id
-    super({})
+    uri = collection_path(product_id)
+    resources = http_request(:get, uri)
+    resources.each do |variation|
+      variation['product_id'] = product_id
+    end
+    extract_resources(resources)
   end
 
   def self.find(product_id, id)
-    @product_id = product_id
-    super(id)
+    return unless id.present?
+    resource = http_request(:get, "#{collection_path(product_id)}/#{id}")
+    resource['product_id'] = product_id
+    self.extract_resource(resource)
   end
 
   def self.create(product_id, attributes)
-    @product_id = product_id
-    super(attributes)
+    attributes[:product_id] = product_id
+    variation = super(attributes)
+    variation.product_id = product_id
+    variation
   end
 end
 
