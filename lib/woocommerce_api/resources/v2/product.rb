@@ -5,10 +5,10 @@ module WoocommerceAPI
     class Product < Resource
       def as_json(options={})
         product_attributes = super(options)
-        if attributes[:wc_attributes] && !attributes[:wc_attributes].empty?
-          product_attributes['attributes'] = attributes[:wc_attributes]
-          product_attributes.delete('wc_attributes')
-        end
+
+        product_options = product_attributes.delete(:wc_attributes)
+        product_attributes['attributes'] = product_options if product_options.present?
+
         product_attributes.delete('images') unless options[:images]
         product_attributes['backorders'] = nil if product_attributes['backorders'].blank?
         product_attributes

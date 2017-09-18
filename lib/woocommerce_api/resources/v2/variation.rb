@@ -14,9 +14,9 @@ module WoocommerceAPI
 
       def as_json(options={})
         variant_attributes = super(options)
-        if attributes[:wc_attributes] && !attributes[:wc_attributes].empty?
-          variant_attributes['attributes'] = attributes[:wc_attributes]
-        end
+
+        variant_options = variant_attributes.delete(:wc_attributes)
+        variant_attributes['attributes'] = variant_options if variant_options.present?
 
         variant_attributes.delete('image') unless options[:images]
         variant_attributes['backorders'] = nil if variant_attributes['backorders'].blank?
