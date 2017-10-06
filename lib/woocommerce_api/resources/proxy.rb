@@ -1,4 +1,6 @@
 class WoocommerceAPI::Variation < WoocommerceAPI::ResourceProxy
+  DEFAULT_PER_PAGE = 100
+
   def self.collection_path(product_id)
     "/products/#{product_id}/variations"
   end
@@ -13,8 +15,7 @@ class WoocommerceAPI::Variation < WoocommerceAPI::ResourceProxy
   end
 
   def self.all(product_id)
-    uri = collection_path(product_id)
-    resources = http_request(:get, uri)
+    resources = self.fetch_all(product_id)
     resources.each do |variation|
       variation['product_id'] = product_id
     end
@@ -33,6 +34,21 @@ class WoocommerceAPI::Variation < WoocommerceAPI::ResourceProxy
     variation = super(attributes)
     variation.product_id = product_id
     variation
+  end
+
+  def self.fetch_all(product_id)
+    per_page = DEFAULT_PER_PAGE
+    base_uri = collection_path(product_id)
+    page = 1
+    resource_count = per_page
+    all_resources = []
+    while resource_count == per_page
+      resources = http_request(:get, "#{base_uri}?per_page=#{per_page}&page=#{page}&orderby=id&order=asc")
+      resource_count = resources.length
+      all_resources += resources
+      page += 1
+    end
+    return all_resources
   end
 end
 
