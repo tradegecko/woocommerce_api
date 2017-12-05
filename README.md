@@ -1,4 +1,4 @@
-# Ruby Cleint for Woocommerce api 
+# Ruby Client for Woocommerce API
 
 [![Build Status](https://semaphoreci.com/api/v1/tradegecko/woocommerce_api/branches/fix-variations/badge.svg)](https://semaphoreci.com/tradegecko/woocommerce_api)
 ## Installation
