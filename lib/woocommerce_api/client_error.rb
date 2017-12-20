@@ -11,14 +11,22 @@ module WoocommerceAPI
                 else
                   extract_response(response.parsed_response)
                 end
-      super(message)
+      super(clean_html_response(message))
     rescue
       # There are cases where calling just response would raise a JSON::ParserError
       # but response.body and response.code would be returned normally.
-      super(response.body)
+      super(clean_html_response(response.body))
     end
 
   private
+
+    def clean_html_response(message)
+      if message.to_s.include?("DOCTYPE html")
+        "Woocommerce API returned an unexpected HTML response instead of JSON"
+      else
+        message
+      end
+    end
 
     def extract_response(response)
       case response
@@ -31,6 +39,5 @@ module WoocommerceAPI
         response.to_s.gsub(/[,.]$/, '')
       end
     end
-
   end
 end
