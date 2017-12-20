@@ -21,7 +21,7 @@ module WoocommerceAPI
   private
 
     def clean_html_response(message)
-      if message.to_s.include?("DOCTYPE html")
+      if message.to_s.downcase.include?("doctype html")
         "Woocommerce API returned an unexpected HTML response instead of JSON"
       else
         message
