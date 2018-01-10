@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "lib/woocommerce_api/client_error.rb",
     "lib/woocommerce_api/concerns/associations.rb",
     "lib/woocommerce_api/concerns/attribute_assignment.rb",
+    "lib/woocommerce_api/concerns/attribute_slicer.rb",
     "lib/woocommerce_api/concerns/params_converter.rb",
     "lib/woocommerce_api/concerns/singleton.rb",
     "lib/woocommerce_api/oauth_client.rb",

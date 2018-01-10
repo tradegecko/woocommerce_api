@@ -3,6 +3,8 @@ require "woocommerce_api/resources/v2/variation"
 module WoocommerceAPI
   module V2
     class Product < Resource
+      include WoocommerceAPI::AttributeSlicer
+
       def as_json(options={})
         product_attributes = super(options)
 
@@ -14,16 +16,7 @@ module WoocommerceAPI
         product_attributes.delete('images') unless options[:images]
         product_attributes['backorders'] = nil if product_attributes['backorders'].blank?
 
-        case options[:sync_type]&.to_sym
-        when :price
-          product_attributes.slice(:id, :regular_price, :sale_price)
-        when :stock_level
-          product_attributes.slice(:id, :stock_quantity, :in_stock)
-        when :price_and_stock_level
-          product_attributes.slice(:id, :regular_price, :sale_price, :stock_quantity, :in_stock)
-        else
-          product_attributes
-        end
+        slice_by_sync_type(options[:sync_type], product_attributes)
       end
 
       # Managed Attributes
