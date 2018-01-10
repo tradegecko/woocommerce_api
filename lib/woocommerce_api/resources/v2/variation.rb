@@ -20,7 +20,17 @@ module WoocommerceAPI
 
         variant_attributes.delete('image') unless options[:images]
         variant_attributes['backorders'] = nil if variant_attributes['backorders'].blank?
-        variant_attributes
+        
+        case options[:sync_type]&.to_sym
+        when :price
+          variant_attributes.slice(:id, :regular_price, :sale_price)
+        when :stock_level
+          variant_attributes.slice(:id, :stock_quantity, :in_stock)
+        when :price_and_stock_level
+          variant_attributes.slice(:id, :regular_price, :sale_price, :stock_quantity, :in_stock)
+        else
+          variant_attributes
+        end
       end
 
       attribute :id, Integer
