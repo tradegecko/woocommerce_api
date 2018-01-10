@@ -1,8 +1,12 @@
 require "woocommerce_api/resources/v1/variation"
+require "woocommerce_api/resources/v1/variation"
+
 
 module WoocommerceAPI
   module V1
     class Product < Resource
+      include WoocommerceAPI::AttributeSlicer
+
       def as_json(options={})
         product_attributes = super(options)
         if attributes[:wc_attributes] && !attributes[:wc_attributes].empty?
@@ -29,19 +33,6 @@ module WoocommerceAPI
         end
 
         product_attributes
-      end
-
-      def slice_by_sync_type(sync_type, attr_hash)
-        case sync_type.to_sym
-        when :price
-          attr_hash.slice(:id, :regular_price, :sale_price)
-        when :stock_level
-          attr_hash.slice(:id, :stock_quantity, :in_stock)
-        when :price_and_stock_level
-          attr_hash.slice(:id, :regular_price, :sale_price, :stock_quantity, :in_stock)
-        else
-          attr_hash
-        end
       end
 
       # Managed Attributes
