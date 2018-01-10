@@ -15,7 +15,33 @@ module WoocommerceAPI
           product_attributes.delete('short_description')
         end
         product_attributes['backorders'] = nil if product_attributes['backorders'].blank?
+
+        if sync_type = options[:sync_type]
+          if product_attributes['variations'].present?
+            product_attributes = product_attributes.slice(:id, :variations)
+            variations = product_attributes['variations'].map do |attr_hash|
+              slice_by_sync_type(sync_type, attr_hash)
+            end
+            product_attributes['variations'] = variations
+          else
+            product_attributes = slice_by_sync_type(sync_type, product_attributes)
+          end
+        end
+
         product_attributes
+      end
+
+      def slice_by_sync_type(sync_type, attr_hash)
+        case sync_type.to_sym
+        when :price
+          attr_hash.slice(:id, :regular_price, :sale_price)
+        when :stock_level
+          attr_hash.slice(:id, :stock_quantity, :in_stock)
+        when :price_and_stock_level
+          attr_hash.slice(:id, :regular_price, :sale_price, :stock_quantity, :in_stock)
+        else
+          attr_hash
+        end
       end
 
       # Managed Attributes
