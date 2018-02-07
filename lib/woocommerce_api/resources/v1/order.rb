@@ -50,16 +50,9 @@ module WoocommerceAPI
       attribute :total_tax                 , Decimal            , writer: :private
       attribute :transaction_id            , String             , writer: :private
       attribute :version                   , String             , writer: :private
-      attribute :meta_data                 , Array              , writer: :private
 
       def order_notes
         WoocommerceAPI::OrderNote.all(self.id)
-      end
-
-      def shipment_details
-        self.meta_data&.detect do |meta|
-          meta['key'] == '_wc_shipment_tracking_items'
-        end&.fetch('value')&.first
       end
 
       def paid
@@ -68,6 +61,10 @@ module WoocommerceAPI
 
       def customer
         WoocommerceAPI::Customer.find(self.customer_id)
+      end
+
+      def shipment_details
+        # NOOP
       end
     end
   end

@@ -72,6 +72,10 @@ module WoocommerceAPI
       def transaction_id
         self.payment_details.transaction_id
       end
+
+      def shipment_details
+        # NOOP
+      end
     end
   end
 end
