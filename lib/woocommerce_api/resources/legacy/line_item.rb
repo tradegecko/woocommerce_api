@@ -1,3 +1,4 @@
+require "woocommerce_api/resources/meta_datum"
 module WoocommerceAPI
   module V3
     class LineItem < Resource
@@ -15,10 +16,14 @@ module WoocommerceAPI
       attribute :name      , String     , writer: :private
       attribute :price     , Decimal    , writer: :private
       attribute :tax_class , String     , writer: :private
-      attribute :meta      , Array[Hash], writer: :private
+      attribute :meta      , Array[MetaDatum], writer: :private
 
       # Write Only
       attribute :variations, Array[Hash]
+
+      def meta_data
+        meta
+      end
     end
   end
 end
