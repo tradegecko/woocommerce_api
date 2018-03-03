@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/products
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/products
     body:
       encoding: US-ASCII
       string: ''
@@ -13,6 +13,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -113,7 +115,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 07:55:39 GMT
 - request:
     method: post
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/products
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/products
     body:
       encoding: UTF-8
       string: '{"id":null,"wc_attributes":[],"backorders":null,"button_text":null,"catalog_visibility":null,"categories":["Clothing","T-shirts"],"cross_sell_ids":[],"date_on_sale_from":null,"date_on_sale_to":null,"default_attributes":{},"description":"Pellentesque
@@ -130,6 +132,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 201
@@ -200,7 +204,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 07:55:42 GMT
 - request:
     method: put
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/products/7867
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/products/7867
     body:
       encoding: UTF-8
       string: '{"id":7867,"wc_attributes":[],"backorders":"no","button_text":"","catalog_visibility":"visible","categories":[],"cross_sell_ids":[],"date_on_sale_from":"","date_on_sale_to":"","default_attributes":{},"description":"\u003cp\u003ePellentesque
@@ -217,6 +221,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -282,7 +288,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 07:55:45 GMT
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/products/7867
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/products/7867
     body:
       encoding: US-ASCII
       string: ''
@@ -293,6 +299,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -363,7 +371,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 07:55:46 GMT
 - request:
     method: delete
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/products/7867
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/products/7867
     body:
       encoding: US-ASCII
       string: ''
@@ -374,6 +382,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -434,7 +444,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 07:55:49 GMT
 - request:
     method: delete
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/products/7867?force=true
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/products/7867?force=true
     body:
       encoding: US-ASCII
       string: ''
@@ -445,6 +455,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/customers
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/customers
     body:
       encoding: US-ASCII
       string: ''
@@ -13,6 +13,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -92,7 +94,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:37:10 GMT
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/customers
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/customers
     body:
       encoding: US-ASCII
       string: ''
@@ -103,6 +105,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 401

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders
+    uri: https://wpcommercetest.wpengine.com/wc-api/v2/orders
     body:
       encoding: US-ASCII
       string: ''
@@ -13,6 +13,8 @@ http_interactions:
       - application/json
       User-Agent:
       - TradeGecko Woocommerce/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -128,7 +130,7 @@ http_interactions:
   recorded_at: Wed, 15 Jun 2016 04:20:11 GMT
 - request:
     method: put
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders/6524
+    uri: https://wpcommercetest.wpengine.com/wc-api/v2/orders/6524
     body:
       encoding: UTF-8
       string: '{"order":{"id":6523,"billing_address":{"id":null,"address_1":"969 Market","address_2":"","city":"San
@@ -150,6 +152,8 @@ http_interactions:
       - application/json
       User-Agent:
       - TradeGecko Woocommerce/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -187,7 +191,7 @@ http_interactions:
   recorded_at: Wed, 15 Jun 2016 04:20:19 GMT
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders/6524
+    uri: https://wpcommercetest.wpengine.com/wc-api/v2/orders/6524
     body:
       encoding: US-ASCII
       string: ''
@@ -198,6 +202,8 @@ http_interactions:
       - application/json
       User-Agent:
       - TradeGecko Woocommerce/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -247,7 +253,7 @@ http_interactions:
   recorded_at: Wed, 15 Jun 2016 04:20:20 GMT
 - request:
     method: post
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders
+    uri: https://wpcommercetest.wpengine.com/wc-api/v2/orders
     body:
       encoding: UTF-8
       string: '{"order":{"id":null,"billing_address":{"id":null,"address_1":"969 Market","address_2":"","city":"San
@@ -264,6 +270,8 @@ http_interactions:
       - application/json
       User-Agent:
       - TradeGecko Woocommerce/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 201
@@ -300,7 +308,7 @@ http_interactions:
   recorded_at: Wed, 15 Jun 2016 04:20:22 GMT
 - request:
     method: delete
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v2/orders/6524
+    uri: https://wpcommercetest.wpengine.com/wc-api/v2/orders/6524
     body:
       encoding: US-ASCII
       string: ''
@@ -311,6 +319,8 @@ http_interactions:
       - application/json
       User-Agent:
       - TradeGecko Woocommerce/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 202
