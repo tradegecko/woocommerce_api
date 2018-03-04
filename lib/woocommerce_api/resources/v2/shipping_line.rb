@@ -1,3 +1,4 @@
+require "woocommerce_api/resources/meta_datum"
 module WoocommerceAPI
   module V2
     class ShippingLine < Resource
@@ -7,6 +8,7 @@ module WoocommerceAPI
       attribute :total, Decimal
       attribute :total_tax, Decimal
       attribute :taxes, Array[Hash]
+      attribute :meta_data , Array[MetaDatum], writer: :private
     end
   end
 end

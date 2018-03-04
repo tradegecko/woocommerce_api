@@ -5,6 +5,10 @@ module WoocommerceAPI
       attribute :method_id, Integer
       attribute :method_title
       attribute :total, Decimal
+
+      def meta_data
+        []
+      end
     end
   end
 end
