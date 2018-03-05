@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v3/products
+    uri: https://wpcommercetest.wpengine.com/wc-api/v3/products
     body:
       encoding: US-ASCII
       string: ''
@@ -13,6 +13,8 @@ http_interactions:
       - application/json
       User-Agent:
       - TradeGecko Woocommerce/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -126,7 +128,7 @@ http_interactions:
   recorded_at: Wed, 15 Jun 2016 04:22:54 GMT
 - request:
     method: delete
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v3/products/6528
+    uri: https://wpcommercetest.wpengine.com/wc-api/v3/products/6528
     body:
       encoding: US-ASCII
       string: ''
@@ -137,6 +139,8 @@ http_interactions:
       - application/json
       User-Agent:
       - TradeGecko Woocommerce/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 202
@@ -161,7 +165,7 @@ http_interactions:
   recorded_at: Wed, 15 Jun 2016 04:22:59 GMT
 - request:
     method: delete
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v3/products/6528?force=true
+    uri: https://wpcommercetest.wpengine.com/wc-api/v3/products/6528?force=true
     body:
       encoding: US-ASCII
       string: ''
@@ -172,6 +176,8 @@ http_interactions:
       - application/json
       User-Agent:
       - TradeGecko Woocommerce/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -198,7 +204,7 @@ http_interactions:
   recorded_at: Wed, 15 Jun 2016 04:23:03 GMT
 - request:
     method: post
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v3/products
+    uri: https://wpcommercetest.wpengine.com/wc-api/v3/products
     body:
       encoding: UTF-8
       string: '{"product":{"id":null,"wc_attributes":[],"catalog_visibility":null,"cross_sell_ids":[],"description":"Pellentesque
@@ -215,6 +221,8 @@ http_interactions:
       - application/json
       User-Agent:
       - TradeGecko Woocommerce/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 201
@@ -247,7 +255,7 @@ http_interactions:
   recorded_at: Wed, 15 Jun 2016 04:23:08 GMT
 - request:
     method: put
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v3/products/6528
+    uri: https://wpcommercetest.wpengine.com/wc-api/v3/products/6528
     body:
       encoding: UTF-8
       string: '{"product":{"id":6528,"wc_attributes":[],"catalog_visibility":"visible","cross_sell_ids":[],"description":"\u003cp\u003ePellentesque
@@ -264,6 +272,8 @@ http_interactions:
       - application/json
       User-Agent:
       - TradeGecko Woocommerce/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -296,7 +306,7 @@ http_interactions:
   recorded_at: Wed, 15 Jun 2016 04:23:11 GMT
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wc-api/v3/products/6528
+    uri: https://wpcommercetest.wpengine.com/wc-api/v3/products/6528
     body:
       encoding: US-ASCII
       string: ''
@@ -307,6 +317,8 @@ http_interactions:
       - application/json
       User-Agent:
       - TradeGecko Woocommerce/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200

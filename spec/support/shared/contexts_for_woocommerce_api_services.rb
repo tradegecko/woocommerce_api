@@ -1,4 +1,4 @@
-require 'webmock'
+require 'webmock/rspec'
 require 'vcr'
 
 shared_context "woocommerce_api_services" do |options|

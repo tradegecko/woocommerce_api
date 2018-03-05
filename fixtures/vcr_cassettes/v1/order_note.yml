@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149/notes/
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149/notes/
     body:
       encoding: US-ASCII
       string: ''
@@ -13,6 +13,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -83,7 +85,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:35:33 GMT
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149/notes/
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149/notes/
     body:
       encoding: US-ASCII
       string: ''
@@ -94,6 +96,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -164,7 +168,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:35:35 GMT
 - request:
     method: post
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149/notes/
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149/notes/
     body:
       encoding: UTF-8
       string: '{"id":null,"customer_note":null,"note":"Carrier: Blah Blah\n               Tracking
@@ -176,6 +180,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 201
@@ -233,7 +239,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:35:37 GMT
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149
     body:
       encoding: US-ASCII
       string: ''
@@ -244,6 +250,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -316,7 +324,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:35:38 GMT
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149/notes/
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149/notes/
     body:
       encoding: US-ASCII
       string: ''
@@ -327,6 +335,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 401
@@ -374,7 +384,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:39:33 GMT
 - request:
     method: post
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149/notes/
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149/notes/
     body:
       encoding: UTF-8
       string: '{"id":null,"customer_note":null,"note":"Carrier: Blah Blah\n               Tracking
@@ -386,6 +396,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 401
@@ -421,7 +433,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:39:36 GMT
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders/6149
     body:
       encoding: US-ASCII
       string: ''
@@ -432,6 +444,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 401

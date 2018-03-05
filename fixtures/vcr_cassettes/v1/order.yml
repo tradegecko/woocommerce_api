@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders
     body:
       encoding: US-ASCII
       string: ''
@@ -13,6 +13,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -132,7 +134,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:32:25 GMT
 - request:
     method: post
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders
     body:
       encoding: UTF-8
       string: '{"id":null,"billing":null,"coupon_lines":[],"currency":null,"customer_id":2,"fee_lines":[],"line_items":[{"id":null,"product_id":6512,"quantity":2,"subtotal":null,"subtotal_tax":null,"total":null,"total_tax":null,"sku":null,"name":null,"price":null,"tax_class":null,"meta":[],"variations":[]}],"customer_note":"This
@@ -145,6 +147,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 201
@@ -203,7 +207,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:32:27 GMT
 - request:
     method: put
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/7877
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders/7877
     body:
       encoding: UTF-8
       string: '{"id":7877,"billing":{"address_1":"","address_2":"","city":"","company":"","country":"","email":"cameron+woo@tradegecko.com","first_name":"","last_name":"","phone":"","postcode":"","state":""},"coupon_lines":[],"currency":"SGD","customer_id":3,"fee_lines":[],"line_items":[],"customer_note":"This
@@ -216,6 +220,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -272,7 +278,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:32:44 GMT
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/7877
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders/7877
     body:
       encoding: US-ASCII
       string: ''
@@ -283,6 +289,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -349,7 +357,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:32:46 GMT
 - request:
     method: delete
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders/7877
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders/7877
     body:
       encoding: US-ASCII
       string: ''
@@ -360,6 +368,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 200
@@ -416,7 +426,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:32:48 GMT
 - request:
     method: get
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders
     body:
       encoding: US-ASCII
       string: ''
@@ -427,6 +437,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 401
@@ -474,7 +486,7 @@ http_interactions:
   recorded_at: Thu, 27 Apr 2017 08:39:39 GMT
 - request:
     method: post
-    uri: https://ck_1234567890abcdefghijklmnopqrstuv:cs_1234567890abcdefghijklmnopqrstuv@wpcommercetest.wpengine.com/wp-json/wc/v1/orders
+    uri: https://wpcommercetest.wpengine.com/wp-json/wc/v1/orders
     body:
       encoding: UTF-8
       string: '{"id":null,"billing":null,"coupon_lines":[],"currency":null,"customer_id":2,"fee_lines":[],"line_items":[{"id":null,"product_id":6512,"quantity":2,"subtotal":null,"subtotal_tax":null,"total":null,"total_tax":null,"sku":null,"name":null,"price":null,"tax_class":null,"meta":[],"variations":[]}],"customer_note":"This
@@ -487,6 +499,8 @@ http_interactions:
       - application/json
       User-Agent:
       - WoocommerceAPI/0.1.0
+      Authorization:
+      - Basic Y2tfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY6Y3NfMTIzNDU2Nzg5MGFiY2RlZmdoaWprbG1ub3BxcnN0dXY=
   response:
     status:
       code: 401
