@@ -7,6 +7,10 @@ module WoocommerceAPI
       attribute :tax_class
       attribute :total, Decimal
       attribute :total_tax, Decimal
+
+      def meta_data
+        []
+      end
     end
   end
 end

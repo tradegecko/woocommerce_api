@@ -4,6 +4,9 @@ module WoocommerceAPI
       attribute :id, Integer
       attribute :code
       attribute :amount, Decimal
+      def meta_data
+        []
+      end
     end
   end
 end

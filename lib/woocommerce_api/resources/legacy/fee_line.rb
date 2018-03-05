@@ -9,6 +9,10 @@ module WoocommerceAPI
       attribute :total_tax, Decimal
 
       alias_attribute :name, :title
+
+      def meta_data
+        []
+      end
     end
   end
 end

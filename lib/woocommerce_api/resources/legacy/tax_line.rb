@@ -7,6 +7,9 @@ module WoocommerceAPI
       attribute :rate_id, Integer
       attribute :title
       attribute :total, Decimal
+      def meta_data
+        []
+      end
     end
   end
 end
