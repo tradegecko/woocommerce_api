@@ -23,9 +23,13 @@ module WoocommerceAPI
       attribute :customer_note             , String             , writer: :private
       attribute :customer_user_agent       , String             , writer: :private
       attribute :date_completed            , DateTime           , writer: :private
+      attribute :date_completed_gmt        , DateTime           , writer: :private
       attribute :date_created              , DateTime           , writer: :private
+      attribute :date_created_gmt          , DateTime           , writer: :private
       attribute :date_modified             , DateTime           , writer: :private
+      attribute :date_modified_gmt         , DateTime           , writer: :private
       attribute :date_paid                 , DateTime           , writer: :private
+      attribute :date_paid_gmt             , DateTime           , writer: :private
       attribute :discount_tax              , Decimal            , writer: :private
       attribute :discount_total            , Decimal            , writer: :private
       attribute :fee_lines                 , Array[FeeLine]     , writer: :private
