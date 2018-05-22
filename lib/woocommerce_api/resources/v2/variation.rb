@@ -21,6 +21,7 @@ module WoocommerceAPI
         variant_attributes['attributes'] = variant_options if variant_options.present?
 
         variant_attributes.delete('image') unless options[:images]
+        variant_attributes.delete('manage_stock') if variant_attributes['manage_stock'] == 'parent'
         variant_attributes['backorders'] = nil if variant_attributes['backorders'].blank?
 
         slice_by_sync_type(options[:sync_type], variant_attributes)
