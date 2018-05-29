@@ -54,8 +54,6 @@ module WoocommerceAPI
       attribute :variations, Array[Variation]
       attribute :wc_attributes, Array
       attribute :weight
-      attribute :product_url, String
-      attribute :button_text, String
 
       # Unmanaged attributes
       attribute :catalog_visibility, String, writer: :private
@@ -105,6 +103,8 @@ module WoocommerceAPI
       attribute :default_attributes, Hash, writer: :private
       attribute :sale_price_dates_from, DateTime, writer: :private
       attribute :sale_price_dates_to, DateTime, writer: :private
+      attribute :product_url, String, writer: :private
+      attribute :button_text, String, writer: :private
 
       has_many :product_reviews, class_name: "ProductReview", resource_uri: '/reviews'
       has_many :orders, class_name: "Order"
