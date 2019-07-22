@@ -47,6 +47,7 @@ module WoocommerceAPI
       attribute :sale_price, Decimal
       attribute :sku
       attribute :stock_quantity, Integer
+      attribute :tags, Array
       attribute :type
       attribute :variations, Array[Variation]
       attribute :wc_attributes, Array
@@ -92,7 +93,6 @@ module WoocommerceAPI
       attribute :slug               , String  , writer: :private
       attribute :sold_individually  , Boolean  , writer: :private
       attribute :status             , String  , writer: :private
-      attribute :tags               , Array  , writer: :private
       attribute :tax_class          , String  , writer: :private
       attribute :tax_status         , String  , writer: :private
       attribute :total_sales        , Integer , writer: :private
