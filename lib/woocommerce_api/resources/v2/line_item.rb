@@ -17,6 +17,7 @@ module WoocommerceAPI
       attribute :price     , Decimal         , writer: :private
       attribute :tax_class , String          , writer: :private
       attribute :meta_data , Array[MetaDatum], writer: :private
+      attribute :taxes     , Array[Hash]     , writer: :private
 
       # Write Only
       attribute :variations, Array[Hash]
