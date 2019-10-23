@@ -8,11 +8,21 @@ module WoocommerceAPI
         payload[:method]        = http_method::METHOD.downcase
         payload[:request_uri]   = request_uri
         payload[:request_body]  = options[:body]
+        options[:headers] = { 'Content-Type' => 'application/json' } if valid_json?(options[:body])
         payload[:response_body] = super(http_method, request_uri, options, &block)
       end
     end
 
   private
+
+    def self.valid_json?(json)
+      return false if json.nil?
+
+      JSON.parse(json)
+      return true
+    rescue JSON::ParserError => e
+      return false
+    end
 
     def self.oauth_url(http_method, path, params={})
       oauth_options = Thread.current["WoocommerceAPI"]
