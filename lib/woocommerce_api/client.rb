@@ -1,6 +1,9 @@
+require 'woocommerce_api/concerns/request_headers'
+
 module WoocommerceAPI
   class Client
     include HTTParty
+    include WoocommerceAPI::RequestHeaders
 
     def self.default_options
       Thread.current["WoocommerceAPI"] || raise("Session has not been activated yet")
@@ -37,6 +40,7 @@ module WoocommerceAPI
         payload[:method]        = http_method::METHOD.downcase
         payload[:request_uri]   = path
         payload[:request_body]  = options[:body]
+        options[:headers]       = set_request_headers(options, http_method::METHOD)
         payload[:response_body] = super
       end
     end
