@@ -37,6 +37,7 @@ module WoocommerceAPI
 
     def self.perform_request(http_method, path, options = {}, &block)
       ActiveSupport::Notifications.instrument("request.woocommerce_api") do |payload|
+        http_method = HTTPRequestMethod.request_method(http_method, options)
         payload[:method]        = http_method::METHOD.downcase
         payload[:request_uri]   = path
         payload[:request_body]  = options[:body]
