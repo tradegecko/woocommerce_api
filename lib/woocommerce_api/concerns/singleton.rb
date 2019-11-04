@@ -84,10 +84,14 @@ module WoocommerceAPI
         self.class.collection_path(prefix_options, query_options)
       end
 
-      def save(options={})
+      def save(options={}, request_options={})
         return unless valid?
         method = persisted? ? :put : :post
-        resource = self.class.http_request(method, self.to_path, body: self.as_json(options).to_json)
+        resource = self.class.http_request(
+          method,
+          to_path,
+          { body: as_json(options).to_json }.merge(request_options)
+        )
         self.class.extract_resource(resource)
       end
       alias_method :create, :save
@@ -102,7 +106,7 @@ module WoocommerceAPI
 
       def to_path
         "#{collection_path}#{"/#{id}" if id}"
-      end  
+      end
     end
 
     def self.included(receiver)

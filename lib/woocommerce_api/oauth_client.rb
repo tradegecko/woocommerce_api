@@ -1,4 +1,5 @@
 require 'woocommerce_api/concerns/request_headers'
+require 'woocommerce_api/services/http_request_method'
 
 module WoocommerceAPI
   class OauthClient
@@ -7,7 +8,9 @@ module WoocommerceAPI
 
     def self.perform_request(http_method, path, options = {}, &block)
       ActiveSupport::Notifications.instrument("request.woocommerce_api") do |payload|
+        http_method = HTTPRequestMethod.request_method(http_method, options)
         request_uri = oauth_url(http_method, path)
+
         payload[:method]        = http_method::METHOD.downcase
         payload[:request_uri]   = request_uri
         payload[:request_body]  = options[:body]
