@@ -24,12 +24,20 @@ module WoocommerceAPI
     def self.oauth_url(http_method, path, params={})
       oauth_options = Thread.current["WoocommerceAPI"]
       parsed_url = URI::parse("#{oauth_options[:base_uri]}#{path}")
+
       if parsed_url.query
         CGI::parse(parsed_url.query).each do |key, value|
-          params[key] = value[0]
+          if key.include?('[]')
+            value.each_with_index do |v, i|
+              params[key.gsub("[]", "[#{i}]")] = v
+            end
+          else
+            params[key] = value[0]
+          end
         end
         params = Hash[params.sort]
       end
+
       url = "http://#{parsed_url.host}#{parsed_url.path}"
 
       consumer_secret = if oauth_options[:version] == "v3" || oauth_options[:wordpress_api]
