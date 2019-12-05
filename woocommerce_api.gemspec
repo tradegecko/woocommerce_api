@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["TradeGecko".freeze]
-  s.date = "2017-06-12"
+  s.date = "2019-12-05"
   s.description = "Enables Ruby applications to communicate with the WooCommerce API.".freeze
   s.email = "support@tradegecko.com".freeze
   s.extra_rdoc_files = [
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "lib/woocommerce_api/concerns/attribute_assignment.rb",
     "lib/woocommerce_api/concerns/attribute_slicer.rb",
     "lib/woocommerce_api/concerns/params_converter.rb",
+    "lib/woocommerce_api/concerns/request_headers.rb",
     "lib/woocommerce_api/concerns/singleton.rb",
     "lib/woocommerce_api/oauth_client.rb",
     "lib/woocommerce_api/resource.rb",
@@ -50,9 +51,12 @@ Gem::Specification.new do |s|
     "lib/woocommerce_api/resources/legacy/refund.rb",
     "lib/woocommerce_api/resources/legacy/shipping_line.rb",
     "lib/woocommerce_api/resources/legacy/store.rb",
+    "lib/woocommerce_api/resources/legacy/tax_class.rb",
     "lib/woocommerce_api/resources/legacy/tax_line.rb",
+    "lib/woocommerce_api/resources/legacy/tax_rate.rb",
     "lib/woocommerce_api/resources/legacy/variation.rb",
     "lib/woocommerce_api/resources/legacy/webhook.rb",
+    "lib/woocommerce_api/resources/meta_datum.rb",
     "lib/woocommerce_api/resources/proxy.rb",
     "lib/woocommerce_api/resources/v1/address.rb",
     "lib/woocommerce_api/resources/v1/coupon.rb",
@@ -71,7 +75,9 @@ Gem::Specification.new do |s|
     "lib/woocommerce_api/resources/v1/refund.rb",
     "lib/woocommerce_api/resources/v1/shipping_line.rb",
     "lib/woocommerce_api/resources/v1/store.rb",
+    "lib/woocommerce_api/resources/v1/tax_class.rb",
     "lib/woocommerce_api/resources/v1/tax_line.rb",
+    "lib/woocommerce_api/resources/v1/tax_rate.rb",
     "lib/woocommerce_api/resources/v1/variation.rb",
     "lib/woocommerce_api/resources/v1/webhook.rb",
     "lib/woocommerce_api/resources/v2/address.rb",
@@ -86,21 +92,25 @@ Gem::Specification.new do |s|
     "lib/woocommerce_api/resources/v2/order.rb",
     "lib/woocommerce_api/resources/v2/order_note.rb",
     "lib/woocommerce_api/resources/v2/payment_details.rb",
+    "lib/woocommerce_api/resources/v2/payment_gateway.rb",
     "lib/woocommerce_api/resources/v2/product.rb",
     "lib/woocommerce_api/resources/v2/product_review.rb",
     "lib/woocommerce_api/resources/v2/refund.rb",
     "lib/woocommerce_api/resources/v2/shipping_line.rb",
     "lib/woocommerce_api/resources/v2/store.rb",
+    "lib/woocommerce_api/resources/v2/tax_class.rb",
     "lib/woocommerce_api/resources/v2/tax_line.rb",
+    "lib/woocommerce_api/resources/v2/tax_rate.rb",
+    "lib/woocommerce_api/resources/v2/tool.rb",
     "lib/woocommerce_api/resources/v2/variation.rb",
     "lib/woocommerce_api/resources/v2/webhook.rb",
-    "lib/woocommerce_api/resources/v2/payment_gateway.rb",
-    "lib/woocommerce_api/resources/v2/tool.rb",
+    "lib/woocommerce_api/services/http_method_override.rb",
+    "lib/woocommerce_api/services/http_request_method.rb",
     "lib/woocommerce_api/version.rb"
   ]
   s.homepage = "http://github.com/tradegecko/woocommerce_api".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.5.2".freeze
+  s.rubygems_version = "2.7.6.2".freeze
   s.summary = "Enables Ruby applications to communicate with the WooCommerce API".freeze
 
   if s.respond_to? :specification_version then
@@ -145,3 +155,4 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<pry>.freeze, [">= 0"])
   end
 end
+

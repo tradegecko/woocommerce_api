@@ -141,6 +141,18 @@ class WoocommerceAPI::OrderNote < WoocommerceAPI::ResourceProxy
   end
 end
 
+class WoocommerceAPI::TaxClass < WoocommerceAPI::ResourceProxy
+  def self.collection_path(prefix_options='', param_options=nil)
+    "/taxes/classes"
+  end
+end
+
+class WoocommerceAPI::TaxRate < WoocommerceAPI::ResourceProxy
+  def self.collection_path(prefix_options='', param_options=nil)
+    "/taxes"
+  end
+end
+
 class WoocommerceAPI::Webhook < WoocommerceAPI::ResourceProxy
 end
 

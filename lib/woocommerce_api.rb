@@ -88,14 +88,21 @@ require "woocommerce_api/resources/legacy/store.rb"
 require "woocommerce_api/resources/v1/store.rb"
 require "woocommerce_api/resources/v2/store.rb"
 
+require "woocommerce_api/resources/legacy/tax_class.rb"
+require "woocommerce_api/resources/v1/tax_class.rb"
+require "woocommerce_api/resources/v2/tax_class.rb"
+
 require "woocommerce_api/resources/legacy/tax_line.rb"
 require "woocommerce_api/resources/v1/tax_line.rb"
 require "woocommerce_api/resources/v2/tax_line.rb"
 
+require "woocommerce_api/resources/legacy/tax_rate.rb"
+require "woocommerce_api/resources/v1/tax_rate.rb"
+require "woocommerce_api/resources/v2/tax_rate.rb"
+
 require "woocommerce_api/resources/legacy/webhook.rb"
 require "woocommerce_api/resources/v1/webhook.rb"
 require "woocommerce_api/resources/v2/webhook.rb"
-
 
 require "woocommerce_api/resources/legacy/product.rb"
 require "woocommerce_api/resources/v1/product.rb"
