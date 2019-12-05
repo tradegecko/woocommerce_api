@@ -110,7 +110,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://github.com/tradegecko/woocommerce_api".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.7.6.2".freeze
+  s.rubygems_version = "2.5.2".freeze
   s.summary = "Enables Ruby applications to communicate with the WooCommerce API".freeze
 
   if s.respond_to? :specification_version then
