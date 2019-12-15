@@ -34,12 +34,13 @@ module WoocommerceAPI
       attribute :type
       attribute :wc_attributes, Array
       attribute :weight
+      attribute :external_url, String
+      attribute :button_text, String
 
       # Unmanaged Attributes
       attribute :average_rating     , Decimal , writer: :private
       attribute :backordered        , Boolean , writer: :private
       attribute :backorders_allowed , Boolean , writer: :private
-      attribute :button_text        , String  , writer: :private
       attribute :catalog_visibility , String  , writer: :private
       attribute :categories         , Array  , writer: :private
       attribute :cross_sell_ids     , Array  , writer: :private
@@ -54,7 +55,6 @@ module WoocommerceAPI
       attribute :download_type      , String  , writer: :private
       attribute :downloadable       , Boolean  , writer: :private
       attribute :downloads          , String  , writer: :private
-      attribute :external_url       , String  , writer: :private
       attribute :featured           , Boolean  , writer: :private
       attribute :grouped_products   , Array   , writer: :private
       attribute :on_sale            , Boolean , writer: :private

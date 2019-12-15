@@ -28,8 +28,8 @@ module WoocommerceAPI
                        else #:oauth_https
                          oauth_https_options(params)
                        end
-      client_options[:version] = params.delete(:version) || 'v2'
-      client_options[:wordpress_api] = params.delete(:wordpress_api)
+      client_options[:version] = params.dig(:version) || 'v2'
+      client_options[:wordpress_api] = params.dig(:wordpress_api)
       client_options[:base_uri] = normalize_base_uri(params[:store_url], client_options[:version], client_options[:wordpress_api])
       session_options = self.class.default_client_options.merge(client_options)
       Thread.current["WoocommerceAPI"] = session_options
