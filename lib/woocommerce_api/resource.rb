@@ -12,7 +12,7 @@ module WoocommerceAPI
     def initialize(params={})
       self.class.include_root_in_json = !!legacy_api?
       @raw_params = params.dup
-      if params.is_a?(Hash) && params['attributes']
+      if params.is_a?(Hash) && params.has_key?('attributes')
         params['wc_attributes'] = params.delete('attributes')
       end
       load(params)
