@@ -54,6 +54,7 @@ module WoocommerceAPI
       attribute :variations, Array[Variation]
       attribute :wc_attributes, Array
       attribute :weight
+      attribute :status, String
 
       # Unmanaged attributes
       attribute :catalog_visibility, String, writer: :private
@@ -73,7 +74,6 @@ module WoocommerceAPI
       attribute :shipping_class, String, writer: :private
       attribute :short_description, String, writer: :private
       attribute :sold_individually, Boolean, writer: :private
-      attribute :status, String  , writer: :private
       attribute :tags, Array, writer: :private
       attribute :tax_class, String  , writer: :private
       attribute :tax_status, String  , writer: :private
