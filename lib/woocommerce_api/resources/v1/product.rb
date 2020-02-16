@@ -20,6 +20,8 @@ module WoocommerceAPI
         end
         product_attributes['backorders'] = nil if product_attributes['backorders'].blank?
 
+        product_attributes.delete('status') unless product_attributes[:status]
+
         if sync_type = options[:sync_type]
           if product_attributes['variations'].present?
             product_attributes = product_attributes.slice(:id, :variations)

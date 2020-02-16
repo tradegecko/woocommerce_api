@@ -16,6 +16,8 @@ module WoocommerceAPI
         product_attributes.delete('images') unless options[:images]
         product_attributes['backorders'] = nil if product_attributes['backorders'].blank?
 
+        product_attributes.delete('status') unless product_attributes[:status]
+
         slice_by_sync_type(options[:sync_type], product_attributes)
       end
 

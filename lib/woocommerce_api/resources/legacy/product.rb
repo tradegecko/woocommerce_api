@@ -12,6 +12,7 @@ module WoocommerceAPI
             wc_attributes['product'].delete('description')
             wc_attributes['product'].delete('short_description')
           end
+          wc_attributes['product'].delete('status') unless wc_attributes['product']['status']
         else
           wc_attributes.delete('images') unless options[:images]
           if options[:description_sync_disabled]
