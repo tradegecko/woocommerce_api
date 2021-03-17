@@ -10,6 +10,8 @@ module WoocommerceAPI
 
     attr_reader :raw_params, :model
     delegate :attributes, to: :model
+    # `load` is a semi-reserved word in Ruby, ensure that our usage doesn't lean on method_missing.
+    delegate :load, to: :model
 
     def initialize(params={})
       @raw_params = params.dup
