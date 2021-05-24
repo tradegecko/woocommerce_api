@@ -4,6 +4,7 @@ module WoocommerceAPI
   class Client
     include HTTParty
     include WoocommerceAPI::RequestHeaders
+    maintain_method_across_redirects true
 
     def self.default_options
       Thread.current["WoocommerceAPI"] || raise("Session has not been activated yet")
